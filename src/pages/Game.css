@@ -1,0 +1,113 @@
+.game-page {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  overflow-x: hidden;
+}
+
+.game-status {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.status-win {
+  background: #2a4a1f;
+  border: 2px solid #4a7c3f;
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7ddb6a;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.next-puzzle {
+  color: #c8a84b;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.guess-board {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.reveal-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 24px;
+  background: transparent;
+  border: 2px solid #c8a84b;
+  color: #c8a84b;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.reveal-btn:hover {
+  background: #c8a84b;
+  color: #1a1a1a;
+}
+
+.answer-reveal {
+  margin-top: 20px;
+  text-align: center;
+  padding: 16px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.answer-details {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.practice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.practice-stats {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.new-game-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #c8a84b;
+  background: transparent;
+  color: #c8a84b;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.new-game-btn:hover { background: #c8a84b; color: #1a1a1a; }
+.new-game-btn.inline { margin-top: 12px; }
+
+@media (max-width: 600px) {
+  .game-page { padding: 12px 0 0; }
+  .game-status,
+  .status-win,
+  .answer-reveal,
+  .reveal-btn,
+  .practice-header,
+  .new-game-btn,
+  .archive-nav { margin-left: 10px; margin-right: 10px; }
+  .guess-input-wrapper { padding: 0 10px; max-width: 100%; }
+  .status-win { font-size: 1rem; }
+  .answer-reveal { font-size: 1rem; }
+  .practice-header { flex-direction: column; gap: 10px; align-items: flex-start; }
+}
