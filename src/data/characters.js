@@ -1,5 +1,5 @@
 // Auto-generated from Google Sheets — do not edit manually
-// Last synced: 2026-06-14T04:49:14.973Z
+// Last synced: 2026-06-14T06:13:16.494Z
 
 export const CHARACTERS = [
   {

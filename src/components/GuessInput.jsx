@@ -10,9 +10,10 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
   const divRef = useRef(null);
 
   useEffect(() => {
-    const q = query.toLowerCase().trim();
+    const normalize = s => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+    const q = normalize(query);
     const filtered = CHARACTERS
-      .filter(c => !guessedNames.includes(c.name) && (!q || c.name.toLowerCase().includes(q)))
+      .filter(c => !guessedNames.includes(c.name) && (!q || normalize(c.name).includes(q)))
       .slice(0, 300);
     setSuggestions(focused ? filtered : []);
     setHighlighted(-1);
@@ -57,6 +58,9 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
           role="combobox"
           aria-expanded={suggestions.length > 0}
           aria-autocomplete="list"
+          spellCheck={false}
+          autoCorrect="off"
+          autoCapitalize="off"
         />
         <button
           className="guess-btn"
