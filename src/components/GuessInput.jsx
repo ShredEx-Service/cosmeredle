@@ -4,6 +4,7 @@ import './GuessInput.css';
 
 export default function GuessInput({ onGuess, guessedNames, disabled }) {
   const [query, setQuery] = useState('');
+  const [selected, setSelected] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
   const [highlighted, setHighlighted] = useState(-1);
   const [focused, setFocused] = useState(false);
@@ -17,11 +18,31 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
       .slice(0, 300);
     setSuggestions(focused ? filtered : []);
     setHighlighted(-1);
+    // If user edits after selecting, clear selection
+    if (selected && query !== selected.name) setSelected(null);
   }, [query, guessedNames, focused]);
 
-  function submit(char) {
+  function selectSuggestion(char) {
+    setSelected(char);
+    setQuery(char.name);
+    if (divRef.current) {
+      divRef.current.textContent = char.name;
+      const range = document.createRange();
+      const sel = window.getSelection();
+      range.selectNodeContents(divRef.current);
+      range.collapse(false);
+      sel.removeAllRanges();
+      sel.addRange(range);
+      divRef.current.focus();
+    }
+    setSuggestions([]);
+  }
+
+  function submit() {
+    const char = selected || (suggestions.length === 1 ? suggestions[0] : null);
     if (!char) return;
     onGuess(char);
+    setSelected(null);
     setQuery('');
     if (divRef.current) divRef.current.textContent = '';
     setSuggestions([]);
@@ -32,8 +53,8 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
     else if (e.key === 'ArrowUp') { e.preventDefault(); setHighlighted(h => Math.max(h - 1, -1)); }
     else if (e.key === 'Enter') {
       e.preventDefault();
-      if (highlighted >= 0) submit(suggestions[highlighted]);
-      else if (suggestions.length === 1) submit(suggestions[0]);
+      if (highlighted >= 0) selectSuggestion(suggestions[highlighted]);
+      else submit();
     }
     else if (e.key === 'Escape') setSuggestions([]);
   }
@@ -41,6 +62,8 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
   function handleInput() {
     setQuery(divRef.current?.textContent || '');
   }
+
+  const canGuess = !!(selected || suggestions.length === 1);
 
   return (
     <div className="guess-input-wrapper">
@@ -64,8 +87,8 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
         />
         <button
           className="guess-btn"
-          onClick={() => highlighted >= 0 ? submit(suggestions[highlighted]) : suggestions.length === 1 && submit(suggestions[0])}
-          disabled={disabled || suggestions.length === 0}
+          onClick={submit}
+          disabled={disabled || !canGuess}
         >
           Guess
         </button>
@@ -76,7 +99,8 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
             <li
               key={c.name}
               className={i === highlighted ? 'highlighted' : ''}
-              onMouseDown={() => submit(c)}
+              onMouseDown={() => selectSuggestion(c)}
+              onTouchEnd={(e) => { e.preventDefault(); selectSuggestion(c); }}
               onMouseEnter={() => setHighlighted(i)}
             >
               {c.name}
