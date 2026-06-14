@@ -84,5 +84,14 @@
 @media (max-width: 600px) {
   .guess-input { font-size: 0.95rem; padding: 10px 12px; min-height: 44px; }
   .guess-btn { padding: 10px 14px; font-size: 0.9rem; }
-  .suggestions { right: 0; max-height: 200px; }
+  .suggestions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    max-height: 180px;
+    border-radius: 8px;
+    z-index: 1000;
+    margin: 4px 0 0;
+  }
 }

@@ -2,7 +2,7 @@ name: Sync Characters from Google Sheets
 
 on:
   schedule:
-    - cron: '0 * * * *'   # runs every hour
+    - cron: '0 6 * * *'   # runs daily at 6am UTC
   workflow_dispatch:        # lets you trigger it manually from GitHub
 
 jobs:
