@@ -65,7 +65,8 @@ for (const c of characters) {
   else if (!cPast && !ePast) { if (c.validFrom < existing.validFrom) byName.set(c.name, c); }
 }
 
-const deduped = [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
+const sortKey = s => s.replace(/['"]/g, '').trim().toLowerCase();
+const deduped = [...byName.values()].sort((a, b) => sortKey(a.name).localeCompare(sortKey(b.name)));
 const validAnswers = deduped.filter(c => c.validFrom <= TODAY);
 
 const output = `// Auto-generated from Google Sheets — do not edit manually

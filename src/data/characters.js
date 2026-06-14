@@ -1,15 +1,7 @@
 // Auto-generated from Google Sheets — do not edit manually
-// Last synced: 2026-06-14T06:13:16.494Z
+// Last synced: 2026-06-14T06:15:48.521Z
 
 export const CHARACTERS = [
-  {
-    "name": "\"Grandmother\", Forescout",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Shade",
-    "abilities": "Cognitive Shadow",
-    "validFrom": 0
-  },
   {
     "name": "121",
     "homeWorld": "Roshar",
@@ -739,6 +731,14 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
+    "name": "\"Grandmother\", Forescout",
+    "homeWorld": "Threnody",
+    "firstAppearance": "Shadows for Silence in the Forests of Hell",
+    "species": "Shade",
+    "abilities": "Cognitive Shadow",
+    "validFrom": 0
+  },
+  {
     "name": "Gyundok",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
@@ -1227,7 +1227,7 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Miles, \"Hundredlives\", Dagouter",
+    "name": "Miles, Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
     "species": "Human, Terris",
@@ -1235,7 +1235,7 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Miles, Dagouter",
+    "name": "Miles, \"Hundredlives\", Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
     "species": "Human, Terris",
@@ -2342,14 +2342,6 @@ export const CHARACTERS = [
 
 export const VALID_ANSWERS = [
   {
-    "name": "\"Grandmother\", Forescout",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Shade",
-    "abilities": "Cognitive Shadow",
-    "validFrom": 0
-  },
-  {
     "name": "121",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
@@ -3078,6 +3070,14 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
+    "name": "\"Grandmother\", Forescout",
+    "homeWorld": "Threnody",
+    "firstAppearance": "Shadows for Silence in the Forests of Hell",
+    "species": "Shade",
+    "abilities": "Cognitive Shadow",
+    "validFrom": 0
+  },
+  {
     "name": "Gyundok",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
@@ -3566,7 +3566,7 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Miles, \"Hundredlives\", Dagouter",
+    "name": "Miles, Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
     "species": "Human, Terris",
@@ -3574,7 +3574,7 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Miles, Dagouter",
+    "name": "Miles, \"Hundredlives\", Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
     "species": "Human, Terris",
