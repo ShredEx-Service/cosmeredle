@@ -56,8 +56,9 @@
   position: absolute;
   top: 100%;
   left: 0;
-  right: 60px;
-  background: #2a2a2a;
+  right: 0;
+  background: rgba(42, 42, 42, 0.45);
+  backdrop-filter: blur(6px);
   border: 1px solid #c8a84b;
   border-radius: 8px;
   list-style: none;
@@ -66,6 +67,7 @@
   z-index: 100;
   max-height: 400px;
   overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .suggestions li {
@@ -75,7 +77,6 @@
   font-size: 0.95rem;
 }
 
-.suggestions li:hover,
 .suggestions li.highlighted {
   background: #c8a84b;
   color: #1a1a1a;

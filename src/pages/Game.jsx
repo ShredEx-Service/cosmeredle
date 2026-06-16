@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import GuessInput from '../components/GuessInput.jsx';
 import GuessRow, { GuessHeader } from '../components/GuessRow.jsx';
 import { getDailyCharacter, getDayNumber, compareCharacters } from '../utils/gameLogic.js';
+import { useAuth } from '../contexts/AuthContext.jsx';
+import { supabase } from '../utils/supabase.js';
 import './Game.css';
 
 const STORAGE_KEY = 'cosmeredle_daily';
@@ -12,6 +14,7 @@ export default function Game() {
   const [guesses, setGuesses] = useState([]);
   const [won, setWon] = useState(false);
   const [revealed, setRevealed] = useState(false);
+  const { user } = useAuth();
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
@@ -29,6 +32,25 @@ export default function Game() {
     }));
   }
 
+  async function syncDailyResult(newWon) {
+    if (!user) return;
+    const { data: existing } = await supabase.from('stats').select('*').eq('user_id', user.id).single();
+    if (!existing) return;
+    const alreadyPlayedToday = existing.daily_last_win_day === dayNumber || existing.daily_last_play_day === dayNumber;
+    if (alreadyPlayedToday) return;
+    const continuedStreak = existing.daily_last_win_day === dayNumber - 1;
+    const newStreak = newWon ? (continuedStreak ? existing.daily_streak + 1 : 1) : 0;
+    await supabase.from('stats').update({
+      daily_played: existing.daily_played + 1,
+      daily_won: existing.daily_won + (newWon ? 1 : 0),
+      daily_streak: newStreak,
+      daily_best_streak: Math.max(existing.daily_best_streak, newStreak),
+      daily_last_win_day: newWon ? dayNumber : existing.daily_last_win_day,
+      daily_last_play_day: dayNumber,
+      updated_at: new Date().toISOString(),
+    }).eq('user_id', user.id);
+  }
+
   function handleGuess(char) {
     if (won) return;
     const result = compareCharacters(char, target);
@@ -37,23 +59,21 @@ export default function Game() {
     setGuesses(newGuesses);
     setWon(newWon);
     saveState(newGuesses, newWon);
+    if (newWon) syncDailyResult(true);
+    else if (newGuesses.length >= 20) syncDailyResult(false);
   }
 
   const guessedNames = guesses.map(g => g.name);
-  const timeUntilNext = getTimeUntilNextDay();
 
   return (
     <div className="game-page">
-      <div className="game-status">
-        {won ? (
+      {won && (
+        <div className="game-status">
           <div className="status-win">
             You got it in {guesses.length} guess{guesses.length !== 1 ? 'es' : ''}! 🎉
-            <div className="next-puzzle">Next puzzle in {timeUntilNext}</div>
           </div>
-        ) : (
-          <div className="next-puzzle">New puzzle in {timeUntilNext}</div>
-        )}
-      </div>
+        </div>
+      )}
 
       {!won && (
         <GuessInput onGuess={handleGuess} guessedNames={guessedNames} disabled={won} />
@@ -68,7 +88,7 @@ export default function Game() {
         </div>
       )}
 
-      {(won || guesses.length >= 20) && !revealed && (
+      {!won && guesses.length >= 20 && !revealed && (
         <button className="reveal-btn" onClick={() => setRevealed(true)}>
           Reveal Answer
         </button>
@@ -86,14 +106,3 @@ export default function Game() {
   );
 }
 
-function getTimeUntilNextDay() {
-  const now = new Date();
-  const next = new Date(now);
-  next.setDate(next.getDate() + 1);
-  next.setHours(0, 0, 0, 0);
-  const diff = next - now;
-  const h = Math.floor(diff / 3600000);
-  const m = Math.floor((diff % 3600000) / 60000);
-  const s = Math.floor((diff % 60000) / 1000);
-  return `${h}h ${m}m ${s}s`;
-}

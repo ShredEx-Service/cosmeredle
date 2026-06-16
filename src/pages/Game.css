@@ -3,12 +3,10 @@
   width: 100%;
   margin: 0 auto;
   padding: 16px;
-  overflow-x: hidden;
 }
 
 .game-status {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .status-win {
@@ -27,8 +25,8 @@
 }
 
 .next-puzzle {
-  color: #c8a84b;
-  font-size: 0.9rem;
+  color: #666;
+  font-size: 0.72rem;
   margin-top: 4px;
 }
 
@@ -40,6 +38,10 @@
 .reveal-btn {
   display: block;
   margin: 20px auto 0;
+}
+
+.reveal-btn.centered {
+  margin: 20px auto;
   padding: 10px 24px;
   background: transparent;
   border: 2px solid #c8a84b;

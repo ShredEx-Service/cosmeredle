@@ -1,12 +1,12 @@
 // Auto-generated from Google Sheets — do not edit manually
-// Last synced: 2026-06-14T06:15:48.521Z
+// Last synced: 2026-06-14T07:24:47.362Z
 
 export const CHARACTERS = [
   {
     "name": "121",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Highspren",
+    "species": "Spren (Highspren)",
     "abilities": "Knight Radiant, Nahel Bond, Skybreaker, Splinter, Worldhopper",
     "validFrom": 0
   },
@@ -14,7 +14,7 @@ export const CHARACTERS = [
     "name": "Aditil",
     "homeWorld": "Dhatri",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Aetherbound, Worldhopper",
     "validFrom": 0
   },
@@ -22,7 +22,7 @@ export const CHARACTERS = [
     "name": "Adolin Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer, Unoathed",
     "validFrom": 0
   },
@@ -38,7 +38,7 @@ export const CHARACTERS = [
     "name": "Adonalsium Will Remember Our Plight Eventually",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -46,7 +46,7 @@ export const CHARACTERS = [
     "name": "Adrotagia",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Kharbranthian",
+    "species": "Human (Kharbranthian)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -54,7 +54,7 @@ export const CHARACTERS = [
     "name": "Akane",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Nightmare Painter",
     "validFrom": 0
   },
@@ -62,7 +62,7 @@ export const CHARACTERS = [
     "name": "Aladar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -70,7 +70,7 @@ export const CHARACTERS = [
     "name": "Alendi",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Khlenni",
+    "species": "Human (Khlenni)",
     "abilities": "Misting, Seeker",
     "validFrom": 0
   },
@@ -78,15 +78,15 @@ export const CHARACTERS = [
     "name": "Allik Neverfar",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Malwish",
+    "species": "Human (Malwish)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Allrianne, Cett",
+    "name": "Allrianne Cett",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Rioter",
     "validFrom": 0
   },
@@ -94,7 +94,7 @@ export const CHARACTERS = [
     "name": "Amaram",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -102,7 +102,7 @@ export const CHARACTERS = [
     "name": "Ann",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -110,15 +110,15 @@ export const CHARACTERS = [
     "name": "Aona",
     "homeWorld": "Yolen",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Yolish",
+    "species": "Human (Yolish)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
   {
-    "name": "Aradan, Yomen",
+    "name": "Aradan Yomen",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Seer",
     "validFrom": 0
   },
@@ -126,15 +126,15 @@ export const CHARACTERS = [
     "name": "Arclomedarian",
     "homeWorld": "Roshar",
     "firstAppearance": "Edgedancer",
-    "species": "Sleepless, Aimian",
+    "species": "Sleepless (Aimian)",
     "abilities": "Hordelings",
     "validFrom": 0
   },
   {
-    "name": "Armal, Harms",
+    "name": "Armal Harms",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Misting, Rioter",
     "validFrom": 0
   },
@@ -142,7 +142,7 @@ export const CHARACTERS = [
     "name": "Arsteel",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Cognitive Shadow, Lifeless, Returned",
     "validFrom": 0
   },
@@ -150,15 +150,15 @@ export const CHARACTERS = [
     "name": "Ashravan",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Grand",
+    "species": "Human (Grand)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Ashweather, Cett",
+    "name": "Ashweather Cett",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -166,7 +166,7 @@ export const CHARACTERS = [
     "name": "Ati",
     "homeWorld": "Yolen",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -174,7 +174,7 @@ export const CHARACTERS = [
     "name": "Auxiliary",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Highspren",
+    "species": "Spren (Highspren)",
     "abilities": "Nahel Bond, Skybreaker, Splinter, Worldhopper",
     "validFrom": 0
   },
@@ -182,7 +182,7 @@ export const CHARACTERS = [
     "name": "Axies",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Siah, Aimian",
+    "species": "Siah (Aimian)",
     "abilities": "Curse of Kind",
     "validFrom": 0
   },
@@ -190,7 +190,7 @@ export const CHARACTERS = [
     "name": "Ba-Ado-Mishram",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Unmade",
+    "species": "Spren (Unmade)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -198,7 +198,7 @@ export const CHARACTERS = [
     "name": "Baon",
     "homeWorld": "Taldain",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Darksider",
+    "species": "Human (Darksider)",
     "abilities": "Sand master, Worldhopper",
     "validFrom": 0
   },
@@ -206,7 +206,7 @@ export const CHARACTERS = [
     "name": "Battar",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -214,7 +214,7 @@ export const CHARACTERS = [
     "name": "Beldre",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Coinshot, Misting",
     "validFrom": 0
   },
@@ -222,7 +222,7 @@ export const CHARACTERS = [
     "name": "Bethab",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -230,7 +230,7 @@ export const CHARACTERS = [
     "name": "Blended",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Inkspren",
+    "species": "Spren (Inkspren)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -238,7 +238,7 @@ export const CHARACTERS = [
     "name": "Bluefingers",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Pahn Kahl",
+    "species": "Human (Pahn Kahl)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -246,7 +246,7 @@ export const CHARACTERS = [
     "name": "Blushweaver",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Cognitive Shadow, Returned",
     "validFrom": 0
   },
@@ -254,7 +254,7 @@ export const CHARACTERS = [
     "name": "Breeze",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Soother",
     "validFrom": 0
   },
@@ -262,7 +262,7 @@ export const CHARACTERS = [
     "name": "Caelinora",
     "homeWorld": "Roshar",
     "firstAppearance": "Dawnshard",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -270,7 +270,7 @@ export const CHARACTERS = [
     "name": "Cakoban",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Navigator, Worldhopper",
     "validFrom": 0
   },
@@ -278,7 +278,7 @@ export const CHARACTERS = [
     "name": "Chanarach",
     "homeWorld": "Ashyn",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -286,7 +286,7 @@ export const CHARACTERS = [
     "name": "Charlie",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Diggen's Point",
+    "species": "Human (Diggen's Point)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -294,15 +294,15 @@ export const CHARACTERS = [
     "name": "Charlie (Chuck)",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Lumaran",
+    "species": "Human (Lumaran)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Chesterton, Divide",
+    "name": "Chesterton Divide",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -323,18 +323,18 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Cinder, King",
+    "name": "Cinder King",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Charred",
     "validFrom": 0
   },
   {
-    "name": "Cladent, (Clubs)",
+    "name": "Cladent (Clubs)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Smoker",
     "validFrom": 0
   },
@@ -342,7 +342,7 @@ export const CHARACTERS = [
     "name": "Clubs",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Smoker",
     "validFrom": 0
   },
@@ -350,7 +350,7 @@ export const CHARACTERS = [
     "name": "Colot",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Unoathed, Windrunner Squire",
     "validFrom": 0
   },
@@ -358,7 +358,7 @@ export const CHARACTERS = [
     "name": "Cord",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Unkalaki",
+    "species": "Human (Unkalaki)",
     "abilities": "Shardbearer, Sighted",
     "validFrom": 0
   },
@@ -366,7 +366,7 @@ export const CHARACTERS = [
     "name": "Crow",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Spore Eater",
     "validFrom": 0
   },
@@ -374,7 +374,7 @@ export const CHARACTERS = [
     "name": "Dabbid",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -382,15 +382,15 @@ export const CHARACTERS = [
     "name": "Dajer",
     "homeWorld": "Scadrial",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Malwish",
+    "species": "Human (Malwish)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Dalinar, Kholin",
+    "name": "Dalinar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Bondsmith, Knight Radiant, Old Magic, Shard Vessel, Shardbearer, Sliver, Surgebinder",
     "validFrom": 0
   },
@@ -398,7 +398,7 @@ export const CHARACTERS = [
     "name": "Dami",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Riran",
+    "species": "Human (Riran)",
     "abilities": "Knight Radiant, Shardbearer, Stoneward, Surgebinder",
     "validFrom": 0
   },
@@ -406,7 +406,7 @@ export const CHARACTERS = [
     "name": "Demid",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Forms of Power",
     "validFrom": 0
   },
@@ -414,7 +414,7 @@ export const CHARACTERS = [
     "name": "Demoux",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Seer, Worldhopper",
     "validFrom": 0
   },
@@ -422,7 +422,7 @@ export const CHARACTERS = [
     "name": "Denth",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Cognitive Shadow, Returned, Royal Locks, Worldhopper",
     "validFrom": 0
   },
@@ -430,7 +430,7 @@ export const CHARACTERS = [
     "name": "Design",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Cryptic",
+    "species": "Spren (Cryptic)",
     "abilities": "Lightweaver, Nahel Bond, Splinter, Worldhopper",
     "validFrom": 0
   },
@@ -438,7 +438,7 @@ export const CHARACTERS = [
     "name": "Dilaf",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Fjordell",
+    "species": "Human (Fjordell)",
     "abilities": "Dakhor",
     "validFrom": 0
   },
@@ -446,7 +446,7 @@ export const CHARACTERS = [
     "name": "Dockson",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -454,7 +454,7 @@ export const CHARACTERS = [
     "name": "Dorp",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Lumaran",
+    "species": "Human (Lumaran)",
     "abilities": "Sprouter",
     "validFrom": 0
   },
@@ -462,7 +462,7 @@ export const CHARACTERS = [
     "name": "Dreaming-though-Awake",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
@@ -470,7 +470,7 @@ export const CHARACTERS = [
     "name": "Drile",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Sand master, Undermastrell",
     "validFrom": 0
   },
@@ -478,7 +478,7 @@ export const CHARACTERS = [
     "name": "Dumad",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Coinshot, Duralumin Gnat, Hemalurgy, Leecher, Pewterarm, Seeker",
     "validFrom": 0
   },
@@ -486,7 +486,7 @@ export const CHARACTERS = [
     "name": "Dusk",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Aviar Bond",
     "validFrom": 0
   },
@@ -494,7 +494,7 @@ export const CHARACTERS = [
     "name": "Eddlin",
     "homeWorld": "Silverlight",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Vaxilian",
+    "species": "Human (Vaxilian)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -502,15 +502,15 @@ export const CHARACTERS = [
     "name": "Edgli",
     "homeWorld": "Yolen",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
   {
-    "name": "Edwarn, Ladrian",
+    "name": "Edwarn Ladrian",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Hemalurgy",
     "validFrom": 0
   },
@@ -518,7 +518,7 @@ export const CHARACTERS = [
     "name": "El",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -526,23 +526,23 @@ export const CHARACTERS = [
     "name": "Elegy",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Charred",
     "validFrom": 0
   },
   {
-    "name": "Elend, Venture",
+    "name": "Elend Venture",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Mistborn",
     "validFrom": 0
   },
   {
-    "name": "Elhokar, Kholin",
+    "name": "Elhokar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Lightweaver, Shardbearer",
     "validFrom": 0
   },
@@ -550,15 +550,15 @@ export const CHARACTERS = [
     "name": "Elid-daughter-Zeenid",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Dustbringer, Honorbearer, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Elizandra, Dramali",
+    "name": "Elizandra Dramali",
     "homeWorld": "Scadrial",
     "firstAppearance": "Allomancer Jak and the Pits of Eltania",
-    "species": "Human, Koloss",
+    "species": "Human (Koloss)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -566,7 +566,7 @@ export const CHARACTERS = [
     "name": "Elorin",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Sand master, Undermastrell",
     "validFrom": 0
   },
@@ -574,7 +574,7 @@ export const CHARACTERS = [
     "name": "Eshonai",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Forms of Power, Shardbearer, Willshaper",
     "validFrom": 0
   },
@@ -582,15 +582,15 @@ export const CHARACTERS = [
     "name": "Essu",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fannahn-im, Fused",
     "validFrom": 0
   },
   {
-    "name": "Evi, Kholin",
+    "name": "Evi Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Riran",
+    "species": "Human (Riran)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -598,15 +598,15 @@ export const CHARACTERS = [
     "name": "Felt",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Fen, Rnamdi",
+    "name": "Fen Rnamdi",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Thaylen",
+    "species": "Human (Thaylen)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -614,7 +614,7 @@ export const CHARACTERS = [
     "name": "Forch",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Brute, Coinshot, Ferring, Misting, Twinborn",
     "validFrom": 0
   },
@@ -622,7 +622,7 @@ export const CHARACTERS = [
     "name": "Fort",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Islands of Lobu",
+    "species": "Human (Islands of Lobu)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -630,7 +630,7 @@ export const CHARACTERS = [
     "name": "Frava",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Grand",
+    "species": "Human (Grand)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -638,7 +638,7 @@ export const CHARACTERS = [
     "name": "Frost",
     "homeWorld": "Yolen",
     "firstAppearance": "Words of Radiance",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Unknown",
     "validFrom": 0
   },
@@ -646,7 +646,7 @@ export const CHARACTERS = [
     "name": "Galladon",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Dula",
+    "species": "Human (Dula)",
     "abilities": "Elantrian, Worldhopper",
     "validFrom": 0
   },
@@ -654,7 +654,7 @@ export const CHARACTERS = [
     "name": "Gallant",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Horse, Ryshadium",
+    "species": "Horse (Ryshadium)",
     "abilities": "Nahel Bond",
     "validFrom": 0
   },
@@ -662,7 +662,7 @@ export const CHARACTERS = [
     "name": "Gaotona",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Grand",
+    "species": "Human (Grand)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -670,15 +670,15 @@ export const CHARACTERS = [
     "name": "Gavilar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
   {
-    "name": "Gavilar, Kholin",
+    "name": "Gavilar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -686,15 +686,15 @@ export const CHARACTERS = [
     "name": "Gavinor",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
   {
-    "name": "Gavinor, Kholin",
+    "name": "Gavinor Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -702,7 +702,7 @@ export const CHARACTERS = [
     "name": "Gaz",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Lightweaver, Surgebinder",
     "validFrom": 0
   },
@@ -710,7 +710,7 @@ export const CHARACTERS = [
     "name": "Gemmel",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Eleventh Metal",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Mistborn",
     "validFrom": 0
   },
@@ -718,7 +718,7 @@ export const CHARACTERS = [
     "name": "Getruda",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Bloodmaker, Hemalurgy, Slider",
     "validFrom": 0
   },
@@ -726,12 +726,12 @@ export const CHARACTERS = [
     "name": "Glys",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
   {
-    "name": "\"Grandmother\", Forescout",
+    "name": "\"Grandmother\" Forescout",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
     "species": "Shade",
@@ -742,7 +742,7 @@ export const CHARACTERS = [
     "name": "Gyundok",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Torish",
+    "species": "Human (Torish)",
     "abilities": "Nightmare",
     "validFrom": 0
   },
@@ -750,7 +750,7 @@ export const CHARACTERS = [
     "name": "Hammond",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Pewterarm",
     "validFrom": 0
   },
@@ -758,7 +758,7 @@ export const CHARACTERS = [
     "name": "Hanavanar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -766,7 +766,7 @@ export const CHARACTERS = [
     "name": "Hariel",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused",
     "validFrom": 0
   },
@@ -774,15 +774,15 @@ export const CHARACTERS = [
     "name": "Hatham",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
   {
-    "name": "Helaran, Davar",
+    "name": "Helaran Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -790,7 +790,7 @@ export const CHARACTERS = [
     "name": "Hesina",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -798,7 +798,7 @@ export const CHARACTERS = [
     "name": "Hnanan",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Shanay-im",
     "validFrom": 0
   },
@@ -806,15 +806,15 @@ export const CHARACTERS = [
     "name": "Hoid",
     "homeWorld": "Yolen",
     "firstAppearance": "Elantris",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Dawnshard, Elantrian, Knight Radiant, Lightweaver, Mistborn, Surgebinder, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Hoid, (Wit, Cephandrius Maxtori, Midius, Topaz, Lunu'anaki)",
+    "name": "Hoid (Wit Cephandrius Maxtori Midius Topaz Lunu'anaki)",
     "homeWorld": "Yolen",
     "firstAppearance": "Elantris",
-    "species": "Human, Yolish",
+    "species": "Human (Yolish)",
     "abilities": "Awakener, Dawnshard, Elantrian, Knight Radiant, Lightweaver, Mistborn, Surgebinder, Worldhopper",
     "validFrom": 0
   },
@@ -822,7 +822,7 @@ export const CHARACTERS = [
     "name": "Hrathen",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Fjordell",
+    "species": "Human (Fjordell)",
     "abilities": "Dakhor",
     "validFrom": 0
   },
@@ -830,15 +830,15 @@ export const CHARACTERS = [
     "name": "Huio",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Herdazian",
+    "species": "Human (Herdazian)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
   {
-    "name": "Human, (Vershad)",
+    "name": "Human (Vershad)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Koloss, Human",
+    "species": "Koloss (Human)",
     "abilities": "Hemalurgy",
     "validFrom": 0
   },
@@ -846,7 +846,7 @@ export const CHARACTERS = [
     "name": "Iadon",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Aonic",
+    "species": "Human (Aonic)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -854,12 +854,12 @@ export const CHARACTERS = [
     "name": "Ico",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Reacher",
+    "species": "Spren (Reacher)",
     "abilities": "Splinter",
     "validFrom": 0
   },
   {
-    "name": "Illistandrista, (Starling)",
+    "name": "Illistandrista (Starling)",
     "homeWorld": "Yolen",
     "firstAppearance": "Isles of the Emberdark",
     "species": "Dragon",
@@ -870,7 +870,7 @@ export const CHARACTERS = [
     "name": "Ishar",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -878,7 +878,7 @@ export const CHARACTERS = [
     "name": "Ivory",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Inkspren",
+    "species": "Spren (Inkspren)",
     "abilities": "Elsecaller, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -886,7 +886,7 @@ export const CHARACTERS = [
     "name": "Iyatil",
     "homeWorld": "Silverlight",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Southern Scadrian",
+    "species": "Human (Southern Scadrian)",
     "abilities": "Elsecaller, Worldhopper",
     "validFrom": 0
   },
@@ -894,7 +894,7 @@ export const CHARACTERS = [
     "name": "Izzy",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Nightmare Painter",
     "validFrom": 0
   },
@@ -902,15 +902,15 @@ export const CHARACTERS = [
     "name": "Jak",
     "homeWorld": "Scadrial",
     "firstAppearance": "Allomancer Jak and the Pits of Eltania",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Misting, Tineye",
     "validFrom": 0
   },
   {
-    "name": "Jasnah, Kholin",
+    "name": "Jasnah Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Elsecaller, Knight Radiant, Surgebinder",
     "validFrom": 0
   },
@@ -918,7 +918,7 @@ export const CHARACTERS = [
     "name": "Jaxlim",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -926,7 +926,7 @@ export const CHARACTERS = [
     "name": "Jewels",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -934,15 +934,15 @@ export const CHARACTERS = [
     "name": "Jezrien",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Jushu, Davar",
+    "name": "Jushu Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -950,7 +950,7 @@ export const CHARACTERS = [
     "name": "Kabsal",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Herdazian",
+    "species": "Human (Herdazian)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -958,7 +958,7 @@ export const CHARACTERS = [
     "name": "Kaladin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Cognitive Shadow, Herald, Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
@@ -966,7 +966,7 @@ export const CHARACTERS = [
     "name": "Kalak",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -974,7 +974,7 @@ export const CHARACTERS = [
     "name": "Kelsier",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Cognitive Shadow, Hemalurgy, Mistborn, Shard Vessel, Sliver",
     "validFrom": 0
   },
@@ -982,7 +982,7 @@ export const CHARACTERS = [
     "name": "Kenton",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Mastrell, Sand master",
     "validFrom": 0
   },
@@ -990,7 +990,7 @@ export const CHARACTERS = [
     "name": "Khriss",
     "homeWorld": "Taldain",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Darksider",
+    "species": "Human (Darksider)",
     "abilities": "Starmarks, Worldhopper",
     "validFrom": 0
   },
@@ -998,7 +998,7 @@ export const CHARACTERS = [
     "name": "Khrissalla",
     "homeWorld": "Taldain",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Darksider",
+    "species": "Human (Darksider)",
     "abilities": "Starcarved, Worldhopper",
     "validFrom": 0
   },
@@ -1006,7 +1006,7 @@ export const CHARACTERS = [
     "name": "Kiin",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Teo",
+    "species": "Human (Teo)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1014,15 +1014,15 @@ export const CHARACTERS = [
     "name": "Kokerlii",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Aviar, Streamer",
+    "species": "Aviar (Streamer)",
     "abilities": "Mental shielding",
     "validFrom": 0
   },
   {
-    "name": "Koravellium, Avast",
+    "name": "Koravellium Avast",
     "homeWorld": "Yolen",
     "firstAppearance": "Oathbringer",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -1030,7 +1030,7 @@ export const CHARACTERS = [
     "name": "Kwaan",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist",
     "validFrom": 0
   },
@@ -1038,7 +1038,7 @@ export const CHARACTERS = [
     "name": "Kyril",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused",
     "validFrom": 0
   },
@@ -1046,7 +1046,7 @@ export const CHARACTERS = [
     "name": "Laggart",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1054,7 +1054,7 @@ export const CHARACTERS = [
     "name": "Leras",
     "homeWorld": "Yolen",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -1062,7 +1062,7 @@ export const CHARACTERS = [
     "name": "Leshwi",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Shanay-im",
     "validFrom": 0
   },
@@ -1070,15 +1070,15 @@ export const CHARACTERS = [
     "name": "Lezian",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Nex-im",
     "validFrom": 0
   },
   {
-    "name": "Lezian, the Pursuer",
+    "name": "Lezian the Pursuer",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Nex-im",
     "validFrom": 0
   },
@@ -1086,7 +1086,7 @@ export const CHARACTERS = [
     "name": "Lift",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Reshi",
+    "species": "Human (Reshi)",
     "abilities": "Edgedancer, Knight Radiant, Old Magic, Surgebinder",
     "validFrom": 0
   },
@@ -1094,15 +1094,15 @@ export const CHARACTERS = [
     "name": "Lightsong",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Cognitive Shadow, Returned",
     "validFrom": 0
   },
   {
-    "name": "Lin, Davar",
+    "name": "Lin Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1110,7 +1110,7 @@ export const CHARACTERS = [
     "name": "Lirin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1118,7 +1118,7 @@ export const CHARACTERS = [
     "name": "Liyun",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Torish",
+    "species": "Human (Torish)",
     "abilities": "Nightmare",
     "validFrom": 0
   },
@@ -1126,7 +1126,7 @@ export const CHARACTERS = [
     "name": "Llarimar",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1134,7 +1134,7 @@ export const CHARACTERS = [
     "name": "Lopen",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Herdazian",
+    "species": "Human (Herdazian)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
@@ -1142,23 +1142,23 @@ export const CHARACTERS = [
     "name": "Malata",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Dustbringer, Knight Radiant, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Malise, Gevelmar",
+    "name": "Malise Gevelmar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Marasi, Colms",
+    "name": "Marasi Colms",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Misting, Pulser",
     "validFrom": 0
   },
@@ -1166,7 +1166,7 @@ export const CHARACTERS = [
     "name": "Mare",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Tineye",
     "validFrom": 0
   },
@@ -1174,7 +1174,7 @@ export const CHARACTERS = [
     "name": "Marsh",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Misting, Seeker",
     "validFrom": 0
   },
@@ -1182,23 +1182,23 @@ export const CHARACTERS = [
     "name": "Masaka",
     "homeWorld": "Unspecified",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Sleepless, Nagadan",
+    "species": "Sleepless (Nagadan)",
     "abilities": "Hordelings, Nightmare Painter, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Masaka, (Chinikdakordich)",
+    "name": "Masaka (Chinikdakordich)",
     "homeWorld": "Unknown",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Sleepless, Nagadan",
+    "species": "Sleepless (Nagadan)",
     "abilities": "Hordelings, Nightmare Painter, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "May, Aladar",
+    "name": "May Aladar",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Unoathed",
     "validFrom": 0
   },
@@ -1206,7 +1206,7 @@ export const CHARACTERS = [
     "name": "Mayalaran",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Culitvation spren",
+    "species": "Spren (Culitvation spren)",
     "abilities": "Deadeye, Edgedancer, Nahel Bond, Splinter, Unoathed",
     "validFrom": 0
   },
@@ -1214,7 +1214,7 @@ export const CHARACTERS = [
     "name": "Medelantorius",
     "homeWorld": "Yolen",
     "firstAppearance": "Wind and Truth",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -1222,23 +1222,23 @@ export const CHARACTERS = [
     "name": "MeLaan",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Kandra, Seventh Generation",
+    "species": "Kandra (Seventh Generation)",
     "abilities": "Shapeshifting, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Miles, Dagouter",
+    "name": "Miles Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Augur, Bloodmaker, Ferring, Hemalurgy, Misting, Savant, Twinborn",
     "validFrom": 0
   },
   {
-    "name": "Miles, \"Hundredlives\", Dagouter",
+    "name": "Miles \"Hundredlives\" Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Augur, Bloodmaker, Ferring, Hemalurgy, Misting, Savant, Twinborn",
     "validFrom": 0
   },
@@ -1246,7 +1246,7 @@ export const CHARACTERS = [
     "name": "Mirris",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Aviar, Streamer",
+    "species": "Aviar (Streamer)",
     "abilities": "Mental shielding",
     "validFrom": 0
   },
@@ -1254,7 +1254,7 @@ export const CHARACTERS = [
     "name": "Moash",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -1262,7 +1262,7 @@ export const CHARACTERS = [
     "name": "Moss-son-Farrier",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Honorbearer, Lightweaver, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -1270,7 +1270,7 @@ export const CHARACTERS = [
     "name": "Mraize",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Thaylen",
+    "species": "Human (Thaylen)",
     "abilities": "Lightweaver",
     "validFrom": 0
   },
@@ -1278,15 +1278,15 @@ export const CHARACTERS = [
     "name": "Nale",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Navani, Kholin",
+    "name": "Navani Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Bondsmith, Knight Radiant, Surgebinder",
     "validFrom": 0
   },
@@ -1294,12 +1294,12 @@ export const CHARACTERS = [
     "name": "Nazh",
     "homeWorld": "Threnody",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Nazrilof, (Nazh)",
+    "name": "Nazrilof (Nazh)",
     "homeWorld": "Threnody",
     "firstAppearance": "Words of Radiance",
     "species": "Shade",
@@ -1310,7 +1310,7 @@ export const CHARACTERS = [
     "name": "Neturo-son-Vallano",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Bondsmith, Cognitive Shadow, Honorbearer, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -1318,7 +1318,7 @@ export const CHARACTERS = [
     "name": "Night",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Spren, Ancient",
+    "species": "Spren (Ancient)",
     "abilities": "Bondsmith, Nahel Bond",
     "validFrom": 0
   },
@@ -1326,7 +1326,7 @@ export const CHARACTERS = [
     "name": "Nightblood",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Sword, nimi",
+    "species": "Sword (nimi)",
     "abilities": "Consumes Investiture, Comedic timing, Worldhopper",
     "validFrom": 0
   },
@@ -1334,7 +1334,7 @@ export const CHARACTERS = [
     "name": "Nightwatcher",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Bondsmith",
+    "species": "Spren (Bondsmith)",
     "abilities": "Bondsmith, Nahel Bond, Old Magic, Splinter",
     "validFrom": 0
   },
@@ -1342,7 +1342,7 @@ export const CHARACTERS = [
     "name": "Nikaro",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Cognitive Shadow, Nightmare Painter",
     "validFrom": 0
   },
@@ -1350,7 +1350,7 @@ export const CHARACTERS = [
     "name": "Nikliasorm",
     "homeWorld": "Roshar",
     "firstAppearance": "Dawnshard",
-    "species": "Sleepless, Aimian",
+    "species": "Sleepless (Aimian)",
     "abilities": "Hordelings",
     "validFrom": 0
   },
@@ -1358,7 +1358,7 @@ export const CHARACTERS = [
     "name": "Nohadon",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Surgebinder",
     "validFrom": 0
   },
@@ -1366,7 +1366,7 @@ export const CHARACTERS = [
     "name": "Notum",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -1374,7 +1374,7 @@ export const CHARACTERS = [
     "name": "Noura",
     "homeWorld": "Roshar",
     "firstAppearance": "Edgedancer",
-    "species": "Human, Azish",
+    "species": "Human (Azish)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1382,7 +1382,7 @@ export const CHARACTERS = [
     "name": "Numuhukumakiaki'aialunamor (Rock)",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unkalaki",
+    "species": "Human (Unkalaki)",
     "abilities": "Sighted, Windrunner Squire",
     "validFrom": 0
   },
@@ -1390,7 +1390,7 @@ export const CHARACTERS = [
     "name": "OreSeur",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Kandra, Third Generation",
+    "species": "Kandra (Third Generation)",
     "abilities": "Blessing of Potency, Shapeshifter",
     "validFrom": 0
   },
@@ -1398,7 +1398,7 @@ export const CHARACTERS = [
     "name": "Paalm",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Kandra, Third Generation",
+    "species": "Kandra (Third Generation)",
     "abilities": "Hemalurgy, Shapeshifting",
     "validFrom": 0
   },
@@ -1406,7 +1406,7 @@ export const CHARACTERS = [
     "name": "Pailiah",
     "homeWorld": "Ashyn",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -1422,7 +1422,7 @@ export const CHARACTERS = [
     "name": "Pattern",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Cryptic",
+    "species": "Spren (Cryptic)",
     "abilities": "Lightweaver, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -1430,7 +1430,7 @@ export const CHARACTERS = [
     "name": "Phendorana",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -1438,7 +1438,7 @@ export const CHARACTERS = [
     "name": "Pozen-son-Nash",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Elsecaller, Honorbearer, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -1446,7 +1446,7 @@ export const CHARACTERS = [
     "name": "Praxton",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Mastrell, Sand master",
     "validFrom": 0
   },
@@ -1454,7 +1454,7 @@ export const CHARACTERS = [
     "name": "Quellion",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy",
     "validFrom": 0
   },
@@ -1462,7 +1462,7 @@ export const CHARACTERS = [
     "name": "Raboniel",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fannahn-im, Fused",
     "validFrom": 0
   },
@@ -1470,7 +1470,7 @@ export const CHARACTERS = [
     "name": "Ral-na",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Reshi",
+    "species": "Human (Reshi)",
     "abilities": "Dustbringer, Surgebinder",
     "validFrom": 0
   },
@@ -1478,7 +1478,7 @@ export const CHARACTERS = [
     "name": "Ranette",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Lurcher, Misting",
     "validFrom": 0
   },
@@ -1486,7 +1486,7 @@ export const CHARACTERS = [
     "name": "Raoden",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Aonic",
+    "species": "Human (Aonic)",
     "abilities": "Elantrian",
     "validFrom": 0
   },
@@ -1494,7 +1494,7 @@ export const CHARACTERS = [
     "name": "Rashek",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist, Hemalurgy, Mistborn, Savant, Sliver, Twinborn",
     "validFrom": 0
   },
@@ -1502,7 +1502,7 @@ export const CHARACTERS = [
     "name": "Rayse",
     "homeWorld": "Yolen",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -1510,7 +1510,7 @@ export const CHARACTERS = [
     "name": "Redd",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Smoker",
     "validFrom": 0
   },
@@ -1518,15 +1518,15 @@ export const CHARACTERS = [
     "name": "Redin",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Relis, Ruthar",
+    "name": "Relis Ruthar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -1534,15 +1534,15 @@ export const CHARACTERS = [
     "name": "Relu-na",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Greatshell, Tai-na",
+    "species": "Greatshell (Tai-na)",
     "abilities": "Nahel Bond",
     "validFrom": 0
   },
   {
-    "name": "Renarin, Kholin",
+    "name": "Renarin Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Surgebinder, Truthwatcher, Voidbinder",
     "validFrom": 0
   },
@@ -1550,7 +1550,7 @@ export const CHARACTERS = [
     "name": "Riina",
     "homeWorld": "Sel",
     "firstAppearance": "Secret History",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Elantrian, Worldhopper",
     "validFrom": 0
   },
@@ -1558,7 +1558,7 @@ export const CHARACTERS = [
     "name": "Rit-daughter-Clutio",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Honorbearer, Shardbearer, Stoneward, Surgebinder",
     "validFrom": 0
   },
@@ -1566,7 +1566,7 @@ export const CHARACTERS = [
     "name": "Rlain",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Truthwatcher, Voidbinder",
     "validFrom": 0
   },
@@ -1574,7 +1574,7 @@ export const CHARACTERS = [
     "name": "Rock",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unkalaki",
+    "species": "Human (Unkalaki)",
     "abilities": "Sighted, Windrunner Squire",
     "validFrom": 0
   },
@@ -1582,7 +1582,7 @@ export const CHARACTERS = [
     "name": "Roion",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1590,7 +1590,7 @@ export const CHARACTERS = [
     "name": "Rokke",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Aviar, Unspecified",
+    "species": "Aviar (Unspecified)",
     "abilities": "Mental shielding, Worldhopper",
     "validFrom": 0
   },
@@ -1598,7 +1598,7 @@ export const CHARACTERS = [
     "name": "Rua",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -1606,7 +1606,7 @@ export const CHARACTERS = [
     "name": "Ruthar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -1614,7 +1614,7 @@ export const CHARACTERS = [
     "name": "Rysn",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Thaylen",
+    "species": "Human (Thaylen)",
     "abilities": "Dawnshard",
     "validFrom": 0
   },
@@ -1622,7 +1622,7 @@ export const CHARACTERS = [
     "name": "Sak",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Aviar, Unspecified",
+    "species": "Aviar (Unspecified)",
     "abilities": "Precognition",
     "validFrom": 0
   },
@@ -1630,12 +1630,12 @@ export const CHARACTERS = [
     "name": "Salay",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Islands of Lobu",
+    "species": "Human (Islands of Lobu)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Sand, Lord",
+    "name": "Sand Lord",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
     "species": "Unknown",
@@ -1643,10 +1643,10 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Sanvith, Prasanva, Maahik, va, Sila, (TwinSoul)",
+    "name": "Sanvith Prasanva Maahik va Sila (TwinSoul)",
     "homeWorld": "Dhatri",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Aetherbound, Worldhopper",
     "validFrom": 0
   },
@@ -1654,7 +1654,7 @@ export const CHARACTERS = [
     "name": "Sarene",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Teo",
+    "species": "Human (Teo)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1662,7 +1662,7 @@ export const CHARACTERS = [
     "name": "Sazed",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist, Shard Vessel",
     "validFrom": 0
   },
@@ -1670,15 +1670,15 @@ export const CHARACTERS = [
     "name": "Sebruki",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Sebruki, Forescout",
+    "name": "Sebruki Forescout",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1686,7 +1686,7 @@ export const CHARACTERS = [
     "name": "Sekeir",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -1694,7 +1694,7 @@ export const CHARACTERS = [
     "name": "Shai",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, MaiPon",
+    "species": "Human (MaiPon)",
     "abilities": "Forger, Worldhopper",
     "validFrom": 0
   },
@@ -1702,23 +1702,23 @@ export const CHARACTERS = [
     "name": "Shalash",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Shallan, Davar",
+    "name": "Shallan Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Knight Radiant, Lightweaver, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Shan, Elariel",
+    "name": "Shan Elariel",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Mistborn",
     "validFrom": 0
   },
@@ -1726,7 +1726,7 @@ export const CHARACTERS = [
     "name": "Shashara",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Cognitive Shadow, Returned, Royal Locks, Shardbearer, Worldhopper",
     "validFrom": 0
   },
@@ -1734,7 +1734,7 @@ export const CHARACTERS = [
     "name": "Shuden",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, JinDo",
+    "species": "Human (JinDo)",
     "abilities": "ChayShan",
     "validFrom": 0
   },
@@ -1742,7 +1742,7 @@ export const CHARACTERS = [
     "name": "Sibling",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Bondsmith",
+    "species": "Spren (Bondsmith)",
     "abilities": "Bondsmith, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -1750,7 +1750,7 @@ export const CHARACTERS = [
     "name": "Sigzil",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Azish",
+    "species": "Human (Azish)",
     "abilities": "Dawnshard, Knight Radiant, Skybreaker, Surgebinder, Windrunner, Worldhopper",
     "validFrom": 0
   },
@@ -1758,7 +1758,7 @@ export const CHARACTERS = [
     "name": "Silajana",
     "homeWorld": "Dhatri",
     "firstAppearance": "The Lost Metal",
-    "species": "Aether, Roseite",
+    "species": "Aether (Roseite)",
     "abilities": "Aether, Control of Roseite, Luhel Bond",
     "validFrom": 0
   },
@@ -1766,15 +1766,15 @@ export const CHARACTERS = [
     "name": "Silence",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Silence, (Forescout), Montane",
+    "name": "Silence (Forescout) Montane",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1782,7 +1782,7 @@ export const CHARACTERS = [
     "name": "Siri",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Idrian",
+    "species": "Human (Idrian)",
     "abilities": "Royal Locks",
     "validFrom": 0
   },
@@ -1790,15 +1790,15 @@ export const CHARACTERS = [
     "name": "Sivi-daughter-Sivi",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Honorbearer, Shardbearer, Surgebinder, Willshaper",
     "validFrom": 0
   },
   {
-    "name": "Sixth, of, the, Dusk",
+    "name": "Sixth of the Dusk",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Aviar Bond, Navigator, Worldhopper",
     "validFrom": 0
   },
@@ -1806,7 +1806,7 @@ export const CHARACTERS = [
     "name": "Sja-anat",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Unmade",
+    "species": "Spren (Unmade)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -1814,7 +1814,7 @@ export const CHARACTERS = [
     "name": "Skai",
     "homeWorld": "Yolen",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Yolish",
+    "species": "Human (Yolish)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -1822,7 +1822,7 @@ export const CHARACTERS = [
     "name": "Skar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
@@ -1830,7 +1830,7 @@ export const CHARACTERS = [
     "name": "Spark",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Ashspren",
+    "species": "Spren (Ashspren)",
     "abilities": "Dustbringer, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -1838,23 +1838,23 @@ export const CHARACTERS = [
     "name": "Spook",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Mistborn, Misting, Savant, Tineye",
     "validFrom": 0
   },
   {
-    "name": "Spook, (Lestibournes, Jedal)",
+    "name": "Spook (Lestibournes Jedal)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Mistborn, Misting, Savant, Tineye",
     "validFrom": 0
   },
   {
-    "name": "Steris, Harms",
+    "name": "Steris Harms",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1862,7 +1862,7 @@ export const CHARACTERS = [
     "name": "Stick",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Plant, Stick",
+    "species": "Plant (Stick)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -1870,7 +1870,7 @@ export const CHARACTERS = [
     "name": "Stone",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Spren, Ancient",
+    "species": "Spren (Ancient)",
     "abilities": "Bondsmith, Nahel Bond",
     "validFrom": 0
   },
@@ -1878,15 +1878,15 @@ export const CHARACTERS = [
     "name": "Stormfather",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Bondsmith",
+    "species": "Spren (Bondsmith)",
     "abilities": "Bondsmith, Cognitive Shadow, Nahel Bond, Sliver, Splinter",
     "validFrom": 0
   },
   {
-    "name": "Straff, Venture",
+    "name": "Straff Venture",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Tineye",
     "validFrom": 0
   },
@@ -1894,7 +1894,7 @@ export const CHARACTERS = [
     "name": "Sureblood",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Horse, Ryshadium",
+    "species": "Horse (Ryshadium)",
     "abilities": "Nahel Bond",
     "validFrom": 0
   },
@@ -1902,7 +1902,7 @@ export const CHARACTERS = [
     "name": "Susebron",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Awakener, Cognitive Shadow, Returned",
     "validFrom": 0
   },
@@ -1910,7 +1910,7 @@ export const CHARACTERS = [
     "name": "Sylphrena",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -1918,7 +1918,7 @@ export const CHARACTERS = [
     "name": "Szeth",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
@@ -1926,7 +1926,7 @@ export const CHARACTERS = [
     "name": "Szeth-son-Vallano",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
@@ -1934,7 +1934,7 @@ export const CHARACTERS = [
     "name": "Talenel",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -1942,7 +1942,7 @@ export const CHARACTERS = [
     "name": "Tanavast",
     "homeWorld": "Yolen",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -1950,7 +1950,7 @@ export const CHARACTERS = [
     "name": "Taravangian",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Kharbranthian",
+    "species": "Human (Kharbranthian)",
     "abilities": "Old Magic, Shard Vessel",
     "validFrom": 0
   },
@@ -1958,7 +1958,7 @@ export const CHARACTERS = [
     "name": "Tarson",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Koloss",
+    "species": "Human (Koloss)",
     "abilities": "Pewterarm, Savant",
     "validFrom": 0
   },
@@ -1966,15 +1966,15 @@ export const CHARACTERS = [
     "name": "Teft",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
   {
-    "name": "Telsin, Ladrian",
+    "name": "Telsin Ladrian",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Avatar, Ferring, Hemalurgy, Windwhisperer",
     "validFrom": 0
   },
@@ -1982,7 +1982,7 @@ export const CHARACTERS = [
     "name": "TenSoon",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Kandra, Third Generation",
+    "species": "Kandra (Third Generation)",
     "abilities": "Blessing of Potency, Blessing of Presence, Shapeshifting",
     "validFrom": 0
   },
@@ -1990,7 +1990,7 @@ export const CHARACTERS = [
     "name": "Testament",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Cryptic",
+    "species": "Spren (Cryptic)",
     "abilities": "Deadeye, Lightweaver, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -1998,7 +1998,7 @@ export const CHARACTERS = [
     "name": "Thude",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Knight Radiant, Willshaper",
     "validFrom": 0
   },
@@ -2006,7 +2006,7 @@ export const CHARACTERS = [
     "name": "Tien",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Lightweaver",
     "validFrom": 0
   },
@@ -2014,7 +2014,7 @@ export const CHARACTERS = [
     "name": "Timbre",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Reacher",
+    "species": "Spren (Reacher)",
     "abilities": "Nahel Bond, Splinter, Willshaper",
     "validFrom": 0
   },
@@ -2022,7 +2022,7 @@ export const CHARACTERS = [
     "name": "Tindwyl",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist",
     "validFrom": 0
   },
@@ -2030,23 +2030,23 @@ export const CHARACTERS = [
     "name": "Tojin",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Nightmare Painter",
     "validFrom": 0
   },
   {
-    "name": "Tonk, Fah",
+    "name": "Tonk Fah",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Pahn Kahl",
+    "species": "Human (Pahn Kahl)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Torol, Sadeas",
+    "name": "Torol Sadeas",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -2054,7 +2054,7 @@ export const CHARACTERS = [
     "name": "Tress",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Diggen's Point",
+    "species": "Human (Diggen's Point)",
     "abilities": "Sprouter",
     "validFrom": 0
   },
@@ -2062,15 +2062,15 @@ export const CHARACTERS = [
     "name": "Tumi",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
   {
-    "name": "Turinad, Sebarial",
+    "name": "Turinad Sebarial",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2078,7 +2078,7 @@ export const CHARACTERS = [
     "name": "Tyvnk",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Grass, Shin",
+    "species": "Grass (Shin)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2086,7 +2086,7 @@ export const CHARACTERS = [
     "name": "Ua'pam",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Peakspren",
+    "species": "Spren (Peakspren)",
     "abilities": "Nahel Bond, Splinter, Stoneward",
     "validFrom": 0
   },
@@ -2094,15 +2094,15 @@ export const CHARACTERS = [
     "name": "Ulaam",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Kandra, Unspecified",
+    "species": "Kandra (Unspecified)",
     "abilities": "Shapeshifting",
     "validFrom": 0
   },
   {
-    "name": "Uli, Da",
+    "name": "Uli Da",
     "homeWorld": "Yolen",
     "firstAppearance": "Oathbringer",
-    "species": "Sho Del, Unspecified",
+    "species": "Sho Del (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -2110,7 +2110,7 @@ export const CHARACTERS = [
     "name": "Uma",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
@@ -2118,7 +2118,7 @@ export const CHARACTERS = [
     "name": "Unativi",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Peakspren",
+    "species": "Spren (Peakspren)",
     "abilities": "Nahel Bond, Splinter, Stoneward",
     "validFrom": 0
   },
@@ -2126,7 +2126,7 @@ export const CHARACTERS = [
     "name": "Valam",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -2134,7 +2134,7 @@ export const CHARACTERS = [
     "name": "Vasher",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Cognitive Shadow, Returned, Shardbearer, Worldhopper",
     "validFrom": 0
   },
@@ -2142,7 +2142,7 @@ export const CHARACTERS = [
     "name": "Vathi",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Aviar Bond",
     "validFrom": 0
   },
@@ -2150,7 +2150,7 @@ export const CHARACTERS = [
     "name": "Vedel",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -2158,7 +2158,7 @@ export const CHARACTERS = [
     "name": "Venli",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Forms of Power, Knight Radiant, Willshaper",
     "validFrom": 0
   },
@@ -2166,7 +2166,7 @@ export const CHARACTERS = [
     "name": "Vienta",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -2174,7 +2174,7 @@ export const CHARACTERS = [
     "name": "Vin",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Mistborn, Shard Vessel, Sliver",
     "validFrom": 0
   },
@@ -2182,23 +2182,23 @@ export const CHARACTERS = [
     "name": "Vivenna",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Idrian",
+    "species": "Human (Idrian)",
     "abilities": "Awakener, Royal Locks, Shardbearer, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Wan, ShaiLu",
+    "name": "Wan ShaiLu",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, MaiPon",
+    "species": "Human (MaiPon)",
     "abilities": "Forger, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Waxillium, Ladrian",
+    "name": "Waxillium Ladrian",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Coinshot, Ferring, Hemalurgy, Mistborn, Skimmer, Twinborn",
     "validFrom": 0
   },
@@ -2206,7 +2206,7 @@ export const CHARACTERS = [
     "name": "Wayne",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Bloodmaker, Ferring, Hemalurgy, Mistborn, Slider, Twinborn",
     "validFrom": 0
   },
@@ -2214,7 +2214,7 @@ export const CHARACTERS = [
     "name": "Weedfingers",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Dzhamarian",
+    "species": "Human (Dzhamarian)",
     "abilities": "Bloodsealer",
     "validFrom": 0
   },
@@ -2222,31 +2222,31 @@ export const CHARACTERS = [
     "name": "Weev",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Lumaran",
+    "species": "Human (Lumaran)",
     "abilities": "Sprouter",
     "validFrom": 0
   },
   {
-    "name": "Wikim, Davar",
+    "name": "Wikim Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "William Ann, Montane",
+    "name": "William Ann",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "William, Ann",
+    "name": "William Ann Montane",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2254,7 +2254,7 @@ export const CHARACTERS = [
     "name": "Wind",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Spren, Ancient",
+    "species": "Spren (Ancient)",
     "abilities": "Bondsmith, Nahel Bond",
     "validFrom": 0
   },
@@ -2262,7 +2262,7 @@ export const CHARACTERS = [
     "name": "Wyndle",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Culitvation spren",
+    "species": "Spren (Culitvation spren)",
     "abilities": "Edgedancer, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -2270,7 +2270,7 @@ export const CHARACTERS = [
     "name": "Xisisrefliel",
     "homeWorld": "Yolen",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Awakener, Worldhopper",
     "validFrom": 0
   },
@@ -2278,7 +2278,7 @@ export const CHARACTERS = [
     "name": "Yanagawn",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Azish",
+    "species": "Human (Azish)",
     "abilities": "Unoathed",
     "validFrom": 0
   },
@@ -2286,7 +2286,7 @@ export const CHARACTERS = [
     "name": "Yelamaiszin",
     "homeWorld": "Roshar",
     "firstAppearance": "Dawnshard",
-    "species": "Sleepless, Aimian",
+    "species": "Sleepless (Aimian)",
     "abilities": "Hordelings",
     "validFrom": 0
   },
@@ -2294,7 +2294,7 @@ export const CHARACTERS = [
     "name": "Ym",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Iriali",
+    "species": "Human (Iriali)",
     "abilities": "Knight Radiant, Surgebinder, Truthwatcher",
     "validFrom": 0
   },
@@ -2302,15 +2302,15 @@ export const CHARACTERS = [
     "name": "Yumi",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Torish",
+    "species": "Human (Torish)",
     "abilities": "Cognitive Shadow, Yoki-Hijo",
     "validFrom": 0
   },
   {
-    "name": "Zane, Venture",
+    "name": "Zane Venture",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Hemalurgy, Mistborn",
     "validFrom": 0
   },
@@ -2318,7 +2318,7 @@ export const CHARACTERS = [
     "name": "Zeal",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2334,7 +2334,7 @@ export const CHARACTERS = [
     "name": "Zu",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Human, Iriali",
+    "species": "Human (Iriali)",
     "abilities": "Knight Radiant, Shardbearer, Stoneward, Surgebinder",
     "validFrom": 0
   }
@@ -2345,7 +2345,7 @@ export const VALID_ANSWERS = [
     "name": "121",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Highspren",
+    "species": "Spren (Highspren)",
     "abilities": "Knight Radiant, Nahel Bond, Skybreaker, Splinter, Worldhopper",
     "validFrom": 0
   },
@@ -2353,7 +2353,7 @@ export const VALID_ANSWERS = [
     "name": "Aditil",
     "homeWorld": "Dhatri",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Aetherbound, Worldhopper",
     "validFrom": 0
   },
@@ -2361,7 +2361,7 @@ export const VALID_ANSWERS = [
     "name": "Adolin Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer, Unoathed",
     "validFrom": 0
   },
@@ -2377,7 +2377,7 @@ export const VALID_ANSWERS = [
     "name": "Adonalsium Will Remember Our Plight Eventually",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2385,7 +2385,7 @@ export const VALID_ANSWERS = [
     "name": "Adrotagia",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Kharbranthian",
+    "species": "Human (Kharbranthian)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2393,7 +2393,7 @@ export const VALID_ANSWERS = [
     "name": "Akane",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Nightmare Painter",
     "validFrom": 0
   },
@@ -2401,7 +2401,7 @@ export const VALID_ANSWERS = [
     "name": "Aladar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -2409,7 +2409,7 @@ export const VALID_ANSWERS = [
     "name": "Alendi",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Khlenni",
+    "species": "Human (Khlenni)",
     "abilities": "Misting, Seeker",
     "validFrom": 0
   },
@@ -2417,15 +2417,15 @@ export const VALID_ANSWERS = [
     "name": "Allik Neverfar",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Malwish",
+    "species": "Human (Malwish)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Allrianne, Cett",
+    "name": "Allrianne Cett",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Rioter",
     "validFrom": 0
   },
@@ -2433,7 +2433,7 @@ export const VALID_ANSWERS = [
     "name": "Amaram",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -2441,7 +2441,7 @@ export const VALID_ANSWERS = [
     "name": "Ann",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2449,15 +2449,15 @@ export const VALID_ANSWERS = [
     "name": "Aona",
     "homeWorld": "Yolen",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Yolish",
+    "species": "Human (Yolish)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
   {
-    "name": "Aradan, Yomen",
+    "name": "Aradan Yomen",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Seer",
     "validFrom": 0
   },
@@ -2465,15 +2465,15 @@ export const VALID_ANSWERS = [
     "name": "Arclomedarian",
     "homeWorld": "Roshar",
     "firstAppearance": "Edgedancer",
-    "species": "Sleepless, Aimian",
+    "species": "Sleepless (Aimian)",
     "abilities": "Hordelings",
     "validFrom": 0
   },
   {
-    "name": "Armal, Harms",
+    "name": "Armal Harms",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Misting, Rioter",
     "validFrom": 0
   },
@@ -2481,7 +2481,7 @@ export const VALID_ANSWERS = [
     "name": "Arsteel",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Cognitive Shadow, Lifeless, Returned",
     "validFrom": 0
   },
@@ -2489,15 +2489,15 @@ export const VALID_ANSWERS = [
     "name": "Ashravan",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Grand",
+    "species": "Human (Grand)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Ashweather, Cett",
+    "name": "Ashweather Cett",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2505,7 +2505,7 @@ export const VALID_ANSWERS = [
     "name": "Ati",
     "homeWorld": "Yolen",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -2513,7 +2513,7 @@ export const VALID_ANSWERS = [
     "name": "Auxiliary",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Highspren",
+    "species": "Spren (Highspren)",
     "abilities": "Nahel Bond, Skybreaker, Splinter, Worldhopper",
     "validFrom": 0
   },
@@ -2521,7 +2521,7 @@ export const VALID_ANSWERS = [
     "name": "Axies",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Siah, Aimian",
+    "species": "Siah (Aimian)",
     "abilities": "Curse of Kind",
     "validFrom": 0
   },
@@ -2529,7 +2529,7 @@ export const VALID_ANSWERS = [
     "name": "Ba-Ado-Mishram",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Unmade",
+    "species": "Spren (Unmade)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -2537,7 +2537,7 @@ export const VALID_ANSWERS = [
     "name": "Baon",
     "homeWorld": "Taldain",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Darksider",
+    "species": "Human (Darksider)",
     "abilities": "Sand master, Worldhopper",
     "validFrom": 0
   },
@@ -2545,7 +2545,7 @@ export const VALID_ANSWERS = [
     "name": "Battar",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -2553,7 +2553,7 @@ export const VALID_ANSWERS = [
     "name": "Beldre",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Coinshot, Misting",
     "validFrom": 0
   },
@@ -2561,7 +2561,7 @@ export const VALID_ANSWERS = [
     "name": "Bethab",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2569,7 +2569,7 @@ export const VALID_ANSWERS = [
     "name": "Blended",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Inkspren",
+    "species": "Spren (Inkspren)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -2577,7 +2577,7 @@ export const VALID_ANSWERS = [
     "name": "Bluefingers",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Pahn Kahl",
+    "species": "Human (Pahn Kahl)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2585,7 +2585,7 @@ export const VALID_ANSWERS = [
     "name": "Blushweaver",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Cognitive Shadow, Returned",
     "validFrom": 0
   },
@@ -2593,7 +2593,7 @@ export const VALID_ANSWERS = [
     "name": "Breeze",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Soother",
     "validFrom": 0
   },
@@ -2601,7 +2601,7 @@ export const VALID_ANSWERS = [
     "name": "Caelinora",
     "homeWorld": "Roshar",
     "firstAppearance": "Dawnshard",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -2609,7 +2609,7 @@ export const VALID_ANSWERS = [
     "name": "Cakoban",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Navigator, Worldhopper",
     "validFrom": 0
   },
@@ -2617,7 +2617,7 @@ export const VALID_ANSWERS = [
     "name": "Chanarach",
     "homeWorld": "Ashyn",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -2625,7 +2625,7 @@ export const VALID_ANSWERS = [
     "name": "Charlie",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Diggen's Point",
+    "species": "Human (Diggen's Point)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2633,15 +2633,15 @@ export const VALID_ANSWERS = [
     "name": "Charlie (Chuck)",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Lumaran",
+    "species": "Human (Lumaran)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Chesterton, Divide",
+    "name": "Chesterton Divide",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2662,18 +2662,18 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Cinder, King",
+    "name": "Cinder King",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Charred",
     "validFrom": 0
   },
   {
-    "name": "Cladent, (Clubs)",
+    "name": "Cladent (Clubs)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Smoker",
     "validFrom": 0
   },
@@ -2681,7 +2681,7 @@ export const VALID_ANSWERS = [
     "name": "Clubs",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Smoker",
     "validFrom": 0
   },
@@ -2689,7 +2689,7 @@ export const VALID_ANSWERS = [
     "name": "Colot",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Unoathed, Windrunner Squire",
     "validFrom": 0
   },
@@ -2697,7 +2697,7 @@ export const VALID_ANSWERS = [
     "name": "Cord",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Unkalaki",
+    "species": "Human (Unkalaki)",
     "abilities": "Shardbearer, Sighted",
     "validFrom": 0
   },
@@ -2705,7 +2705,7 @@ export const VALID_ANSWERS = [
     "name": "Crow",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Spore Eater",
     "validFrom": 0
   },
@@ -2713,7 +2713,7 @@ export const VALID_ANSWERS = [
     "name": "Dabbid",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2721,15 +2721,15 @@ export const VALID_ANSWERS = [
     "name": "Dajer",
     "homeWorld": "Scadrial",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Malwish",
+    "species": "Human (Malwish)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Dalinar, Kholin",
+    "name": "Dalinar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Bondsmith, Knight Radiant, Old Magic, Shard Vessel, Shardbearer, Sliver, Surgebinder",
     "validFrom": 0
   },
@@ -2737,7 +2737,7 @@ export const VALID_ANSWERS = [
     "name": "Dami",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Riran",
+    "species": "Human (Riran)",
     "abilities": "Knight Radiant, Shardbearer, Stoneward, Surgebinder",
     "validFrom": 0
   },
@@ -2745,7 +2745,7 @@ export const VALID_ANSWERS = [
     "name": "Demid",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Forms of Power",
     "validFrom": 0
   },
@@ -2753,7 +2753,7 @@ export const VALID_ANSWERS = [
     "name": "Demoux",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Seer, Worldhopper",
     "validFrom": 0
   },
@@ -2761,7 +2761,7 @@ export const VALID_ANSWERS = [
     "name": "Denth",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Cognitive Shadow, Returned, Royal Locks, Worldhopper",
     "validFrom": 0
   },
@@ -2769,7 +2769,7 @@ export const VALID_ANSWERS = [
     "name": "Design",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Cryptic",
+    "species": "Spren (Cryptic)",
     "abilities": "Lightweaver, Nahel Bond, Splinter, Worldhopper",
     "validFrom": 0
   },
@@ -2777,7 +2777,7 @@ export const VALID_ANSWERS = [
     "name": "Dilaf",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Fjordell",
+    "species": "Human (Fjordell)",
     "abilities": "Dakhor",
     "validFrom": 0
   },
@@ -2785,7 +2785,7 @@ export const VALID_ANSWERS = [
     "name": "Dockson",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2793,7 +2793,7 @@ export const VALID_ANSWERS = [
     "name": "Dorp",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Lumaran",
+    "species": "Human (Lumaran)",
     "abilities": "Sprouter",
     "validFrom": 0
   },
@@ -2801,7 +2801,7 @@ export const VALID_ANSWERS = [
     "name": "Dreaming-though-Awake",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
@@ -2809,7 +2809,7 @@ export const VALID_ANSWERS = [
     "name": "Drile",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Sand master, Undermastrell",
     "validFrom": 0
   },
@@ -2817,7 +2817,7 @@ export const VALID_ANSWERS = [
     "name": "Dumad",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Coinshot, Duralumin Gnat, Hemalurgy, Leecher, Pewterarm, Seeker",
     "validFrom": 0
   },
@@ -2825,7 +2825,7 @@ export const VALID_ANSWERS = [
     "name": "Dusk",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Aviar Bond",
     "validFrom": 0
   },
@@ -2833,7 +2833,7 @@ export const VALID_ANSWERS = [
     "name": "Eddlin",
     "homeWorld": "Silverlight",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Vaxilian",
+    "species": "Human (Vaxilian)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2841,15 +2841,15 @@ export const VALID_ANSWERS = [
     "name": "Edgli",
     "homeWorld": "Yolen",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
   {
-    "name": "Edwarn, Ladrian",
+    "name": "Edwarn Ladrian",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Hemalurgy",
     "validFrom": 0
   },
@@ -2857,7 +2857,7 @@ export const VALID_ANSWERS = [
     "name": "El",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -2865,23 +2865,23 @@ export const VALID_ANSWERS = [
     "name": "Elegy",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Charred",
     "validFrom": 0
   },
   {
-    "name": "Elend, Venture",
+    "name": "Elend Venture",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Mistborn",
     "validFrom": 0
   },
   {
-    "name": "Elhokar, Kholin",
+    "name": "Elhokar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Lightweaver, Shardbearer",
     "validFrom": 0
   },
@@ -2889,15 +2889,15 @@ export const VALID_ANSWERS = [
     "name": "Elid-daughter-Zeenid",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Dustbringer, Honorbearer, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Elizandra, Dramali",
+    "name": "Elizandra Dramali",
     "homeWorld": "Scadrial",
     "firstAppearance": "Allomancer Jak and the Pits of Eltania",
-    "species": "Human, Koloss",
+    "species": "Human (Koloss)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2905,7 +2905,7 @@ export const VALID_ANSWERS = [
     "name": "Elorin",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Sand master, Undermastrell",
     "validFrom": 0
   },
@@ -2913,7 +2913,7 @@ export const VALID_ANSWERS = [
     "name": "Eshonai",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Forms of Power, Shardbearer, Willshaper",
     "validFrom": 0
   },
@@ -2921,15 +2921,15 @@ export const VALID_ANSWERS = [
     "name": "Essu",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fannahn-im, Fused",
     "validFrom": 0
   },
   {
-    "name": "Evi, Kholin",
+    "name": "Evi Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Riran",
+    "species": "Human (Riran)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2937,15 +2937,15 @@ export const VALID_ANSWERS = [
     "name": "Felt",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Fen, Rnamdi",
+    "name": "Fen Rnamdi",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Thaylen",
+    "species": "Human (Thaylen)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2953,7 +2953,7 @@ export const VALID_ANSWERS = [
     "name": "Forch",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Brute, Coinshot, Ferring, Misting, Twinborn",
     "validFrom": 0
   },
@@ -2961,7 +2961,7 @@ export const VALID_ANSWERS = [
     "name": "Fort",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Islands of Lobu",
+    "species": "Human (Islands of Lobu)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2969,7 +2969,7 @@ export const VALID_ANSWERS = [
     "name": "Frava",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Grand",
+    "species": "Human (Grand)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2977,7 +2977,7 @@ export const VALID_ANSWERS = [
     "name": "Frost",
     "homeWorld": "Yolen",
     "firstAppearance": "Words of Radiance",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Unknown",
     "validFrom": 0
   },
@@ -2985,7 +2985,7 @@ export const VALID_ANSWERS = [
     "name": "Galladon",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Dula",
+    "species": "Human (Dula)",
     "abilities": "Elantrian, Worldhopper",
     "validFrom": 0
   },
@@ -2993,7 +2993,7 @@ export const VALID_ANSWERS = [
     "name": "Gallant",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Horse, Ryshadium",
+    "species": "Horse (Ryshadium)",
     "abilities": "Nahel Bond",
     "validFrom": 0
   },
@@ -3001,7 +3001,7 @@ export const VALID_ANSWERS = [
     "name": "Gaotona",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Grand",
+    "species": "Human (Grand)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3009,15 +3009,15 @@ export const VALID_ANSWERS = [
     "name": "Gavilar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
   {
-    "name": "Gavilar, Kholin",
+    "name": "Gavilar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -3025,15 +3025,15 @@ export const VALID_ANSWERS = [
     "name": "Gavinor",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
   {
-    "name": "Gavinor, Kholin",
+    "name": "Gavinor Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -3041,7 +3041,7 @@ export const VALID_ANSWERS = [
     "name": "Gaz",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Lightweaver, Surgebinder",
     "validFrom": 0
   },
@@ -3049,7 +3049,7 @@ export const VALID_ANSWERS = [
     "name": "Gemmel",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Eleventh Metal",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Mistborn",
     "validFrom": 0
   },
@@ -3057,7 +3057,7 @@ export const VALID_ANSWERS = [
     "name": "Getruda",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Bloodmaker, Hemalurgy, Slider",
     "validFrom": 0
   },
@@ -3065,12 +3065,12 @@ export const VALID_ANSWERS = [
     "name": "Glys",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
   {
-    "name": "\"Grandmother\", Forescout",
+    "name": "\"Grandmother\" Forescout",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
     "species": "Shade",
@@ -3081,7 +3081,7 @@ export const VALID_ANSWERS = [
     "name": "Gyundok",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Torish",
+    "species": "Human (Torish)",
     "abilities": "Nightmare",
     "validFrom": 0
   },
@@ -3089,7 +3089,7 @@ export const VALID_ANSWERS = [
     "name": "Hammond",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Pewterarm",
     "validFrom": 0
   },
@@ -3097,7 +3097,7 @@ export const VALID_ANSWERS = [
     "name": "Hanavanar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -3105,7 +3105,7 @@ export const VALID_ANSWERS = [
     "name": "Hariel",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused",
     "validFrom": 0
   },
@@ -3113,15 +3113,15 @@ export const VALID_ANSWERS = [
     "name": "Hatham",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
   {
-    "name": "Helaran, Davar",
+    "name": "Helaran Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -3129,7 +3129,7 @@ export const VALID_ANSWERS = [
     "name": "Hesina",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3137,7 +3137,7 @@ export const VALID_ANSWERS = [
     "name": "Hnanan",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Shanay-im",
     "validFrom": 0
   },
@@ -3145,15 +3145,15 @@ export const VALID_ANSWERS = [
     "name": "Hoid",
     "homeWorld": "Yolen",
     "firstAppearance": "Elantris",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Dawnshard, Elantrian, Knight Radiant, Lightweaver, Mistborn, Surgebinder, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Hoid, (Wit, Cephandrius Maxtori, Midius, Topaz, Lunu'anaki)",
+    "name": "Hoid (Wit Cephandrius Maxtori Midius Topaz Lunu'anaki)",
     "homeWorld": "Yolen",
     "firstAppearance": "Elantris",
-    "species": "Human, Yolish",
+    "species": "Human (Yolish)",
     "abilities": "Awakener, Dawnshard, Elantrian, Knight Radiant, Lightweaver, Mistborn, Surgebinder, Worldhopper",
     "validFrom": 0
   },
@@ -3161,7 +3161,7 @@ export const VALID_ANSWERS = [
     "name": "Hrathen",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Fjordell",
+    "species": "Human (Fjordell)",
     "abilities": "Dakhor",
     "validFrom": 0
   },
@@ -3169,15 +3169,15 @@ export const VALID_ANSWERS = [
     "name": "Huio",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Herdazian",
+    "species": "Human (Herdazian)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
   {
-    "name": "Human, (Vershad)",
+    "name": "Human (Vershad)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Koloss, Human",
+    "species": "Koloss (Human)",
     "abilities": "Hemalurgy",
     "validFrom": 0
   },
@@ -3185,7 +3185,7 @@ export const VALID_ANSWERS = [
     "name": "Iadon",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Aonic",
+    "species": "Human (Aonic)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3193,12 +3193,12 @@ export const VALID_ANSWERS = [
     "name": "Ico",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Reacher",
+    "species": "Spren (Reacher)",
     "abilities": "Splinter",
     "validFrom": 0
   },
   {
-    "name": "Illistandrista, (Starling)",
+    "name": "Illistandrista (Starling)",
     "homeWorld": "Yolen",
     "firstAppearance": "Isles of the Emberdark",
     "species": "Dragon",
@@ -3209,7 +3209,7 @@ export const VALID_ANSWERS = [
     "name": "Ishar",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -3217,7 +3217,7 @@ export const VALID_ANSWERS = [
     "name": "Ivory",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Inkspren",
+    "species": "Spren (Inkspren)",
     "abilities": "Elsecaller, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -3225,7 +3225,7 @@ export const VALID_ANSWERS = [
     "name": "Iyatil",
     "homeWorld": "Silverlight",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Southern Scadrian",
+    "species": "Human (Southern Scadrian)",
     "abilities": "Elsecaller, Worldhopper",
     "validFrom": 0
   },
@@ -3233,7 +3233,7 @@ export const VALID_ANSWERS = [
     "name": "Izzy",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Nightmare Painter",
     "validFrom": 0
   },
@@ -3241,15 +3241,15 @@ export const VALID_ANSWERS = [
     "name": "Jak",
     "homeWorld": "Scadrial",
     "firstAppearance": "Allomancer Jak and the Pits of Eltania",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Misting, Tineye",
     "validFrom": 0
   },
   {
-    "name": "Jasnah, Kholin",
+    "name": "Jasnah Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Elsecaller, Knight Radiant, Surgebinder",
     "validFrom": 0
   },
@@ -3257,7 +3257,7 @@ export const VALID_ANSWERS = [
     "name": "Jaxlim",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3265,7 +3265,7 @@ export const VALID_ANSWERS = [
     "name": "Jewels",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3273,15 +3273,15 @@ export const VALID_ANSWERS = [
     "name": "Jezrien",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Jushu, Davar",
+    "name": "Jushu Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3289,7 +3289,7 @@ export const VALID_ANSWERS = [
     "name": "Kabsal",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Herdazian",
+    "species": "Human (Herdazian)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3297,7 +3297,7 @@ export const VALID_ANSWERS = [
     "name": "Kaladin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Cognitive Shadow, Herald, Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
@@ -3305,7 +3305,7 @@ export const VALID_ANSWERS = [
     "name": "Kalak",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -3313,7 +3313,7 @@ export const VALID_ANSWERS = [
     "name": "Kelsier",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Cognitive Shadow, Hemalurgy, Mistborn, Shard Vessel, Sliver",
     "validFrom": 0
   },
@@ -3321,7 +3321,7 @@ export const VALID_ANSWERS = [
     "name": "Kenton",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Mastrell, Sand master",
     "validFrom": 0
   },
@@ -3329,7 +3329,7 @@ export const VALID_ANSWERS = [
     "name": "Khriss",
     "homeWorld": "Taldain",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Darksider",
+    "species": "Human (Darksider)",
     "abilities": "Starmarks, Worldhopper",
     "validFrom": 0
   },
@@ -3337,7 +3337,7 @@ export const VALID_ANSWERS = [
     "name": "Khrissalla",
     "homeWorld": "Taldain",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Darksider",
+    "species": "Human (Darksider)",
     "abilities": "Starcarved, Worldhopper",
     "validFrom": 0
   },
@@ -3345,7 +3345,7 @@ export const VALID_ANSWERS = [
     "name": "Kiin",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Teo",
+    "species": "Human (Teo)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3353,15 +3353,15 @@ export const VALID_ANSWERS = [
     "name": "Kokerlii",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Aviar, Streamer",
+    "species": "Aviar (Streamer)",
     "abilities": "Mental shielding",
     "validFrom": 0
   },
   {
-    "name": "Koravellium, Avast",
+    "name": "Koravellium Avast",
     "homeWorld": "Yolen",
     "firstAppearance": "Oathbringer",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -3369,7 +3369,7 @@ export const VALID_ANSWERS = [
     "name": "Kwaan",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist",
     "validFrom": 0
   },
@@ -3377,7 +3377,7 @@ export const VALID_ANSWERS = [
     "name": "Kyril",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused",
     "validFrom": 0
   },
@@ -3385,7 +3385,7 @@ export const VALID_ANSWERS = [
     "name": "Laggart",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3393,7 +3393,7 @@ export const VALID_ANSWERS = [
     "name": "Leras",
     "homeWorld": "Yolen",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -3401,7 +3401,7 @@ export const VALID_ANSWERS = [
     "name": "Leshwi",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Shanay-im",
     "validFrom": 0
   },
@@ -3409,15 +3409,15 @@ export const VALID_ANSWERS = [
     "name": "Lezian",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Nex-im",
     "validFrom": 0
   },
   {
-    "name": "Lezian, the Pursuer",
+    "name": "Lezian the Pursuer",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fused, Nex-im",
     "validFrom": 0
   },
@@ -3425,7 +3425,7 @@ export const VALID_ANSWERS = [
     "name": "Lift",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Reshi",
+    "species": "Human (Reshi)",
     "abilities": "Edgedancer, Knight Radiant, Old Magic, Surgebinder",
     "validFrom": 0
   },
@@ -3433,15 +3433,15 @@ export const VALID_ANSWERS = [
     "name": "Lightsong",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Cognitive Shadow, Returned",
     "validFrom": 0
   },
   {
-    "name": "Lin, Davar",
+    "name": "Lin Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3449,7 +3449,7 @@ export const VALID_ANSWERS = [
     "name": "Lirin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3457,7 +3457,7 @@ export const VALID_ANSWERS = [
     "name": "Liyun",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Torish",
+    "species": "Human (Torish)",
     "abilities": "Nightmare",
     "validFrom": 0
   },
@@ -3465,7 +3465,7 @@ export const VALID_ANSWERS = [
     "name": "Llarimar",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3473,7 +3473,7 @@ export const VALID_ANSWERS = [
     "name": "Lopen",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Herdazian",
+    "species": "Human (Herdazian)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
@@ -3481,23 +3481,23 @@ export const VALID_ANSWERS = [
     "name": "Malata",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Dustbringer, Knight Radiant, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Malise, Gevelmar",
+    "name": "Malise Gevelmar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Marasi, Colms",
+    "name": "Marasi Colms",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Misting, Pulser",
     "validFrom": 0
   },
@@ -3505,7 +3505,7 @@ export const VALID_ANSWERS = [
     "name": "Mare",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Tineye",
     "validFrom": 0
   },
@@ -3513,7 +3513,7 @@ export const VALID_ANSWERS = [
     "name": "Marsh",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Misting, Seeker",
     "validFrom": 0
   },
@@ -3521,23 +3521,23 @@ export const VALID_ANSWERS = [
     "name": "Masaka",
     "homeWorld": "Unspecified",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Sleepless, Nagadan",
+    "species": "Sleepless (Nagadan)",
     "abilities": "Hordelings, Nightmare Painter, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Masaka, (Chinikdakordich)",
+    "name": "Masaka (Chinikdakordich)",
     "homeWorld": "Unknown",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Sleepless, Nagadan",
+    "species": "Sleepless (Nagadan)",
     "abilities": "Hordelings, Nightmare Painter, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "May, Aladar",
+    "name": "May Aladar",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Unoathed",
     "validFrom": 0
   },
@@ -3545,7 +3545,7 @@ export const VALID_ANSWERS = [
     "name": "Mayalaran",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Culitvation spren",
+    "species": "Spren (Culitvation spren)",
     "abilities": "Deadeye, Edgedancer, Nahel Bond, Splinter, Unoathed",
     "validFrom": 0
   },
@@ -3553,7 +3553,7 @@ export const VALID_ANSWERS = [
     "name": "Medelantorius",
     "homeWorld": "Yolen",
     "firstAppearance": "Wind and Truth",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -3561,23 +3561,23 @@ export const VALID_ANSWERS = [
     "name": "MeLaan",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Kandra, Seventh Generation",
+    "species": "Kandra (Seventh Generation)",
     "abilities": "Shapeshifting, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Miles, Dagouter",
+    "name": "Miles Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Augur, Bloodmaker, Ferring, Hemalurgy, Misting, Savant, Twinborn",
     "validFrom": 0
   },
   {
-    "name": "Miles, \"Hundredlives\", Dagouter",
+    "name": "Miles \"Hundredlives\" Dagouter",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Augur, Bloodmaker, Ferring, Hemalurgy, Misting, Savant, Twinborn",
     "validFrom": 0
   },
@@ -3585,7 +3585,7 @@ export const VALID_ANSWERS = [
     "name": "Mirris",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Aviar, Streamer",
+    "species": "Aviar (Streamer)",
     "abilities": "Mental shielding",
     "validFrom": 0
   },
@@ -3593,7 +3593,7 @@ export const VALID_ANSWERS = [
     "name": "Moash",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -3601,7 +3601,7 @@ export const VALID_ANSWERS = [
     "name": "Moss-son-Farrier",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Honorbearer, Lightweaver, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -3609,7 +3609,7 @@ export const VALID_ANSWERS = [
     "name": "Mraize",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Thaylen",
+    "species": "Human (Thaylen)",
     "abilities": "Lightweaver",
     "validFrom": 0
   },
@@ -3617,15 +3617,15 @@ export const VALID_ANSWERS = [
     "name": "Nale",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Navani, Kholin",
+    "name": "Navani Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Bondsmith, Knight Radiant, Surgebinder",
     "validFrom": 0
   },
@@ -3633,12 +3633,12 @@ export const VALID_ANSWERS = [
     "name": "Nazh",
     "homeWorld": "Threnody",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Nazrilof, (Nazh)",
+    "name": "Nazrilof (Nazh)",
     "homeWorld": "Threnody",
     "firstAppearance": "Words of Radiance",
     "species": "Shade",
@@ -3649,7 +3649,7 @@ export const VALID_ANSWERS = [
     "name": "Neturo-son-Vallano",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Bondsmith, Cognitive Shadow, Honorbearer, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -3657,7 +3657,7 @@ export const VALID_ANSWERS = [
     "name": "Night",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Spren, Ancient",
+    "species": "Spren (Ancient)",
     "abilities": "Bondsmith, Nahel Bond",
     "validFrom": 0
   },
@@ -3665,7 +3665,7 @@ export const VALID_ANSWERS = [
     "name": "Nightblood",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Sword, nimi",
+    "species": "Sword (nimi)",
     "abilities": "Consumes Investiture, Comedic timing, Worldhopper",
     "validFrom": 0
   },
@@ -3673,7 +3673,7 @@ export const VALID_ANSWERS = [
     "name": "Nightwatcher",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Bondsmith",
+    "species": "Spren (Bondsmith)",
     "abilities": "Bondsmith, Nahel Bond, Old Magic, Splinter",
     "validFrom": 0
   },
@@ -3681,7 +3681,7 @@ export const VALID_ANSWERS = [
     "name": "Nikaro",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Cognitive Shadow, Nightmare Painter",
     "validFrom": 0
   },
@@ -3689,7 +3689,7 @@ export const VALID_ANSWERS = [
     "name": "Nikliasorm",
     "homeWorld": "Roshar",
     "firstAppearance": "Dawnshard",
-    "species": "Sleepless, Aimian",
+    "species": "Sleepless (Aimian)",
     "abilities": "Hordelings",
     "validFrom": 0
   },
@@ -3697,7 +3697,7 @@ export const VALID_ANSWERS = [
     "name": "Nohadon",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Surgebinder",
     "validFrom": 0
   },
@@ -3705,7 +3705,7 @@ export const VALID_ANSWERS = [
     "name": "Notum",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -3713,7 +3713,7 @@ export const VALID_ANSWERS = [
     "name": "Noura",
     "homeWorld": "Roshar",
     "firstAppearance": "Edgedancer",
-    "species": "Human, Azish",
+    "species": "Human (Azish)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3721,7 +3721,7 @@ export const VALID_ANSWERS = [
     "name": "Numuhukumakiaki'aialunamor (Rock)",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unkalaki",
+    "species": "Human (Unkalaki)",
     "abilities": "Sighted, Windrunner Squire",
     "validFrom": 0
   },
@@ -3729,7 +3729,7 @@ export const VALID_ANSWERS = [
     "name": "OreSeur",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Kandra, Third Generation",
+    "species": "Kandra (Third Generation)",
     "abilities": "Blessing of Potency, Shapeshifter",
     "validFrom": 0
   },
@@ -3737,7 +3737,7 @@ export const VALID_ANSWERS = [
     "name": "Paalm",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Kandra, Third Generation",
+    "species": "Kandra (Third Generation)",
     "abilities": "Hemalurgy, Shapeshifting",
     "validFrom": 0
   },
@@ -3745,7 +3745,7 @@ export const VALID_ANSWERS = [
     "name": "Pailiah",
     "homeWorld": "Ashyn",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -3761,7 +3761,7 @@ export const VALID_ANSWERS = [
     "name": "Pattern",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Cryptic",
+    "species": "Spren (Cryptic)",
     "abilities": "Lightweaver, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -3769,7 +3769,7 @@ export const VALID_ANSWERS = [
     "name": "Phendorana",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -3777,7 +3777,7 @@ export const VALID_ANSWERS = [
     "name": "Pozen-son-Nash",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Elsecaller, Honorbearer, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -3785,7 +3785,7 @@ export const VALID_ANSWERS = [
     "name": "Praxton",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
-    "species": "Human, Daysider",
+    "species": "Human (Daysider)",
     "abilities": "Mastrell, Sand master",
     "validFrom": 0
   },
@@ -3793,7 +3793,7 @@ export const VALID_ANSWERS = [
     "name": "Quellion",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Hero of Ages",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy",
     "validFrom": 0
   },
@@ -3801,7 +3801,7 @@ export const VALID_ANSWERS = [
     "name": "Raboniel",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Singer, Fused",
+    "species": "Singer (Fused)",
     "abilities": "Fannahn-im, Fused",
     "validFrom": 0
   },
@@ -3809,7 +3809,7 @@ export const VALID_ANSWERS = [
     "name": "Ral-na",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Reshi",
+    "species": "Human (Reshi)",
     "abilities": "Dustbringer, Surgebinder",
     "validFrom": 0
   },
@@ -3817,7 +3817,7 @@ export const VALID_ANSWERS = [
     "name": "Ranette",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Lurcher, Misting",
     "validFrom": 0
   },
@@ -3825,7 +3825,7 @@ export const VALID_ANSWERS = [
     "name": "Raoden",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Aonic",
+    "species": "Human (Aonic)",
     "abilities": "Elantrian",
     "validFrom": 0
   },
@@ -3833,7 +3833,7 @@ export const VALID_ANSWERS = [
     "name": "Rashek",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist, Hemalurgy, Mistborn, Savant, Sliver, Twinborn",
     "validFrom": 0
   },
@@ -3841,7 +3841,7 @@ export const VALID_ANSWERS = [
     "name": "Rayse",
     "homeWorld": "Yolen",
     "firstAppearance": "Oathbringer",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -3849,7 +3849,7 @@ export const VALID_ANSWERS = [
     "name": "Redd",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Misting, Smoker",
     "validFrom": 0
   },
@@ -3857,15 +3857,15 @@ export const VALID_ANSWERS = [
     "name": "Redin",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Relis, Ruthar",
+    "name": "Relis Ruthar",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -3873,15 +3873,15 @@ export const VALID_ANSWERS = [
     "name": "Relu-na",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Greatshell, Tai-na",
+    "species": "Greatshell (Tai-na)",
     "abilities": "Nahel Bond",
     "validFrom": 0
   },
   {
-    "name": "Renarin, Kholin",
+    "name": "Renarin Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Surgebinder, Truthwatcher, Voidbinder",
     "validFrom": 0
   },
@@ -3889,7 +3889,7 @@ export const VALID_ANSWERS = [
     "name": "Riina",
     "homeWorld": "Sel",
     "firstAppearance": "Secret History",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Elantrian, Worldhopper",
     "validFrom": 0
   },
@@ -3897,7 +3897,7 @@ export const VALID_ANSWERS = [
     "name": "Rit-daughter-Clutio",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Honorbearer, Shardbearer, Stoneward, Surgebinder",
     "validFrom": 0
   },
@@ -3905,7 +3905,7 @@ export const VALID_ANSWERS = [
     "name": "Rlain",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Truthwatcher, Voidbinder",
     "validFrom": 0
   },
@@ -3913,7 +3913,7 @@ export const VALID_ANSWERS = [
     "name": "Rock",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unkalaki",
+    "species": "Human (Unkalaki)",
     "abilities": "Sighted, Windrunner Squire",
     "validFrom": 0
   },
@@ -3921,7 +3921,7 @@ export const VALID_ANSWERS = [
     "name": "Roion",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -3929,7 +3929,7 @@ export const VALID_ANSWERS = [
     "name": "Rokke",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Aviar, Unspecified",
+    "species": "Aviar (Unspecified)",
     "abilities": "Mental shielding, Worldhopper",
     "validFrom": 0
   },
@@ -3937,7 +3937,7 @@ export const VALID_ANSWERS = [
     "name": "Rua",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -3945,7 +3945,7 @@ export const VALID_ANSWERS = [
     "name": "Ruthar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -3953,7 +3953,7 @@ export const VALID_ANSWERS = [
     "name": "Rysn",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Thaylen",
+    "species": "Human (Thaylen)",
     "abilities": "Dawnshard",
     "validFrom": 0
   },
@@ -3961,7 +3961,7 @@ export const VALID_ANSWERS = [
     "name": "Sak",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Aviar, Unspecified",
+    "species": "Aviar (Unspecified)",
     "abilities": "Precognition",
     "validFrom": 0
   },
@@ -3969,12 +3969,12 @@ export const VALID_ANSWERS = [
     "name": "Salay",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Islands of Lobu",
+    "species": "Human (Islands of Lobu)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Sand, Lord",
+    "name": "Sand Lord",
     "homeWorld": "Taldain",
     "firstAppearance": "White Sand",
     "species": "Unknown",
@@ -3982,10 +3982,10 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Sanvith, Prasanva, Maahik, va, Sila, (TwinSoul)",
+    "name": "Sanvith Prasanva Maahik va Sila (TwinSoul)",
     "homeWorld": "Dhatri",
     "firstAppearance": "The Lost Metal",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Aetherbound, Worldhopper",
     "validFrom": 0
   },
@@ -3993,7 +3993,7 @@ export const VALID_ANSWERS = [
     "name": "Sarene",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, Teo",
+    "species": "Human (Teo)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4001,7 +4001,7 @@ export const VALID_ANSWERS = [
     "name": "Sazed",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist, Shard Vessel",
     "validFrom": 0
   },
@@ -4009,15 +4009,15 @@ export const VALID_ANSWERS = [
     "name": "Sebruki",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Sebruki, Forescout",
+    "name": "Sebruki Forescout",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4025,7 +4025,7 @@ export const VALID_ANSWERS = [
     "name": "Sekeir",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -4033,7 +4033,7 @@ export const VALID_ANSWERS = [
     "name": "Shai",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, MaiPon",
+    "species": "Human (MaiPon)",
     "abilities": "Forger, Worldhopper",
     "validFrom": 0
   },
@@ -4041,23 +4041,23 @@ export const VALID_ANSWERS = [
     "name": "Shalash",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Shallan, Davar",
+    "name": "Shallan Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Knight Radiant, Lightweaver, Shardbearer, Surgebinder",
     "validFrom": 0
   },
   {
-    "name": "Shan, Elariel",
+    "name": "Shan Elariel",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Mistborn",
     "validFrom": 0
   },
@@ -4065,7 +4065,7 @@ export const VALID_ANSWERS = [
     "name": "Shashara",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Cognitive Shadow, Returned, Royal Locks, Shardbearer, Worldhopper",
     "validFrom": 0
   },
@@ -4073,7 +4073,7 @@ export const VALID_ANSWERS = [
     "name": "Shuden",
     "homeWorld": "Sel",
     "firstAppearance": "Elantris",
-    "species": "Human, JinDo",
+    "species": "Human (JinDo)",
     "abilities": "ChayShan",
     "validFrom": 0
   },
@@ -4081,7 +4081,7 @@ export const VALID_ANSWERS = [
     "name": "Sibling",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Bondsmith",
+    "species": "Spren (Bondsmith)",
     "abilities": "Bondsmith, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -4089,7 +4089,7 @@ export const VALID_ANSWERS = [
     "name": "Sigzil",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Azish",
+    "species": "Human (Azish)",
     "abilities": "Dawnshard, Knight Radiant, Skybreaker, Surgebinder, Windrunner, Worldhopper",
     "validFrom": 0
   },
@@ -4097,7 +4097,7 @@ export const VALID_ANSWERS = [
     "name": "Silajana",
     "homeWorld": "Dhatri",
     "firstAppearance": "The Lost Metal",
-    "species": "Aether, Roseite",
+    "species": "Aether (Roseite)",
     "abilities": "Aether, Control of Roseite, Luhel Bond",
     "validFrom": 0
   },
@@ -4105,15 +4105,15 @@ export const VALID_ANSWERS = [
     "name": "Silence",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Silence, (Forescout), Montane",
+    "name": "Silence (Forescout) Montane",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4121,7 +4121,7 @@ export const VALID_ANSWERS = [
     "name": "Siri",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Idrian",
+    "species": "Human (Idrian)",
     "abilities": "Royal Locks",
     "validFrom": 0
   },
@@ -4129,15 +4129,15 @@ export const VALID_ANSWERS = [
     "name": "Sivi-daughter-Sivi",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Cognitive Shadow, Honorbearer, Shardbearer, Surgebinder, Willshaper",
     "validFrom": 0
   },
   {
-    "name": "Sixth, of, the, Dusk",
+    "name": "Sixth of the Dusk",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Isles of the Emberdark",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Aviar Bond, Navigator, Worldhopper",
     "validFrom": 0
   },
@@ -4145,7 +4145,7 @@ export const VALID_ANSWERS = [
     "name": "Sja-anat",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Unmade",
+    "species": "Spren (Unmade)",
     "abilities": "Splinter",
     "validFrom": 0
   },
@@ -4153,7 +4153,7 @@ export const VALID_ANSWERS = [
     "name": "Skai",
     "homeWorld": "Yolen",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Yolish",
+    "species": "Human (Yolish)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -4161,7 +4161,7 @@ export const VALID_ANSWERS = [
     "name": "Skar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
@@ -4169,7 +4169,7 @@ export const VALID_ANSWERS = [
     "name": "Spark",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
-    "species": "Spren, Ashspren",
+    "species": "Spren (Ashspren)",
     "abilities": "Dustbringer, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -4177,23 +4177,23 @@ export const VALID_ANSWERS = [
     "name": "Spook",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Mistborn, Misting, Savant, Tineye",
     "validFrom": 0
   },
   {
-    "name": "Spook, (Lestibournes, Jedal)",
+    "name": "Spook (Lestibournes Jedal)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Mistborn, Misting, Savant, Tineye",
     "validFrom": 0
   },
   {
-    "name": "Steris, Harms",
+    "name": "Steris Harms",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Elendel",
+    "species": "Human (Elendel)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4201,7 +4201,7 @@ export const VALID_ANSWERS = [
     "name": "Stick",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Plant, Stick",
+    "species": "Plant (Stick)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4209,7 +4209,7 @@ export const VALID_ANSWERS = [
     "name": "Stone",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Spren, Ancient",
+    "species": "Spren (Ancient)",
     "abilities": "Bondsmith, Nahel Bond",
     "validFrom": 0
   },
@@ -4217,15 +4217,15 @@ export const VALID_ANSWERS = [
     "name": "Stormfather",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Bondsmith",
+    "species": "Spren (Bondsmith)",
     "abilities": "Bondsmith, Cognitive Shadow, Nahel Bond, Sliver, Splinter",
     "validFrom": 0
   },
   {
-    "name": "Straff, Venture",
+    "name": "Straff Venture",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Misting, Tineye",
     "validFrom": 0
   },
@@ -4233,7 +4233,7 @@ export const VALID_ANSWERS = [
     "name": "Sureblood",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Horse, Ryshadium",
+    "species": "Horse (Ryshadium)",
     "abilities": "Nahel Bond",
     "validFrom": 0
   },
@@ -4241,7 +4241,7 @@ export const VALID_ANSWERS = [
     "name": "Susebron",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Hallandren",
+    "species": "Human (Hallandren)",
     "abilities": "Awakener, Cognitive Shadow, Returned",
     "validFrom": 0
   },
@@ -4249,7 +4249,7 @@ export const VALID_ANSWERS = [
     "name": "Sylphrena",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -4257,7 +4257,7 @@ export const VALID_ANSWERS = [
     "name": "Szeth",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
@@ -4265,7 +4265,7 @@ export const VALID_ANSWERS = [
     "name": "Szeth-son-Vallano",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Shin",
+    "species": "Human (Shin)",
     "abilities": "Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
@@ -4273,7 +4273,7 @@ export const VALID_ANSWERS = [
     "name": "Talenel",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -4281,7 +4281,7 @@ export const VALID_ANSWERS = [
     "name": "Tanavast",
     "homeWorld": "Yolen",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -4289,7 +4289,7 @@ export const VALID_ANSWERS = [
     "name": "Taravangian",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Kharbranthian",
+    "species": "Human (Kharbranthian)",
     "abilities": "Old Magic, Shard Vessel",
     "validFrom": 0
   },
@@ -4297,7 +4297,7 @@ export const VALID_ANSWERS = [
     "name": "Tarson",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Koloss",
+    "species": "Human (Koloss)",
     "abilities": "Pewterarm, Savant",
     "validFrom": 0
   },
@@ -4305,15 +4305,15 @@ export const VALID_ANSWERS = [
     "name": "Teft",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Knight Radiant, Surgebinder, Windrunner",
     "validFrom": 0
   },
   {
-    "name": "Telsin, Ladrian",
+    "name": "Telsin Ladrian",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Bands of Mourning",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Avatar, Ferring, Hemalurgy, Windwhisperer",
     "validFrom": 0
   },
@@ -4321,7 +4321,7 @@ export const VALID_ANSWERS = [
     "name": "TenSoon",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Kandra, Third Generation",
+    "species": "Kandra (Third Generation)",
     "abilities": "Blessing of Potency, Blessing of Presence, Shapeshifting",
     "validFrom": 0
   },
@@ -4329,7 +4329,7 @@ export const VALID_ANSWERS = [
     "name": "Testament",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Cryptic",
+    "species": "Spren (Cryptic)",
     "abilities": "Deadeye, Lightweaver, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -4337,7 +4337,7 @@ export const VALID_ANSWERS = [
     "name": "Thude",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Knight Radiant, Willshaper",
     "validFrom": 0
   },
@@ -4345,7 +4345,7 @@ export const VALID_ANSWERS = [
     "name": "Tien",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Lightweaver",
     "validFrom": 0
   },
@@ -4353,7 +4353,7 @@ export const VALID_ANSWERS = [
     "name": "Timbre",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Reacher",
+    "species": "Spren (Reacher)",
     "abilities": "Nahel Bond, Splinter, Willshaper",
     "validFrom": 0
   },
@@ -4361,7 +4361,7 @@ export const VALID_ANSWERS = [
     "name": "Tindwyl",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Feruchemist",
     "validFrom": 0
   },
@@ -4369,23 +4369,23 @@ export const VALID_ANSWERS = [
     "name": "Tojin",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Nagadan",
+    "species": "Human (Nagadan)",
     "abilities": "Nightmare Painter",
     "validFrom": 0
   },
   {
-    "name": "Tonk, Fah",
+    "name": "Tonk Fah",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Pahn Kahl",
+    "species": "Human (Pahn Kahl)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "Torol, Sadeas",
+    "name": "Torol Sadeas",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -4393,7 +4393,7 @@ export const VALID_ANSWERS = [
     "name": "Tress",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Diggen's Point",
+    "species": "Human (Diggen's Point)",
     "abilities": "Sprouter",
     "validFrom": 0
   },
@@ -4401,15 +4401,15 @@ export const VALID_ANSWERS = [
     "name": "Tumi",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
   {
-    "name": "Turinad, Sebarial",
+    "name": "Turinad Sebarial",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Alethi",
+    "species": "Human (Alethi)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4417,7 +4417,7 @@ export const VALID_ANSWERS = [
     "name": "Tyvnk",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Grass, Shin",
+    "species": "Grass (Shin)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4425,7 +4425,7 @@ export const VALID_ANSWERS = [
     "name": "Ua'pam",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Peakspren",
+    "species": "Spren (Peakspren)",
     "abilities": "Nahel Bond, Splinter, Stoneward",
     "validFrom": 0
   },
@@ -4433,15 +4433,15 @@ export const VALID_ANSWERS = [
     "name": "Ulaam",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Lost Metal",
-    "species": "Kandra, Unspecified",
+    "species": "Kandra (Unspecified)",
     "abilities": "Shapeshifting",
     "validFrom": 0
   },
   {
-    "name": "Uli, Da",
+    "name": "Uli Da",
     "homeWorld": "Yolen",
     "firstAppearance": "Oathbringer",
-    "species": "Sho Del, Unspecified",
+    "species": "Sho Del (Unspecified)",
     "abilities": "Shard Vessel",
     "validFrom": 0
   },
@@ -4449,7 +4449,7 @@ export const VALID_ANSWERS = [
     "name": "Uma",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Mistspren",
+    "species": "Spren (Mistspren)",
     "abilities": "Nahel Bond, Splinter, Truthwatcher",
     "validFrom": 0
   },
@@ -4457,7 +4457,7 @@ export const VALID_ANSWERS = [
     "name": "Unativi",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Spren, Peakspren",
+    "species": "Spren (Peakspren)",
     "abilities": "Nahel Bond, Splinter, Stoneward",
     "validFrom": 0
   },
@@ -4465,7 +4465,7 @@ export const VALID_ANSWERS = [
     "name": "Valam",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Shardbearer",
     "validFrom": 0
   },
@@ -4473,7 +4473,7 @@ export const VALID_ANSWERS = [
     "name": "Vasher",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Unspecified",
+    "species": "Human (Unspecified)",
     "abilities": "Awakener, Cognitive Shadow, Returned, Shardbearer, Worldhopper",
     "validFrom": 0
   },
@@ -4481,7 +4481,7 @@ export const VALID_ANSWERS = [
     "name": "Vathi",
     "homeWorld": "First of the Sun",
     "firstAppearance": "Sixth of the Dusk",
-    "species": "Human, Eelakin",
+    "species": "Human (Eelakin)",
     "abilities": "Aviar Bond",
     "validFrom": 0
   },
@@ -4489,7 +4489,7 @@ export const VALID_ANSWERS = [
     "name": "Vedel",
     "homeWorld": "Ashyn",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Ashyn",
+    "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
     "validFrom": 0
   },
@@ -4497,7 +4497,7 @@ export const VALID_ANSWERS = [
     "name": "Venli",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Singer, Listener",
+    "species": "Singer (Listener)",
     "abilities": "Forms of Power, Knight Radiant, Willshaper",
     "validFrom": 0
   },
@@ -4505,7 +4505,7 @@ export const VALID_ANSWERS = [
     "name": "Vienta",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Honorspren",
+    "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
     "validFrom": 0
   },
@@ -4513,7 +4513,7 @@ export const VALID_ANSWERS = [
     "name": "Vin",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
-    "species": "Human, Skaa",
+    "species": "Human (Skaa)",
     "abilities": "Hemalurgy, Mistborn, Shard Vessel, Sliver",
     "validFrom": 0
   },
@@ -4521,23 +4521,23 @@ export const VALID_ANSWERS = [
     "name": "Vivenna",
     "homeWorld": "Nalthis",
     "firstAppearance": "Warbreaker",
-    "species": "Human, Idrian",
+    "species": "Human (Idrian)",
     "abilities": "Awakener, Royal Locks, Shardbearer, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Wan, ShaiLu",
+    "name": "Wan ShaiLu",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, MaiPon",
+    "species": "Human (MaiPon)",
     "abilities": "Forger, Worldhopper",
     "validFrom": 0
   },
   {
-    "name": "Waxillium, Ladrian",
+    "name": "Waxillium Ladrian",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Coinshot, Ferring, Hemalurgy, Mistborn, Skimmer, Twinborn",
     "validFrom": 0
   },
@@ -4545,7 +4545,7 @@ export const VALID_ANSWERS = [
     "name": "Wayne",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Alloy of Law",
-    "species": "Human, Terris",
+    "species": "Human (Terris)",
     "abilities": "Bloodmaker, Ferring, Hemalurgy, Mistborn, Slider, Twinborn",
     "validFrom": 0
   },
@@ -4553,7 +4553,7 @@ export const VALID_ANSWERS = [
     "name": "Weedfingers",
     "homeWorld": "Sel",
     "firstAppearance": "The Emperor's Soul",
-    "species": "Human, Dzhamarian",
+    "species": "Human (Dzhamarian)",
     "abilities": "Bloodsealer",
     "validFrom": 0
   },
@@ -4561,31 +4561,31 @@ export const VALID_ANSWERS = [
     "name": "Weev",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human, Lumaran",
+    "species": "Human (Lumaran)",
     "abilities": "Sprouter",
     "validFrom": 0
   },
   {
-    "name": "Wikim, Davar",
+    "name": "Wikim Davar",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human, Veden",
+    "species": "Human (Veden)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "William Ann, Montane",
+    "name": "William Ann",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
   {
-    "name": "William, Ann",
+    "name": "William Ann Montane",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4593,7 +4593,7 @@ export const VALID_ANSWERS = [
     "name": "Wind",
     "homeWorld": "Roshar",
     "firstAppearance": "Wind and Truth",
-    "species": "Spren, Ancient",
+    "species": "Spren (Ancient)",
     "abilities": "Bondsmith, Nahel Bond",
     "validFrom": 0
   },
@@ -4601,7 +4601,7 @@ export const VALID_ANSWERS = [
     "name": "Wyndle",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Spren, Culitvation spren",
+    "species": "Spren (Culitvation spren)",
     "abilities": "Edgedancer, Nahel Bond, Splinter",
     "validFrom": 0
   },
@@ -4609,7 +4609,7 @@ export const VALID_ANSWERS = [
     "name": "Xisisrefliel",
     "homeWorld": "Yolen",
     "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Dragon, Unspecified",
+    "species": "Dragon (Unspecified)",
     "abilities": "Awakener, Worldhopper",
     "validFrom": 0
   },
@@ -4617,7 +4617,7 @@ export const VALID_ANSWERS = [
     "name": "Yanagawn",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Azish",
+    "species": "Human (Azish)",
     "abilities": "Unoathed",
     "validFrom": 0
   },
@@ -4625,7 +4625,7 @@ export const VALID_ANSWERS = [
     "name": "Yelamaiszin",
     "homeWorld": "Roshar",
     "firstAppearance": "Dawnshard",
-    "species": "Sleepless, Aimian",
+    "species": "Sleepless (Aimian)",
     "abilities": "Hordelings",
     "validFrom": 0
   },
@@ -4633,7 +4633,7 @@ export const VALID_ANSWERS = [
     "name": "Ym",
     "homeWorld": "Roshar",
     "firstAppearance": "Words of Radiance",
-    "species": "Human, Iriali",
+    "species": "Human (Iriali)",
     "abilities": "Knight Radiant, Surgebinder, Truthwatcher",
     "validFrom": 0
   },
@@ -4641,15 +4641,15 @@ export const VALID_ANSWERS = [
     "name": "Yumi",
     "homeWorld": "Komashi",
     "firstAppearance": "Yumi and the Nightmare Painter",
-    "species": "Human, Torish",
+    "species": "Human (Torish)",
     "abilities": "Cognitive Shadow, Yoki-Hijo",
     "validFrom": 0
   },
   {
-    "name": "Zane, Venture",
+    "name": "Zane Venture",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Well of Ascension",
-    "species": "Human, Noble",
+    "species": "Human (Noble)",
     "abilities": "Hemalurgy, Mistborn",
     "validFrom": 0
   },
@@ -4657,7 +4657,7 @@ export const VALID_ANSWERS = [
     "name": "Zeal",
     "homeWorld": "Canticle",
     "firstAppearance": "The Sunlit Man",
-    "species": "Human, Threnodite",
+    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -4673,7 +4673,7 @@ export const VALID_ANSWERS = [
     "name": "Zu",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
-    "species": "Human, Iriali",
+    "species": "Human (Iriali)",
     "abilities": "Knight Radiant, Shardbearer, Stoneward, Surgebinder",
     "validFrom": 0
   }

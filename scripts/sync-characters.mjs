@@ -36,16 +36,22 @@ function parseRow(line) {
   return cells;
 }
 
+function formatSpecies(s) {
+  const idx = s.indexOf(',');
+  if (idx === -1) return s;
+  return s.slice(0, idx).trim() + ' (' + s.slice(idx + 1).trim() + ')';
+}
+
 const res = await fetch(SHEET_CSV_URL);
 if (!res.ok) throw new Error(`Failed to fetch sheet: ${res.status}`);
 const text = await res.text();
 const rows = parseCSV(text);
 
 const characters = rows.map(r => ({
-  name: r['Name'],
+  name: r['Name'].replace(/,\s*/g, ' '),
   homeWorld: r['Home World'] || 'Unknown',
   firstAppearance: r['First Appearance'] || 'Unknown',
-  species: r['Species'] || 'Unknown',
+  species: formatSpecies(r['Species'] || 'Unknown'),
   abilities: r['Abilities/Investiture'] || 'None',
   validFrom: parseInt(r['Valid From'] || '0', 10),
 }));

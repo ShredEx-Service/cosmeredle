@@ -8,21 +8,76 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
   const [suggestions, setSuggestions] = useState([]);
   const [highlighted, setHighlighted] = useState(-1);
   const [focused, setFocused] = useState(false);
+  const [displayAll, setDisplayAll] = useState(false); // true = ignore query, show full list
   const divRef = useRef(null);
+  const listRef = useRef(null);
+  const usingKeyboard = useRef(false);
+  const lastMousePos = useRef({ x: 0, y: 0 });
+  const touchStartY = useRef(0);
+  const touchMoved = useRef(false);
+  const highlightFirstOnOpen = useRef(false);
+  const listLocked = useRef(false); // freeze list while navigating with arrow keys
+
+  // Global key handler: focus input on arrow keys or typing, submit on Enter
+  const submitRef = useRef(null);
+  submitRef.current = submit;
 
   useEffect(() => {
+    function onGlobalKey(e) {
+      if (disabled) return;
+      if (document.activeElement === divRef.current) return;
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        usingKeyboard.current = true;
+        highlightFirstOnOpen.current = true;
+        divRef.current?.focus();
+        setFocused(true);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        submitRef.current();
+      } else if (e.key.length === 1 && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        divRef.current?.focus();
+        setFocused(true);
+      }
+    }
+    document.addEventListener('keydown', onGlobalKey);
+    return () => document.removeEventListener('keydown', onGlobalKey);
+  }, [disabled]);
+
+  // Rebuild suggestions whenever anything that affects the list changes
+  useEffect(() => {
+    if (!focused) { setSuggestions([]); return; }
+    if (listLocked.current) return;
     const normalize = s => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
     const q = normalize(query);
     const filtered = CHARACTERS
-      .filter(c => !guessedNames.includes(c.name) && (!q || normalize(c.name).includes(q)))
+      .filter(c => !guessedNames.includes(c.name) && (displayAll || !q || normalize(c.name).includes(q)))
+      .sort((a, b) => {
+        if (!q) return 0;
+        const aStarts = normalize(a.name).startsWith(q);
+        const bStarts = normalize(b.name).startsWith(q);
+        if (aStarts && !bStarts) return -1;
+        if (!aStarts && bStarts) return 1;
+        return 0;
+      })
       .slice(0, 300);
-    setSuggestions(focused ? filtered : []);
-    setHighlighted(-1);
-    // If user edits after selecting, clear selection
-    if (selected && query !== selected.name) setSelected(null);
-  }, [query, guessedNames, focused]);
+    setSuggestions(filtered);
+    if (highlightFirstOnOpen.current && filtered.length > 0) {
+      setHighlighted(0);
+      highlightFirstOnOpen.current = false;
+    }
+  }, [focused, query, guessedNames, displayAll]);
 
-  function selectSuggestion(char) {
+  // Scroll highlighted item into view
+  useEffect(() => {
+    if (highlighted >= 0 && listRef.current) {
+      const item = listRef.current.children[highlighted];
+      if (item) item.scrollIntoView({ block: 'nearest' });
+    }
+  }, [highlighted]);
+
+
+  function selectSuggestion(char, fromKeyboard = false) {
     setSelected(char);
     setQuery(char.name);
     if (divRef.current) {
@@ -35,32 +90,84 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
       sel.addRange(range);
       divRef.current.focus();
     }
-    setSuggestions([]);
+    if (fromKeyboard) {
+      setDisplayAll(true); // keep full list open
+    } else {
+      setSuggestions([]);
+      setFocused(false);
+    }
   }
 
   function submit() {
-    const char = selected || (suggestions.length === 1 ? suggestions[0] : null);
+    const typed = divRef.current?.innerText.trim() || '';
+    const exactMatch = CHARACTERS.find(c => c.name.toLowerCase() === typed.toLowerCase() && !guessedNames.includes(c.name));
+    const char = selected || (suggestions.length === 1 ? suggestions[0] : null) || exactMatch;
     if (!char) return;
     onGuess(char);
     setSelected(null);
     setQuery('');
+    setDisplayAll(false);
+    setHighlighted(-1);
     if (divRef.current) divRef.current.textContent = '';
     setSuggestions([]);
   }
 
   function handleKey(e) {
-    if (e.key === 'ArrowDown') { e.preventDefault(); setHighlighted(h => Math.min(h + 1, suggestions.length - 1)); }
-    else if (e.key === 'ArrowUp') { e.preventDefault(); setHighlighted(h => Math.max(h - 1, -1)); }
-    else if (e.key === 'Enter') {
+    if (e.key === 'ArrowDown') {
       e.preventDefault();
-      if (highlighted >= 0) selectSuggestion(suggestions[highlighted]);
-      else submit();
+      usingKeyboard.current = true;
+      listLocked.current = true;
+      if (suggestions.length === 0) {
+        listLocked.current = false;
+        highlightFirstOnOpen.current = true;
+        setFocused(true);
+        return;
+      }
+      setHighlighted(h => Math.min(h + 1, suggestions.length - 1));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      usingKeyboard.current = true;
+      listLocked.current = true;
+      setHighlighted(h => Math.max(h - 1, -1));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (highlighted >= 0 && suggestions[highlighted]) {
+        const char = suggestions[highlighted];
+        if (selected && selected.name === char.name) {
+          submit();
+        } else {
+          selectSuggestion(char, true);
+        }
+      } else {
+        submit();
+      }
+    } else if (e.key === 'Escape') {
+      setSuggestions([]);
+      setHighlighted(-1);
     }
-    else if (e.key === 'Escape') setSuggestions([]);
   }
 
-  function handleInput() {
-    setQuery(divRef.current?.textContent || '');
+  function handleInput(e) {
+    // Strip any line breaks the browser inserted
+    if (divRef.current) {
+      const clean = divRef.current.innerText.replace(/[\r\n]+/g, '');
+      if (divRef.current.innerText !== clean) {
+        divRef.current.innerText = clean;
+        // Restore cursor to end
+        const range = document.createRange();
+        const sel = window.getSelection();
+        range.selectNodeContents(divRef.current);
+        range.collapse(false);
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+    }
+    usingKeyboard.current = false;
+    listLocked.current = false;
+    setDisplayAll(false);
+    setSelected(null);
+    setQuery(divRef.current?.innerText.replace(/[\r\n]+/g, '') || '');
+    setHighlighted(-1);
   }
 
   const canGuess = !!(selected || suggestions.length === 1);
@@ -77,6 +184,7 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
           onInput={handleInput}
           onKeyDown={handleKey}
           onFocus={() => setFocused(true)}
+          onClick={() => setFocused(true)}
           onBlur={() => setTimeout(() => setFocused(false), 150)}
           role="combobox"
           aria-expanded={suggestions.length > 0}
@@ -94,14 +202,20 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
         </button>
       </div>
       {suggestions.length > 0 && (
-        <ul className="suggestions">
+        <ul className="suggestions" ref={listRef} onMouseMove={(e) => {
+          const moved = e.clientX !== lastMousePos.current.x || e.clientY !== lastMousePos.current.y;
+          lastMousePos.current = { x: e.clientX, y: e.clientY };
+          if (moved) usingKeyboard.current = false;
+        }}>
           {suggestions.map((c, i) => (
             <li
               key={c.name}
               className={i === highlighted ? 'highlighted' : ''}
-              onMouseDown={() => selectSuggestion(c)}
-              onTouchEnd={(e) => { e.preventDefault(); selectSuggestion(c); }}
-              onMouseEnter={() => setHighlighted(i)}
+              onMouseDown={() => selectSuggestion(c, false)}
+              onTouchStart={(e) => { touchStartY.current = e.touches[0].clientY; touchMoved.current = false; }}
+              onTouchMove={(e) => { if (Math.abs(e.touches[0].clientY - touchStartY.current) > 8) touchMoved.current = true; }}
+              onTouchEnd={(e) => { if (!touchMoved.current) { e.preventDefault(); selectSuggestion(c, false); } }}
+              onMouseEnter={() => { if (!usingKeyboard.current) setHighlighted(i); }}
             >
               {c.name}
             </li>

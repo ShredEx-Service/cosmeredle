@@ -1,18 +1,34 @@
 import { VALID_ANSWERS } from '../data/characters.js';
 
-// Epoch date for daily puzzle #1
-const EPOCH = new Date('2024-01-01');
+function seededShuffle(arr, seed) {
+  const a = [...arr];
+  let s = seed;
+  for (let i = a.length - 1; i > 0; i--) {
+    s = (s ^ (s << 13)) >>> 0;
+    s = (s ^ (s >> 17)) >>> 0;
+    s = (s ^ (s << 5)) >>> 0;
+    const j = s % (i + 1);
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
+const SHUFFLED_ANSWERS = seededShuffle(VALID_ANSWERS, 0xC05E4E);
+
+// Epoch date for daily puzzle #1 — uses local midnight so puzzle resets at midnight local time
 export function getDayNumber() {
   const now = new Date();
-  const diff = Math.floor((now - EPOCH) / (1000 * 60 * 60 * 24));
-  return diff;
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const epoch = new Date(2024, 0, 1);
+  return Math.floor((today - epoch) / (1000 * 60 * 60 * 24));
 }
 
 export function getDailyCharacter(dayNumber = getDayNumber()) {
-  const idx = dayNumber % VALID_ANSWERS.length;
-  return VALID_ANSWERS[idx];
+  const idx = dayNumber % SHUFFLED_ANSWERS.length;
+  return SHUFFLED_ANSWERS[idx];
 }
+
+const baseSpecies = s => s.replace(/\s*\(.*\)/, '').trim();
 
 export function compareCharacters(guess, target) {
   return {
@@ -30,7 +46,7 @@ export function compareCharacters(guess, target) {
       value: guess.species,
       correct: guess.species === target.species,
       partial: guess.species !== target.species &&
-        guess.species.split(', ').some(s => target.species.split(', ').includes(s)),
+        baseSpecies(guess.species) === baseSpecies(target.species),
     },
     abilities: {
       value: guess.abilities,
