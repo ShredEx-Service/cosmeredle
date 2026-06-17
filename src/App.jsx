@@ -45,11 +45,15 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownPos, setDropdownPos] = useState({ top: 0, right: 0 });
   const menuRef = useRef(null);
+  const dropdownRef = useRef(null);
   const countdown = useCountdown();
 
   useEffect(() => {
     function handleClick(e) {
-      if (menuRef.current && !menuRef.current.contains(e.target)) setMenuOpen(false);
+      if (
+        menuRef.current && !menuRef.current.contains(e.target) &&
+        dropdownRef.current && !dropdownRef.current.contains(e.target)
+      ) setMenuOpen(false);
     }
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
@@ -79,7 +83,7 @@ export default function App() {
               <span /><span /><span />
             </button>
             {menuOpen && createPortal(
-              <div className="nav-dropdown" style={{ top: dropdownPos.top, right: dropdownPos.right }}>
+              <div className="nav-dropdown" ref={dropdownRef} style={{ top: dropdownPos.top, right: dropdownPos.right }}>
                 {tabs.map(t => (
                   <button
                     key={t.id}
