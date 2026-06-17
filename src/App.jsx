@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Game from './pages/Game.jsx';
 import Practice from './pages/Practice.jsx';
 import Archive from './pages/Archive.jsx';
@@ -77,7 +78,7 @@ export default function App() {
             <button className="hamburger-btn" onClick={openMenu} aria-label="Menu">
               <span /><span /><span />
             </button>
-            {menuOpen && (
+            {menuOpen && createPortal(
               <div className="nav-dropdown" style={{ top: dropdownPos.top, right: dropdownPos.right }}>
                 {tabs.map(t => (
                   <button
@@ -106,7 +107,8 @@ export default function App() {
                     </button>
                   </>
                 )}
-              </div>
+              </div>,
+              document.body
             )}
           </div>
         </div>
