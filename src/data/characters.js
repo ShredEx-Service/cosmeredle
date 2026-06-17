@@ -339,14 +339,6 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Clubs",
-    "homeWorld": "Scadrial",
-    "firstAppearance": "The Final Empire",
-    "species": "Human (Skaa)",
-    "abilities": "Misting, Smoker",
-    "validFrom": 0
-  },
-  {
     "name": "Colot",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
@@ -1568,14 +1560,6 @@ export const CHARACTERS = [
     "firstAppearance": "The Way of Kings",
     "species": "Singer (Listener)",
     "abilities": "Truthwatcher, Voidbinder",
-    "validFrom": 0
-  },
-  {
-    "name": "Rock",
-    "homeWorld": "Roshar",
-    "firstAppearance": "The Way of Kings",
-    "species": "Human (Unkalaki)",
-    "abilities": "Sighted, Windrunner Squire",
     "validFrom": 0
   },
   {
@@ -2678,14 +2662,6 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Clubs",
-    "homeWorld": "Scadrial",
-    "firstAppearance": "The Final Empire",
-    "species": "Human (Skaa)",
-    "abilities": "Misting, Smoker",
-    "validFrom": 0
-  },
-  {
     "name": "Colot",
     "homeWorld": "Roshar",
     "firstAppearance": "Oathbringer",
@@ -3907,14 +3883,6 @@ export const VALID_ANSWERS = [
     "firstAppearance": "The Way of Kings",
     "species": "Singer (Listener)",
     "abilities": "Truthwatcher, Voidbinder",
-    "validFrom": 0
-  },
-  {
-    "name": "Rock",
-    "homeWorld": "Roshar",
-    "firstAppearance": "The Way of Kings",
-    "species": "Human (Unkalaki)",
-    "abilities": "Sighted, Windrunner Squire",
     "validFrom": 0
   },
   {
