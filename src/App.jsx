@@ -42,6 +42,7 @@ export default function App() {
     localStorage.setItem('cosmeredle_tab', id);
   }
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownPos, setDropdownPos] = useState({ top: 0, right: 0 });
   const menuRef = useRef(null);
   const countdown = useCountdown();
 
@@ -52,6 +53,14 @@ export default function App() {
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
+
+  function openMenu() {
+    if (menuRef.current) {
+      const rect = menuRef.current.getBoundingClientRect();
+      setDropdownPos({ top: rect.bottom + 8, right: window.innerWidth - rect.right });
+    }
+    setMenuOpen(o => !o);
+  }
 
   const tabs = isAdmin ? [...TABS, { id: 'admin', label: 'Admin' }] : TABS;
 
@@ -65,11 +74,11 @@ export default function App() {
             <p className="app-subtitle">Guess the Cosmere character</p>
           </div>
           <div className="nav-menu" ref={menuRef}>
-            <button className="hamburger-btn" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
+            <button className="hamburger-btn" onClick={openMenu} aria-label="Menu">
               <span /><span /><span />
             </button>
             {menuOpen && (
-              <div className="nav-dropdown">
+              <div className="nav-dropdown" style={{ top: dropdownPos.top, right: dropdownPos.right }}>
                 {tabs.map(t => (
                   <button
                     key={t.id}
