@@ -99,12 +99,12 @@ body {
 
 .nav-dropdown {
   position: fixed;
-  background: #1a1408;
+  background: #1a1408 !important;
   border: 2px solid #c8a84b;
   border-radius: 10px;
   overflow: hidden;
-  z-index: 200;
-  min-width: 140px;
+  z-index: 9999;
+  min-width: 160px;
 }
 
 .nav-dropdown-item {
