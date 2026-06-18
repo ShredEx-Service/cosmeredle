@@ -193,8 +193,43 @@
 .admin-ability-item:hover { background: #1a1408; color: #ddd; }
 .admin-ability-item.selected { color: #c8a84b; }
 
-.admin-ability-item input[type="checkbox"] {
+.admin-ability-item input[type="checkbox"],
+.admin-ability-item input[type="radio"] {
   accent-color: #c8a84b;
   cursor: pointer;
   flex-shrink: 0;
 }
+
+.admin-add-option {
+  display: flex;
+  gap: 4px;
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.admin-add-input {
+  flex: 1;
+  background: #1a1408;
+  border: 1px solid #3a2f10;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 8px;
+  font-size: 0.78rem;
+  font-family: 'Georgia', serif;
+}
+
+.admin-add-input:focus { outline: none; border-color: #c8a84b; }
+.admin-add-input::placeholder { color: #555; }
+
+.admin-add-btn {
+  background: #2a1f08;
+  border: 1px solid #c8a84b;
+  border-radius: 5px;
+  color: #c8a84b;
+  font-size: 1rem;
+  padding: 3px 10px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.admin-add-btn:hover { background: #3a2f10; }
