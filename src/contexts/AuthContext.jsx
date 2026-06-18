@@ -38,7 +38,19 @@ export function AuthProvider({ children }) {
     return error;
   }
 
-  async function signIn(email, password) {
+  async function signIn(usernameOrEmail, password) {
+    // Try to look up email by username first
+    const looksLikeEmail = usernameOrEmail.includes('@');
+    let email = usernameOrEmail;
+    if (!looksLikeEmail) {
+      const { data } = await supabase
+        .from('profiles')
+        .select('email')
+        .eq('username', usernameOrEmail)
+        .single();
+      if (!data?.email) return { message: 'Username not found' };
+      email = data.email;
+    }
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     return error;
   }

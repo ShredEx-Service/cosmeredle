@@ -56,8 +56,8 @@ export default function AuthModal({ mode, onClose, onSwitch }) {
             )}
             <input
               className="auth-input"
-              type="email"
-              placeholder="Email"
+              type="text"
+              placeholder={mode === 'signin' ? 'Username or Email' : 'Email'}
               value={email}
               onChange={e => setEmail(e.target.value)}
               required
