@@ -283,14 +283,6 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Charlie",
-    "homeWorld": "Lumar",
-    "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human (Diggen's Point)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
     "name": "Charlie (Chuck)",
     "homeWorld": "Lumar",
     "firstAppearance": "Tress of the Emerald Sea",
@@ -2523,22 +2515,6 @@ export const VALID_ANSWERS = [
     "firstAppearance": "Words of Radiance",
     "species": "Human (Ashyn)",
     "abilities": "Cognitive Shadow, Herald, Shardbearer, Surgebinder",
-    "validFrom": 0
-  },
-  {
-    "name": "Charlie",
-    "homeWorld": "Lumar",
-    "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human (Diggen's Point)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
-    "name": "Charlie (Chuck)",
-    "homeWorld": "Lumar",
-    "firstAppearance": "Tress of the Emerald Sea",
-    "species": "Human (Lumaran)",
-    "abilities": "Uninvested",
     "validFrom": 0
   },
   {
