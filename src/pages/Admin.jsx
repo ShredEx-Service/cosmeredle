@@ -175,9 +175,11 @@ export default function Admin() {
     setLoading(true);
     const { data, error } = await supabase
       .from('characters')
-      .select('*')
-      .order('name');
-    if (!error) setCharacters(data || []);
+      .select('*');
+    if (!error) {
+      const sortKey = s => s.name.replace(/^[^a-zA-Z]+/, '').toLowerCase();
+      setCharacters((data || []).sort((a, b) => sortKey(a).localeCompare(sortKey(b))));
+    }
     setLoading(false);
   }
 
