@@ -1,6 +1,4 @@
-import { VALID_ANSWERS } from '../data/characters.js';
-
-function seededShuffle(arr, seed) {
+export function seededShuffle(arr, seed) {
   const a = [...arr];
   let s = seed;
   for (let i = a.length - 1; i > 0; i--) {
@@ -13,9 +11,6 @@ function seededShuffle(arr, seed) {
   return a;
 }
 
-const SHUFFLED_ANSWERS = seededShuffle(VALID_ANSWERS, 0xC05E4E);
-
-// Epoch date for daily puzzle #1 — uses local midnight so puzzle resets at midnight local time
 export function getDayNumber() {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -23,9 +18,9 @@ export function getDayNumber() {
   return Math.floor((today - epoch) / (1000 * 60 * 60 * 24));
 }
 
-export function getDailyCharacter(dayNumber = getDayNumber()) {
-  const idx = dayNumber % SHUFFLED_ANSWERS.length;
-  return SHUFFLED_ANSWERS[idx];
+export function getDailyCharacter(shuffled, dayNumber = getDayNumber()) {
+  if (!shuffled || shuffled.length === 0) return null;
+  return shuffled[dayNumber % shuffled.length];
 }
 
 const baseSpecies = s => s.replace(/\s*\(.*\)/, '').trim();

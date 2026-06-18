@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
-import { CHARACTERS } from '../data/characters.js';
+import { useCharacters } from '../contexts/CharactersContext.jsx';
 import './GuessInput.css';
 
 export default function GuessInput({ onGuess, guessedNames, disabled }) {
+  const { characters: CHARACTERS } = useCharacters();
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
@@ -26,6 +27,8 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
     function onGlobalKey(e) {
       if (disabled) return;
       if (document.activeElement === divRef.current) return;
+      const tag = document.activeElement?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || document.activeElement?.isContentEditable) return;
       if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
         e.preventDefault();
         usingKeyboard.current = true;

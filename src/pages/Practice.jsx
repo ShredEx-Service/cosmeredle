@@ -1,32 +1,34 @@
 import { useState } from 'react';
 import GuessInput from '../components/GuessInput.jsx';
 import GuessRow, { GuessHeader } from '../components/GuessRow.jsx';
-import { VALID_ANSWERS } from '../data/characters.js';
 import { compareCharacters } from '../utils/gameLogic.js';
+import { useCharacters } from '../contexts/CharactersContext.jsx';
 import './Game.css';
 
 const STORAGE_KEY = 'cosmeredle_practice';
 
-function randomChar() {
-  return VALID_ANSWERS[Math.floor(Math.random() * VALID_ANSWERS.length)];
-}
-
-function loadState() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-    return {
-      target: VALID_ANSWERS.find(c => c.name === saved.targetName) || randomChar(),
-      guesses: saved.guesses || [],
-      won: saved.won || false,
-      revealed: saved.revealed || false,
-      stats: saved.stats || { played: 0, guessTotal: 0 },
-    };
-  } catch {
-    return { target: randomChar(), guesses: [], won: false, revealed: false, stats: { played: 0, guessTotal: 0 } };
-  }
-}
-
 export default function Practice() {
+  const { validAnswers } = useCharacters();
+
+  function randomChar() {
+    return validAnswers[Math.floor(Math.random() * validAnswers.length)];
+  }
+
+  function loadState() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      return {
+        target: validAnswers.find(c => c.name === saved.targetName) || randomChar(),
+        guesses: saved.guesses || [],
+        won: saved.won || false,
+        revealed: saved.revealed || false,
+        stats: saved.stats || { played: 0, guessTotal: 0 },
+      };
+    } catch {
+      return { target: randomChar(), guesses: [], won: false, revealed: false, stats: { played: 0, guessTotal: 0 } };
+    }
+  }
+
   const [target, setTarget] = useState(() => loadState().target);
   const [guesses, setGuesses] = useState(() => loadState().guesses);
   const [won, setWon] = useState(() => loadState().won);

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import GuessInput from '../components/GuessInput.jsx';
 import GuessRow, { GuessHeader } from '../components/GuessRow.jsx';
 import { getDailyCharacter, getDayNumber, compareCharacters } from '../utils/gameLogic.js';
+import { useCharacters } from '../contexts/CharactersContext.jsx';
 import './Game.css';
 import './Archive.css';
 
@@ -19,6 +20,7 @@ const MONTH_NAMES = [
 const DAY_LABELS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 
 export default function Archive() {
+  const { shuffled } = useCharacters();
   const currentDay = getDayNumber();
   const today = new Date();
 
@@ -56,7 +58,7 @@ export default function Archive() {
   for (let i = 0; i < firstDow; i++) cells.push(null);
   for (let d = 1; d <= daysInMonth; d++) cells.push(d);
 
-  const target = selectedDay !== null ? getDailyCharacter(selectedDay) : null;
+  const target = selectedDay !== null ? getDailyCharacter(shuffled, selectedDay) : null;
 
   function handleGuess(char) {
     if (!target || won) return;

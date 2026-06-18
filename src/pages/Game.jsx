@@ -3,14 +3,16 @@ import GuessInput from '../components/GuessInput.jsx';
 import GuessRow, { GuessHeader } from '../components/GuessRow.jsx';
 import { getDailyCharacter, getDayNumber, compareCharacters } from '../utils/gameLogic.js';
 import { useAuth } from '../contexts/AuthContext.jsx';
+import { useCharacters } from '../contexts/CharactersContext.jsx';
 import { supabase } from '../utils/supabase.js';
 import './Game.css';
 
 const STORAGE_KEY = 'cosmeredle_daily';
 
 export default function Game() {
+  const { shuffled } = useCharacters();
   const dayNumber = getDayNumber();
-  const target = getDailyCharacter(dayNumber);
+  const target = getDailyCharacter(shuffled, dayNumber);
   const [guesses, setGuesses] = useState([]);
   const [won, setWon] = useState(false);
   const [revealed, setRevealed] = useState(false);

@@ -1755,7 +1755,7 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Spook (Lestibournes Jedal)",
+    "name": "Spook (Lestibournes, Jedal)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
     "species": "Human (Skaa)",
@@ -3982,7 +3982,7 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Spook (Lestibournes Jedal)",
+    "name": "Spook (Lestibournes, Jedal)",
     "homeWorld": "Scadrial",
     "firstAppearance": "The Final Empire",
     "species": "Human (Skaa)",
