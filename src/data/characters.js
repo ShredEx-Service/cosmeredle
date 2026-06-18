@@ -659,25 +659,9 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Gavilar",
-    "homeWorld": "Roshar",
-    "firstAppearance": "The Way of Kings",
-    "species": "Human (Alethi)",
-    "abilities": "Shardbearer",
-    "validFrom": 0
-  },
-  {
     "name": "Gavilar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human (Alethi)",
-    "abilities": "Shardbearer",
-    "validFrom": 0
-  },
-  {
-    "name": "Gavinor",
-    "homeWorld": "Roshar",
-    "firstAppearance": "Oathbringer",
     "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
@@ -1059,14 +1043,6 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Lezian",
-    "homeWorld": "Roshar",
-    "firstAppearance": "Rhythm of War",
-    "species": "Singer (Fused)",
-    "abilities": "Fused, Nex-im",
-    "validFrom": 0
-  },
-  {
     "name": "Lezian the Pursuer",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
@@ -1216,14 +1192,6 @@ export const CHARACTERS = [
     "firstAppearance": "The Hero of Ages",
     "species": "Kandra (Seventh Generation)",
     "abilities": "Shapeshifting, Worldhopper",
-    "validFrom": 0
-  },
-  {
-    "name": "Miles Dagouter",
-    "homeWorld": "Scadrial",
-    "firstAppearance": "The Alloy of Law",
-    "species": "Human (Terris)",
-    "abilities": "Augur, Bloodmaker, Ferring, Hemalurgy, Misting, Savant, Twinborn",
     "validFrom": 0
   },
   {
@@ -1651,14 +1619,6 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Sebruki",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human (Threnodite)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
     "name": "Sebruki Forescout",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
@@ -1672,14 +1632,6 @@ export const CHARACTERS = [
     "firstAppearance": "Rhythm of War",
     "species": "Spren (Honorspren)",
     "abilities": "Splinter",
-    "validFrom": 0
-  },
-  {
-    "name": "Shai",
-    "homeWorld": "Sel",
-    "firstAppearance": "The Emperor's Soul",
-    "species": "Human (MaiPon)",
-    "abilities": "Forger, Worldhopper",
     "validFrom": 0
   },
   {
@@ -1747,14 +1699,6 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Silence",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human (Threnodite)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
     "name": "Silence (Forescout) Montane",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
@@ -1816,14 +1760,6 @@ export const CHARACTERS = [
     "firstAppearance": "Oathbringer",
     "species": "Spren (Ashspren)",
     "abilities": "Dustbringer, Nahel Bond, Splinter",
-    "validFrom": 0
-  },
-  {
-    "name": "Spook",
-    "homeWorld": "Scadrial",
-    "firstAppearance": "The Final Empire",
-    "species": "Human (Skaa)",
-    "abilities": "Hemalurgy, Mistborn, Misting, Savant, Tineye",
     "validFrom": 0
   },
   {
@@ -1896,14 +1832,6 @@ export const CHARACTERS = [
     "firstAppearance": "The Way of Kings",
     "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
-    "validFrom": 0
-  },
-  {
-    "name": "Szeth",
-    "homeWorld": "Roshar",
-    "firstAppearance": "The Way of Kings",
-    "species": "Human (Shin)",
-    "abilities": "Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
   {
@@ -2215,14 +2143,6 @@ export const CHARACTERS = [
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
     "species": "Human (Veden)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
-    "name": "William Ann",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
@@ -2982,25 +2902,9 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Gavilar",
-    "homeWorld": "Roshar",
-    "firstAppearance": "The Way of Kings",
-    "species": "Human (Alethi)",
-    "abilities": "Shardbearer",
-    "validFrom": 0
-  },
-  {
     "name": "Gavilar Kholin",
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
-    "species": "Human (Alethi)",
-    "abilities": "Shardbearer",
-    "validFrom": 0
-  },
-  {
-    "name": "Gavinor",
-    "homeWorld": "Roshar",
-    "firstAppearance": "Oathbringer",
     "species": "Human (Alethi)",
     "abilities": "Shardbearer",
     "validFrom": 0
@@ -3382,14 +3286,6 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Lezian",
-    "homeWorld": "Roshar",
-    "firstAppearance": "Rhythm of War",
-    "species": "Singer (Fused)",
-    "abilities": "Fused, Nex-im",
-    "validFrom": 0
-  },
-  {
     "name": "Lezian the Pursuer",
     "homeWorld": "Roshar",
     "firstAppearance": "Rhythm of War",
@@ -3539,14 +3435,6 @@ export const VALID_ANSWERS = [
     "firstAppearance": "The Hero of Ages",
     "species": "Kandra (Seventh Generation)",
     "abilities": "Shapeshifting, Worldhopper",
-    "validFrom": 0
-  },
-  {
-    "name": "Miles Dagouter",
-    "homeWorld": "Scadrial",
-    "firstAppearance": "The Alloy of Law",
-    "species": "Human (Terris)",
-    "abilities": "Augur, Bloodmaker, Ferring, Hemalurgy, Misting, Savant, Twinborn",
     "validFrom": 0
   },
   {
@@ -3974,14 +3862,6 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Sebruki",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human (Threnodite)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
     "name": "Sebruki Forescout",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
@@ -3995,14 +3875,6 @@ export const VALID_ANSWERS = [
     "firstAppearance": "Rhythm of War",
     "species": "Spren (Honorspren)",
     "abilities": "Splinter",
-    "validFrom": 0
-  },
-  {
-    "name": "Shai",
-    "homeWorld": "Sel",
-    "firstAppearance": "The Emperor's Soul",
-    "species": "Human (MaiPon)",
-    "abilities": "Forger, Worldhopper",
     "validFrom": 0
   },
   {
@@ -4070,14 +3942,6 @@ export const VALID_ANSWERS = [
     "validFrom": 0
   },
   {
-    "name": "Silence",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human (Threnodite)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
     "name": "Silence (Forescout) Montane",
     "homeWorld": "Threnody",
     "firstAppearance": "Shadows for Silence in the Forests of Hell",
@@ -4139,14 +4003,6 @@ export const VALID_ANSWERS = [
     "firstAppearance": "Oathbringer",
     "species": "Spren (Ashspren)",
     "abilities": "Dustbringer, Nahel Bond, Splinter",
-    "validFrom": 0
-  },
-  {
-    "name": "Spook",
-    "homeWorld": "Scadrial",
-    "firstAppearance": "The Final Empire",
-    "species": "Human (Skaa)",
-    "abilities": "Hemalurgy, Mistborn, Misting, Savant, Tineye",
     "validFrom": 0
   },
   {
@@ -4219,14 +4075,6 @@ export const VALID_ANSWERS = [
     "firstAppearance": "The Way of Kings",
     "species": "Spren (Honorspren)",
     "abilities": "Nahel Bond, Splinter, Windrunner",
-    "validFrom": 0
-  },
-  {
-    "name": "Szeth",
-    "homeWorld": "Roshar",
-    "firstAppearance": "The Way of Kings",
-    "species": "Human (Shin)",
-    "abilities": "Knight Radiant, Shardbearer, Skybreaker, Surgebinder",
     "validFrom": 0
   },
   {
@@ -4538,14 +4386,6 @@ export const VALID_ANSWERS = [
     "homeWorld": "Roshar",
     "firstAppearance": "The Way of Kings",
     "species": "Human (Veden)",
-    "abilities": "Uninvested",
-    "validFrom": 0
-  },
-  {
-    "name": "William Ann",
-    "homeWorld": "Threnody",
-    "firstAppearance": "Shadows for Silence in the Forests of Hell",
-    "species": "Human (Threnodite)",
     "abilities": "Uninvested",
     "validFrom": 0
   },
