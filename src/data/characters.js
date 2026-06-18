@@ -779,7 +779,7 @@ export const CHARACTERS = [
     "validFrom": 0
   },
   {
-    "name": "Hoid (Wit Cephandrius Maxtori Midius Topaz Lunu'anaki)",
+    "name": "Hoid (Wit, Cephandrius, Maxtori, Midius, Topaz, Lunu'anaki)",
     "homeWorld": "Yolen",
     "firstAppearance": "Elantris",
     "species": "Human (Yolish)",
