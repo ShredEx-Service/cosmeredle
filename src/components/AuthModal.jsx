@@ -24,8 +24,12 @@ export default function AuthModal({ mode, onClose, onSwitch }) {
     } else {
       if (!username.trim()) { setError('Username is required'); setLoading(false); return; }
       const err = await signUp(email, password, username.trim());
-      if (err) setError(err.message);
-      else setSuccess('Check your email to confirm your account, then sign in.');
+      if (err) { setError(err.message); }
+      else {
+        const signInErr = await signIn(email, password);
+        if (signInErr) setError('Account created! Please sign in.');
+        else onClose();
+      }
     }
     setLoading(false);
   }
