@@ -6,6 +6,7 @@ import Practice from './pages/Practice.jsx';
 import Archive from './pages/Archive.jsx';
 import Leaderboard from './pages/Leaderboard.jsx';
 import Admin from './pages/Admin.jsx';
+import Suggest from './pages/Suggest.jsx';
 import { useAuth } from './contexts/AuthContext.jsx';
 import './App.css';
 
@@ -69,7 +70,11 @@ export default function App() {
     setMenuOpen(o => !o);
   }
 
-  const tabs = isAdmin ? [...TABS, { id: 'admin', label: 'Admin' }] : TABS;
+  const tabs = [
+    ...TABS,
+    { id: 'suggest', label: 'Suggest a Change' },
+    ...(isAdmin ? [{ id: 'admin', label: 'Admin' }] : []),
+  ];
 
   return (
     <div className="app">
@@ -128,6 +133,7 @@ export default function App() {
         {tab === 'archive' && <Archive />}
         {tab === 'practice' && <Practice />}
         {tab === 'leaderboard' && <Leaderboard />}
+        {tab === 'suggest' && <Suggest />}
         {tab === 'admin' && isAdmin && <Admin />}
       </main>
 
