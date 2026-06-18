@@ -1,0 +1,70 @@
+.cf-field { display: flex; flex-direction: column; gap: 4px; }
+
+.cf-field-highlight .cf-grid {
+  border-color: #c8a84b;
+}
+
+.cf-label { color: #888; font-size: 0.8rem; }
+.cf-count { color: #c8a84b; font-weight: 600; }
+.cf-changed { color: #c8a84b; font-size: 0.75rem; margin-left: 6px; }
+
+.cf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  background: #111;
+  border: 1px solid #3a2f10;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.cf-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #aaa;
+  cursor: pointer;
+  padding: 3px 4px;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.cf-item:hover { background: #1a1408; color: #ddd; }
+.cf-item.selected { color: #c8a84b; }
+.cf-item input { accent-color: #c8a84b; cursor: pointer; flex-shrink: 0; }
+
+.cf-add-row {
+  display: flex;
+  gap: 4px;
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.cf-add-input {
+  flex: 1;
+  background: #1a1408;
+  border: 1px solid #3a2f10;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 8px;
+  font-size: 0.78rem;
+  font-family: 'Georgia', serif;
+}
+
+.cf-add-input:focus { outline: none; border-color: #c8a84b; }
+.cf-add-input::placeholder { color: #555; }
+
+.cf-add-btn {
+  background: #2a1f08;
+  border: 1px solid #c8a84b;
+  border-radius: 5px;
+  color: #c8a84b;
+  font-size: 1rem;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.cf-add-btn:hover { background: #3a2f10; }

@@ -1,155 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../utils/supabase.js';
+import { ChecklistField } from '../components/CharacterForm.jsx';
 import './Admin.css';
-
-const OPTIONS = {
-  home_world: [
-    'Ashyn','Canticle','Dhatri','First of the Sun','Komashi','Lumar','Nalthis',
-    'Roshar','Scadrial','Sel','Silverlight','Taldain','The Grand Apparatus',
-    'Threnody','Unknown','Unspecified','Yolen',
-  ],
-  first_appearance: [
-    'Allomancer Jak and the Pits of Eltania','Dawnshard','Edgedancer','Elantris',
-    'Isles of the Emberdark','Oathbringer','Rhythm of War','Secret History',
-    'Shadows for Silence in the Forests of Hell','Sixth of the Dusk',
-    'The Alloy of Law','The Bands of Mourning','The Eleventh Metal',
-    "The Emperor's Soul",'The Final Empire','The Hero of Ages','The Lost Metal',
-    'The Sunlit Man','The Way of Kings','The Well of Ascension',
-    'Tress of the Emerald Sea','Warbreaker','White Sand','Wind and Truth',
-    'Words of Radiance','Yumi and the Nightmare Painter',
-  ],
-  species: [
-    'Aether (Roseite)','Aviar (Streamer)','Aviar (Unspecified)','Dragon',
-    'Dragon (Unspecified)','Grass (Shin)','Greatshell (Tai-na)','Horse (Ryshadium)',
-    'Human (Alethi)','Human (Aonic)','Human (Ashyn)','Human (Azish)',
-    'Human (Darksider)','Human (Daysider)',"Human (Diggen's Point)",'Human (Dula)',
-    'Human (Dzhamarian)','Human (Eelakin)','Human (Elendel)','Human (Fjordell)',
-    'Human (Grand)','Human (Hallandren)','Human (Herdazian)','Human (Idrian)',
-    'Human (Iriali)','Human (Islands of Lobu)','Human (JinDo)',
-    'Human (Kharbranthian)','Human (Khlenni)','Human (Koloss)','Human (Lumaran)',
-    'Human (MaiPon)','Human (Malwish)','Human (Nagadan)','Human (Noble)',
-    'Human (Pahn Kahl)','Human (Reshi)','Human (Riran)','Human (Shin)',
-    'Human (Skaa)','Human (Southern Scadrian)','Human (Teo)','Human (Terris)',
-    'Human (Thaylen)','Human (Threnodite)','Human (Torish)','Human (Unkalaki)',
-    'Human (Unspecified)','Human (Vaxilian)','Human (Veden)','Human (Yolish)',
-    'Kandra (Seventh Generation)','Kandra (Third Generation)','Kandra (Unspecified)',
-    'Koloss (Human)','Larkin','Lawnark','Plant (Stick)','Shade',
-    'Sho Del (Unspecified)','Siah (Aimian)','Singer (Fused)','Singer (Listener)',
-    'Sleepless','Sleepless (Aimian)','Sleepless (Nagadan)','Spren (Ancient)',
-    'Spren (Ashspren)','Spren (Bondsmith)','Spren (Cryptic)',
-    'Spren (Culitvation spren)','Spren (Highspren)','Spren (Honorspren)',
-    'Spren (Inkspren)','Spren (Mistspren)','Spren (Peakspren)','Spren (Reacher)',
-    'Spren (Unmade)','Sword (nimi)','Unknown',
-  ],
-  abilities: [
-    'Aether','Aetherbound','Augur','Avatar','Aviar Bond','Awakener',
-    'Blessing of Potency','Blessing of Presence','Bloodmaker','Bloodsealer',
-    'Bondsmith','Brute','Charred','ChayShan','Cognitive Shadow','Coinshot',
-    'Comedic timing','Consumes Investiture','Control of Roseite','Curse of Kind',
-    'Dakhor','Dawnshard','Deadeye','Duralumin Gnat','Dustbringer','Edgedancer',
-    'Elantrian','Elsecaller','Fannahn-im','Ferring','Feruchemist','Forger',
-    'Forms of Power','Fused','Hemalurgy','Herald','Honorbearer','Hordelings',
-    'Immortal','Knight Radiant','Leecher','Lifeless','Lightweaver','Luhel Bond',
-    'Lurcher','Mastrell','Mental shielding','Mistborn','Misting','Nahel Bond',
-    'Navigator','Nex-im','Nightmare','Nightmare Painter','Old Magic','Pewterarm',
-    'Precognition','Pulser','Returned','Rioter','Royal Locks','Sand master',
-    'Savant','Seeker','Seer','Shanay-im','Shapeshifter','Shapeshifting',
-    'Shard Vessel','Shardbearer','Sighted','Skimmer','Skybreaker','Slider',
-    'Sliver','Smoker','Soother','Splinter','Spore Eater','Sprouter',
-    'Starcarved','Starmarks','Stoneward','Surgebinder','Tineye','Truthwatcher',
-    'Twinborn','Undermastrell','Uninvested','Unknown','Unnamed electricity power',
-    'Unoathed','Voidbinder','Willshaper','Windrunner','Windrunner Squire',
-    'Windwhisperer','Worldhopper','Yoki-Hijo',
-  ],
-};
-
-const MULTI_FIELDS = new Set(['abilities']);
-
-function ChecklistField({ label, fieldKey, value, onChange }) {
-  const isMulti = MULTI_FIELDS.has(fieldKey);
-  const [extraOptions, setExtraOptions] = useState([]);
-  const [addText, setAddText] = useState('');
-  const addInputRef = useRef(null);
-
-  const base = OPTIONS[fieldKey] || [];
-  const allOptions = [...base, ...extraOptions];
-
-  const selected = isMulti
-    ? value.split(',').map(s => s.trim()).filter(Boolean)
-    : value ? [value] : [];
-
-  function toggle(opt) {
-    if (isMulti) {
-      const next = selected.includes(opt)
-        ? selected.filter(s => s !== opt)
-        : [...selected, opt].sort();
-      onChange(next.join(', '));
-    } else {
-      onChange(selected[0] === opt ? '' : opt);
-    }
-  }
-
-  function addCustom() {
-    const val = addText.trim();
-    if (!val) return;
-    if (!allOptions.includes(val)) setExtraOptions(e => [...e, val]);
-    if (isMulti) {
-      if (!selected.includes(val)) onChange([...selected, val].sort().join(', '));
-    } else {
-      onChange(val);
-    }
-    setAddText('');
-    addInputRef.current?.focus();
-  }
-
-  return (
-    <div className="admin-field">
-      <label className="admin-label">
-        {label}
-        {selected.length > 0 && (
-          <span className="admin-abilities-count">
-            {isMulti ? ` (${selected.length} selected)` : `: ${selected[0]}`}
-          </span>
-        )}
-      </label>
-      <div className="admin-abilities-grid">
-        {allOptions.map(opt => {
-          const isSelected = selected.includes(opt);
-          return (
-            <label key={opt} className={`admin-ability-item${isSelected ? ' selected' : ''}`}>
-              <input
-                type={isMulti ? 'checkbox' : 'radio'}
-                checked={isSelected}
-                onChange={() => toggle(opt)}
-              />
-              {opt}
-            </label>
-          );
-        })}
-        <div className="admin-add-option">
-          <input
-            ref={addInputRef}
-            className="admin-add-input"
-            type="text"
-            placeholder="Add new…"
-            value={addText}
-            onChange={e => setAddText(e.target.value)}
-            onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addCustom(); } }}
-          />
-          <button type="button" className="admin-add-btn" onClick={addCustom}>+</button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-const EMPTY_FORM = {
-  name: '',
-  home_world: '',
-  first_appearance: '',
-  species: '',
-  abilities: '',
-};
 
 const COLUMNS = [
   { key: 'home_world', label: 'Home World' },
@@ -157,6 +9,113 @@ const COLUMNS = [
   { key: 'species', label: 'Species' },
   { key: 'abilities', label: 'Abilities' },
 ];
+
+const EMPTY_FORM = { name: '', home_world: '', first_appearance: '', species: '', abilities: '' };
+
+// ── Suggestions panel ──────────────────────────────────────────────────────────
+
+function SuggestionsPanel({ onApproved }) {
+  const [suggestions, setSuggestions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [expanded, setExpanded] = useState(null);
+  const [busy, setBusy] = useState(null);
+
+  useEffect(() => { fetchSuggestions(); }, []);
+
+  async function fetchSuggestions() {
+    setLoading(true);
+    const { data } = await supabase
+      .from('suggestions')
+      .select('*, profiles(username)')
+      .eq('status', 'pending')
+      .order('submitted_at');
+    setSuggestions(data || []);
+    setLoading(false);
+  }
+
+  async function approve(s) {
+    setBusy(s.id);
+    const payload = {
+      name: s.name,
+      home_world: s.home_world,
+      first_appearance: s.first_appearance,
+      species: s.species,
+      abilities: s.abilities,
+    };
+    if (s.type === 'new') {
+      await supabase.from('characters').insert([payload]);
+    } else {
+      await supabase.from('characters').update(payload).eq('id', s.character_id);
+    }
+    await supabase.from('suggestions').update({ status: 'approved' }).eq('id', s.id);
+    setBusy(null);
+    fetchSuggestions();
+    onApproved();
+  }
+
+  async function reject(s) {
+    setBusy(s.id);
+    await supabase.from('suggestions').update({ status: 'rejected' }).eq('id', s.id);
+    setBusy(null);
+    fetchSuggestions();
+  }
+
+  if (loading) return null;
+  if (suggestions.length === 0) return null;
+
+  return (
+    <div className="suggestions-panel">
+      <h3 className="suggestions-title">Pending Suggestions ({suggestions.length})</h3>
+      {suggestions.map(s => (
+        <div key={s.id} className={`suggestion-card${expanded === s.id ? ' expanded' : ''}`}>
+          <div className="suggestion-header" onClick={() => setExpanded(expanded === s.id ? null : s.id)}>
+            <div className="suggestion-meta">
+              <span className={`suggestion-type ${s.type}`}>{s.type === 'new' ? 'New' : 'Edit'}</span>
+              <span className="suggestion-name">{s.name}</span>
+              <span className="suggestion-by">{s.profiles?.username || 'Anonymous'}</span>
+            </div>
+            <span className="suggestion-chevron">{expanded === s.id ? '▲' : '▼'}</span>
+          </div>
+
+          {expanded === s.id && (
+            <div className="suggestion-body">
+              {COLUMNS.map(col => (
+                <div key={col.key} className="suggestion-row">
+                  <span className="suggestion-field-label">{col.label}</span>
+                  <span className="suggestion-field-value">{s[col.key] || '—'}</span>
+                </div>
+              ))}
+              {s.notes && (
+                <div className="suggestion-row">
+                  <span className="suggestion-field-label">Notes</span>
+                  <span className="suggestion-field-value suggestion-notes">{s.notes}</span>
+                </div>
+              )}
+              <div className="suggestion-actions">
+                <button
+                  className="suggestion-btn-approve"
+                  disabled={busy === s.id}
+                  onClick={() => approve(s)}
+                >
+                  {busy === s.id ? '…' : 'Approve'}
+                </button>
+                <button
+                  className="suggestion-btn-reject"
+                  disabled={busy === s.id}
+                  onClick={() => reject(s)}
+                >
+                  Reject
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ── Main admin page ────────────────────────────────────────────────────────────
 
 export default function Admin() {
   const [characters, setCharacters] = useState([]);
@@ -167,15 +126,16 @@ export default function Admin() {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
   const [deleteConfirm, setDeleteConfirm] = useState(false);
+  const [refreshKey, setRefreshKey] = useState(0);
 
-  useEffect(() => { fetchAll(); }, []);
+  useEffect(() => { fetchAll(); }, [refreshKey]);
 
   async function fetchAll() {
     setLoading(true);
-    const { data, error } = await supabase.from('characters').select('*');
-    if (!error) {
+    const { data } = await supabase.from('characters').select('*');
+    if (data) {
       const sortKey = s => s.name.replace(/^[^a-zA-Z]+/, '').toLowerCase();
-      setCharacters((data || []).sort((a, b) => sortKey(a).localeCompare(sortKey(b))));
+      setCharacters(data.sort((a, b) => sortKey(a).localeCompare(sortKey(b))));
     }
     setLoading(false);
   }
@@ -215,10 +175,7 @@ export default function Admin() {
       const { error } = await supabase.from('characters').insert([form]);
       if (error) { setError(error.message); setSaving(false); return; }
     } else {
-      const { error } = await supabase
-        .from('characters')
-        .update(form)
-        .eq('id', editing.id);
+      const { error } = await supabase.from('characters').update(form).eq('id', editing.id);
       if (error) { setError(error.message); setSaving(false); return; }
     }
 
@@ -241,6 +198,8 @@ export default function Admin() {
 
   return (
     <div className="admin-page">
+      <SuggestionsPanel onApproved={() => setRefreshKey(k => k + 1)} />
+
       <div className="admin-header">
         <h2 className="admin-title">Characters ({characters.length})</h2>
         <button className="admin-btn-new" onClick={startNew}>+ Add Character</button>
@@ -293,7 +252,6 @@ export default function Admin() {
                   required
                 />
               </div>
-
               <ChecklistField label="Home World" fieldKey="home_world"
                 value={form.home_world} onChange={v => setForm(f => ({ ...f, home_world: v }))} />
               <ChecklistField label="First Appearance" fieldKey="first_appearance"
@@ -304,7 +262,6 @@ export default function Admin() {
                 value={form.abilities} onChange={v => setForm(f => ({ ...f, abilities: v }))} />
 
               {error && <p className="admin-error">{error}</p>}
-
               <div className="admin-modal-actions">
                 <button type="submit" className="admin-btn-save" disabled={saving}>
                   {saving ? 'Saving...' : 'Save'}
