@@ -29,16 +29,22 @@ export function AuthProvider({ children }) {
       .then(({ data }) => setProfile(data));
   }, [user]);
 
-  function signInWithGoogle() {
-    supabase.auth.signInWithOAuth({ provider: 'google' });
+  async function signUp(email, password, username) {
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { data: { full_name: username } },
+    });
+    return error;
   }
 
-  function signInWithDiscord() {
-    supabase.auth.signInWithOAuth({ provider: 'discord' });
+  async function signIn(email, password) {
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    return error;
   }
 
-  function signOut() {
-    supabase.auth.signOut();
+  async function signOut() {
+    await supabase.auth.signOut();
   }
 
   return (
@@ -47,8 +53,8 @@ export function AuthProvider({ children }) {
       profile,
       loading,
       isAdmin: !!profile?.is_admin,
-      signInWithGoogle,
-      signInWithDiscord,
+      signUp,
+      signIn,
       signOut,
     }}>
       {children}

@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import AuthModal from './components/AuthModal.jsx';
 import Game from './pages/Game.jsx';
 import Practice from './pages/Practice.jsx';
 import Archive from './pages/Archive.jsx';
@@ -36,7 +37,8 @@ function getTimeUntilNextDay() {
 
 export default function App() {
   const [tab, setTab] = useState(() => localStorage.getItem('cosmeredle_tab') || 'daily');
-  const { user, profile, isAdmin, signInWithGoogle, signInWithDiscord, signOut } = useAuth();
+  const { user, profile, isAdmin, signOut } = useAuth();
+  const [authMode, setAuthMode] = useState(null); // 'signin' | 'signup' | null
 
   function switchTab(id) {
     setTab(id);
@@ -103,11 +105,11 @@ export default function App() {
                   </>
                 ) : (
                   <>
-                    <button className="nav-dropdown-item" onClick={signInWithGoogle}>
-                      Sign in with Google
+                    <button className="nav-dropdown-item" onClick={() => { setAuthMode('signin'); setMenuOpen(false); }}>
+                      Sign In
                     </button>
-                    <button className="nav-dropdown-item" onClick={signInWithDiscord}>
-                      Sign in with Discord
+                    <button className="nav-dropdown-item" onClick={() => { setAuthMode('signup'); setMenuOpen(false); }}>
+                      Create Account
                     </button>
                   </>
                 )}
@@ -117,6 +119,8 @@ export default function App() {
           </div>
         </div>
       </header>
+
+      {authMode && <AuthModal mode={authMode} onClose={() => setAuthMode(null)} onSwitch={setAuthMode} />}
 
       <main className="app-main">
         {tab === 'daily' && <Game />}
