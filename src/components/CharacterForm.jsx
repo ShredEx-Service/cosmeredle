@@ -64,13 +64,13 @@ export const OPTIONS = {
 
 const MULTI_FIELDS = new Set(['abilities']);
 
-export function ChecklistField({ label, fieldKey, value, onChange, highlight }) {
+export function ChecklistField({ label, fieldKey, value, onChange, highlight, optionsList }) {
   const isMulti = MULTI_FIELDS.has(fieldKey);
   const [extraOptions, setExtraOptions] = useState([]);
   const [addText, setAddText] = useState('');
   const addInputRef = useRef(null);
 
-  const base = OPTIONS[fieldKey] || [];
+  const base = optionsList || OPTIONS[fieldKey] || [];
   const allOptions = [...base, ...extraOptions];
 
   const selected = isMulti

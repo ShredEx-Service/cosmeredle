@@ -4,12 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx'
 import { CharactersProvider } from './contexts/CharactersContext.jsx'
+import { OptionsProvider } from './contexts/OptionsContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
       <CharactersProvider>
-        <App />
+        <OptionsProvider>
+          <App />
+        </OptionsProvider>
       </CharactersProvider>
     </AuthProvider>
   </StrictMode>,

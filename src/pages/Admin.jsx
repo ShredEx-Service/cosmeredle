@@ -1,7 +1,87 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../utils/supabase.js';
 import { ChecklistField } from '../components/CharacterForm.jsx';
+import { useOptions } from '../contexts/OptionsContext.jsx';
 import './Admin.css';
+
+const CATEGORY_LABELS = {
+  home_world: 'Home World',
+  first_appearance: 'First Appearance',
+  species: 'Species',
+  abilities: 'Abilities',
+};
+
+function OptionsManager() {
+  const { options, refetch } = useOptions();
+  const [activeTab, setActiveTab] = useState('home_world');
+  const [addText, setAddText] = useState('');
+  const [saving, setSaving] = useState(false);
+  const [deleteConfirm, setDeleteConfirm] = useState(null);
+
+  async function addOption() {
+    const val = addText.trim();
+    if (!val) return;
+    setSaving(true);
+    await supabase.from('category_options').insert([{ category: activeTab, value: val }]);
+    setAddText('');
+    setSaving(false);
+    refetch();
+  }
+
+  async function deleteOption(value) {
+    await supabase.from('category_options').delete()
+      .eq('category', activeTab).eq('value', value);
+    setDeleteConfirm(null);
+    refetch();
+  }
+
+  const current = options[activeTab] || [];
+
+  return (
+    <div className="options-manager">
+      <h3 className="options-title">Manage Options</h3>
+      <div className="options-tabs">
+        {Object.entries(CATEGORY_LABELS).map(([key, label]) => (
+          <button
+            key={key}
+            className={`options-tab${activeTab === key ? ' active' : ''}`}
+            onClick={() => { setActiveTab(key); setDeleteConfirm(null); setAddText(''); }}
+          >
+            {label} ({(options[key] || []).length})
+          </button>
+        ))}
+      </div>
+      <div className="options-add-row">
+        <input
+          className="options-add-input"
+          type="text"
+          placeholder={`Add new ${CATEGORY_LABELS[activeTab]}…`}
+          value={addText}
+          onChange={e => setAddText(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addOption(); } }}
+        />
+        <button className="options-add-btn" onClick={addOption} disabled={saving || !addText.trim()}>
+          {saving ? '…' : '+ Add'}
+        </button>
+      </div>
+      <div className="options-list">
+        {current.map(val => (
+          <div key={val} className="options-item">
+            <span className="options-item-label">{val}</span>
+            {deleteConfirm === val ? (
+              <>
+                <button className="options-btn-confirm" onClick={() => deleteOption(val)}>Delete</button>
+                <button className="options-btn-cancel" onClick={() => setDeleteConfirm(null)}>Cancel</button>
+              </>
+            ) : (
+              <button className="options-btn-delete" onClick={() => setDeleteConfirm(val)}>✕</button>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const COLUMNS = [
   { key: 'home_world', label: 'Home World' },
@@ -118,6 +198,7 @@ function SuggestionsPanel({ onApproved }) {
 // ── Main admin page ────────────────────────────────────────────────────────────
 
 export default function Admin() {
+  const { options } = useOptions();
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
@@ -199,6 +280,7 @@ export default function Admin() {
   return (
     <div className="admin-page">
       <SuggestionsPanel onApproved={() => setRefreshKey(k => k + 1)} />
+      <OptionsManager />
 
       <div className="admin-header">
         <h2 className="admin-title">Characters ({characters.length})</h2>
@@ -253,13 +335,17 @@ export default function Admin() {
                 />
               </div>
               <ChecklistField label="Home World" fieldKey="home_world"
-                value={form.home_world} onChange={v => setForm(f => ({ ...f, home_world: v }))} />
+                value={form.home_world} onChange={v => setForm(f => ({ ...f, home_world: v }))}
+                optionsList={options.home_world} />
               <ChecklistField label="First Appearance" fieldKey="first_appearance"
-                value={form.first_appearance} onChange={v => setForm(f => ({ ...f, first_appearance: v }))} />
+                value={form.first_appearance} onChange={v => setForm(f => ({ ...f, first_appearance: v }))}
+                optionsList={options.first_appearance} />
               <ChecklistField label="Species" fieldKey="species"
-                value={form.species} onChange={v => setForm(f => ({ ...f, species: v }))} />
+                value={form.species} onChange={v => setForm(f => ({ ...f, species: v }))}
+                optionsList={options.species} />
               <ChecklistField label="Abilities" fieldKey="abilities"
-                value={form.abilities} onChange={v => setForm(f => ({ ...f, abilities: v }))} />
+                value={form.abilities} onChange={v => setForm(f => ({ ...f, abilities: v }))}
+                optionsList={options.abilities} />
 
               {error && <p className="admin-error">{error}</p>}
               <div className="admin-modal-actions">

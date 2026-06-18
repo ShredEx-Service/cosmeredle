@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../utils/supabase.js';
 import { useAuth } from '../contexts/AuthContext.jsx';
 import { ChecklistField } from '../components/CharacterForm.jsx';
+import { useOptions } from '../contexts/OptionsContext.jsx';
 import './Suggest.css';
 
 const EMPTY = { name: '', home_world: '', first_appearance: '', species: '', abilities: '', notes: '' };
@@ -10,6 +11,7 @@ const LABELS = { home_world: 'Home World', first_appearance: 'First Appearance',
 
 export default function Suggest() {
   const { user } = useAuth();
+  const { options } = useOptions();
   const [characters, setCharacters] = useState([]);
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState(null); // null = new character
@@ -166,6 +168,7 @@ export default function Suggest() {
               value={form[key]}
               onChange={v => setForm(f => ({ ...f, [key]: v }))}
               highlight={isChanged(key)}
+              optionsList={options[key]}
             />
           ))}
 
