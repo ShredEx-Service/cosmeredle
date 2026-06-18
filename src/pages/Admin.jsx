@@ -156,7 +156,6 @@ const EMPTY_FORM = {
   first_appearance: '',
   species: '',
   abilities: '',
-  valid_from: 0,
 };
 
 export default function Admin() {
@@ -196,7 +195,6 @@ export default function Admin() {
       first_appearance: char.first_appearance || '',
       species: char.species || '',
       abilities: char.abilities || '',
-      valid_from: char.valid_from ?? 0,
     });
     setEditing(char);
     setError('');
@@ -211,7 +209,7 @@ export default function Admin() {
     e.preventDefault();
     setSaving(true);
     setError('');
-    const payload = { ...form, valid_from: Number(form.valid_from) || 0 };
+    const payload = { ...form };
 
     if (editing === 'new') {
       const { error } = await supabase.from('characters').insert([payload]);
@@ -267,7 +265,6 @@ export default function Admin() {
                 <th>First Appearance</th>
                 <th>Species</th>
                 <th>Abilities</th>
-                <th>Valid From</th>
                 <th></th>
               </tr>
             </thead>
@@ -279,7 +276,6 @@ export default function Admin() {
                   <td>{char.first_appearance}</td>
                   <td>{char.species}</td>
                   <td className="admin-td-abilities">{char.abilities}</td>
-                  <td>{char.valid_from}</td>
                   <td className="admin-td-actions">
                     <button className="admin-btn-edit" onClick={() => startEdit(char)}>Edit</button>
                     {deleteConfirm === char.id ? (
@@ -339,18 +335,7 @@ export default function Admin() {
                 onChange={v => setForm(f => ({ ...f, abilities: v }))}
               />
 
-              <div className="admin-field">
-                <label className="admin-label">Valid From (puzzle #)</label>
-                <input
-                  className="admin-input"
-                  type="number"
-                  min="0"
-                  value={form.valid_from}
-                  onChange={e => setForm(f => ({ ...f, valid_from: e.target.value }))}
-                />
-              </div>
-
-              {error && <p className="admin-error">{error}</p>}
+{error && <p className="admin-error">{error}</p>}
               <div className="admin-modal-actions">
                 <button type="submit" className="admin-btn-save" disabled={saving}>
                   {saving ? 'Saving...' : 'Save'}
