@@ -21,7 +21,7 @@ const OPTIONS = {
   species: [
     'Aether (Roseite)','Aviar (Streamer)','Aviar (Unspecified)','Dragon',
     'Dragon (Unspecified)','Grass (Shin)','Greatshell (Tai-na)','Horse (Ryshadium)',
-    "Human (Alethi)",'Human (Aonic)','Human (Ashyn)','Human (Azish)',
+    'Human (Alethi)','Human (Aonic)','Human (Ashyn)','Human (Azish)',
     'Human (Darksider)','Human (Daysider)',"Human (Diggen's Point)",'Human (Dula)',
     'Human (Dzhamarian)','Human (Eelakin)','Human (Elendel)','Human (Fjordell)',
     'Human (Grand)','Human (Hallandren)','Human (Herdazian)','Human (Idrian)',
@@ -63,8 +63,6 @@ const OPTIONS = {
   ],
 };
 
-// For single-value fields (home_world, first_appearance, species)
-// For multi-value fields (abilities) — comma-separated
 const MULTI_FIELDS = new Set(['abilities']);
 
 function ChecklistField({ label, fieldKey, value, onChange }) {
@@ -96,10 +94,7 @@ function ChecklistField({ label, fieldKey, value, onChange }) {
     if (!val) return;
     if (!allOptions.includes(val)) setExtraOptions(e => [...e, val]);
     if (isMulti) {
-      if (!selected.includes(val)) {
-        const next = [...selected, val].sort();
-        onChange(next.join(', '));
-      }
+      if (!selected.includes(val)) onChange([...selected, val].sort().join(', '));
     } else {
       onChange(val);
     }
@@ -107,15 +102,13 @@ function ChecklistField({ label, fieldKey, value, onChange }) {
     addInputRef.current?.focus();
   }
 
-  const count = selected.length;
-
   return (
     <div className="admin-field">
       <label className="admin-label">
         {label}
-        {count > 0 && (
+        {selected.length > 0 && (
           <span className="admin-abilities-count">
-            {isMulti ? ` (${count} selected)` : `: ${selected[0]}`}
+            {isMulti ? ` (${selected.length} selected)` : `: ${selected[0]}`}
           </span>
         )}
       </label>
@@ -158,6 +151,13 @@ const EMPTY_FORM = {
   abilities: '',
 };
 
+const COLUMNS = [
+  { key: 'home_world', label: 'Home World' },
+  { key: 'first_appearance', label: 'First Appearance' },
+  { key: 'species', label: 'Species' },
+  { key: 'abilities', label: 'Abilities' },
+];
+
 export default function Admin() {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -166,15 +166,13 @@ export default function Admin() {
   const [form, setForm] = useState(EMPTY_FORM);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
-  const [deleteConfirm, setDeleteConfirm] = useState(null);
+  const [deleteConfirm, setDeleteConfirm] = useState(false);
 
   useEffect(() => { fetchAll(); }, []);
 
   async function fetchAll() {
     setLoading(true);
-    const { data, error } = await supabase
-      .from('characters')
-      .select('*');
+    const { data, error } = await supabase.from('characters').select('*');
     if (!error) {
       const sortKey = s => s.name.replace(/^[^a-zA-Z]+/, '').toLowerCase();
       setCharacters((data || []).sort((a, b) => sortKey(a).localeCompare(sortKey(b))));
@@ -185,6 +183,7 @@ export default function Admin() {
   function startNew() {
     setForm(EMPTY_FORM);
     setEditing('new');
+    setDeleteConfirm(false);
     setError('');
   }
 
@@ -197,11 +196,13 @@ export default function Admin() {
       abilities: char.abilities || '',
     });
     setEditing(char);
+    setDeleteConfirm(false);
     setError('');
   }
 
   function cancelEdit() {
     setEditing(null);
+    setDeleteConfirm(false);
     setError('');
   }
 
@@ -209,15 +210,14 @@ export default function Admin() {
     e.preventDefault();
     setSaving(true);
     setError('');
-    const payload = { ...form };
 
     if (editing === 'new') {
-      const { error } = await supabase.from('characters').insert([payload]);
+      const { error } = await supabase.from('characters').insert([form]);
       if (error) { setError(error.message); setSaving(false); return; }
     } else {
       const { error } = await supabase
         .from('characters')
-        .update(payload)
+        .update(form)
         .eq('id', editing.id);
       if (error) { setError(error.message); setSaving(false); return; }
     }
@@ -227,10 +227,11 @@ export default function Admin() {
     fetchAll();
   }
 
-  async function deleteChar(id) {
-    const { error } = await supabase.from('characters').delete().eq('id', id);
+  async function deleteChar() {
+    const { error } = await supabase.from('characters').delete().eq('id', editing.id);
     if (error) { setError(error.message); return; }
-    setDeleteConfirm(null);
+    setEditing(null);
+    setDeleteConfirm(false);
     fetchAll();
   }
 
@@ -256,47 +257,30 @@ export default function Admin() {
       {loading ? (
         <p className="admin-loading">Loading...</p>
       ) : (
-        <div className="admin-table-wrap">
-          <table className="admin-table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>World</th>
-                <th>First Appearance</th>
-                <th>Species</th>
-                <th>Abilities</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              {filtered.map(char => (
-                <tr key={char.id}>
-                  <td className="admin-td-name">{char.name}</td>
-                  <td>{char.home_world}</td>
-                  <td>{char.first_appearance}</td>
-                  <td>{char.species}</td>
-                  <td className="admin-td-abilities">{char.abilities}</td>
-                  <td className="admin-td-actions">
-                    <button className="admin-btn-edit" onClick={() => startEdit(char)}>Edit</button>
-                    {deleteConfirm === char.id ? (
-                      <>
-                        <button className="admin-btn-confirm-delete" onClick={() => deleteChar(char.id)}>Confirm</button>
-                        <button className="admin-btn-cancel" onClick={() => setDeleteConfirm(null)}>Cancel</button>
-                      </>
-                    ) : (
-                      <button className="admin-btn-delete" onClick={() => setDeleteConfirm(char.id)}>Delete</button>
-                    )}
-                  </td>
-                </tr>
+        <div className="admin-card-list">
+          <div className="admin-card-header">
+            <div className="admin-cell admin-cell-name">Name</div>
+            {COLUMNS.map(col => (
+              <div key={col.key} className="admin-cell">{col.label}</div>
+            ))}
+          </div>
+          {filtered.map(char => (
+            <div key={char.id} className="admin-card" onClick={() => startEdit(char)}>
+              <div className="admin-cell admin-cell-name">{char.name}</div>
+              {COLUMNS.map(col => (
+                <div key={col.key} className="admin-cell admin-cell-value">
+                  {char[col.key] || '—'}
+                </div>
               ))}
-            </tbody>
-          </table>
+            </div>
+          ))}
         </div>
       )}
 
       {editing && (
         <div className="admin-modal-overlay" onClick={e => { if (e.target === e.currentTarget) cancelEdit(); }}>
           <div className="admin-modal">
+            <button className="admin-modal-close" onClick={cancelEdit}>✕</button>
             <h3 className="admin-modal-title">{editing === 'new' ? 'Add Character' : 'Edit Character'}</h3>
             <form onSubmit={saveForm} className="admin-form">
               <div className="admin-field">
@@ -310,37 +294,32 @@ export default function Admin() {
                 />
               </div>
 
-              <ChecklistField
-                label="Home World"
-                fieldKey="home_world"
-                value={form.home_world}
-                onChange={v => setForm(f => ({ ...f, home_world: v }))}
-              />
-              <ChecklistField
-                label="First Appearance"
-                fieldKey="first_appearance"
-                value={form.first_appearance}
-                onChange={v => setForm(f => ({ ...f, first_appearance: v }))}
-              />
-              <ChecklistField
-                label="Species"
-                fieldKey="species"
-                value={form.species}
-                onChange={v => setForm(f => ({ ...f, species: v }))}
-              />
-              <ChecklistField
-                label="Abilities"
-                fieldKey="abilities"
-                value={form.abilities}
-                onChange={v => setForm(f => ({ ...f, abilities: v }))}
-              />
+              <ChecklistField label="Home World" fieldKey="home_world"
+                value={form.home_world} onChange={v => setForm(f => ({ ...f, home_world: v }))} />
+              <ChecklistField label="First Appearance" fieldKey="first_appearance"
+                value={form.first_appearance} onChange={v => setForm(f => ({ ...f, first_appearance: v }))} />
+              <ChecklistField label="Species" fieldKey="species"
+                value={form.species} onChange={v => setForm(f => ({ ...f, species: v }))} />
+              <ChecklistField label="Abilities" fieldKey="abilities"
+                value={form.abilities} onChange={v => setForm(f => ({ ...f, abilities: v }))} />
 
-{error && <p className="admin-error">{error}</p>}
+              {error && <p className="admin-error">{error}</p>}
+
               <div className="admin-modal-actions">
                 <button type="submit" className="admin-btn-save" disabled={saving}>
                   {saving ? 'Saving...' : 'Save'}
                 </button>
                 <button type="button" className="admin-btn-cancel" onClick={cancelEdit}>Cancel</button>
+                {editing !== 'new' && (
+                  deleteConfirm ? (
+                    <>
+                      <button type="button" className="admin-btn-confirm-delete" onClick={deleteChar}>Confirm Delete</button>
+                      <button type="button" className="admin-btn-cancel" onClick={() => setDeleteConfirm(false)}>No</button>
+                    </>
+                  ) : (
+                    <button type="button" className="admin-btn-delete" onClick={() => setDeleteConfirm(true)}>Delete</button>
+                  )
+                )}
               </div>
             </form>
           </div>
