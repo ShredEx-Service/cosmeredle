@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { supabase } from '../utils/supabase.js';
 import { useAuth } from '../contexts/AuthContext.jsx';
 import { ChecklistField } from '../components/CharacterForm.jsx';
@@ -14,6 +14,8 @@ export default function Suggest() {
   const { options } = useOptions();
   const [characters, setCharacters] = useState([]);
   const [search, setSearch] = useState('');
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [highlighted, setHighlighted] = useState(-1);
   const [selected, setSelected] = useState(null); // null = new character
   const [form, setForm] = useState(EMPTY);
   const [original, setOriginal] = useState(null);
@@ -21,6 +23,7 @@ export default function Suggest() {
   const [done, setDone] = useState(false);
   const [error, setError] = useState('');
   const [showSearch, setShowSearch] = useState(true);
+  const listRef = useRef(null);
 
   useEffect(() => {
     supabase.from('characters').select('id, name, home_world, first_appearance, species, abilities')
@@ -32,9 +35,44 @@ export default function Suggest() {
       });
   }, []);
 
-  const filtered = characters.filter(c =>
-    c.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const normalize = s => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+  const filtered = characters.filter(c => {
+    const q = normalize(search);
+    return !q || normalize(c.name).includes(q);
+  }).sort((a, b) => {
+    const q = normalize(search);
+    if (!q) return 0;
+    const aStarts = normalize(a.name).startsWith(q);
+    const bStarts = normalize(b.name).startsWith(q);
+    if (aStarts && !bStarts) return -1;
+    if (!aStarts && bStarts) return 1;
+    return 0;
+  });
+
+  useEffect(() => {
+    if (highlighted >= 0 && listRef.current) {
+      const item = listRef.current.children[highlighted];
+      if (item) item.scrollIntoView({ block: 'nearest' });
+    }
+  }, [highlighted]);
+
+  function handleSearchKey(e) {
+    if (!dropdownOpen) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setHighlighted(h => Math.min(h + 1, filtered.length - 1));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setHighlighted(h => Math.max(h - 1, -1));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (highlighted >= 0 && filtered[highlighted]) {
+        pickCharacter(filtered[highlighted]);
+      }
+    } else if (e.key === 'Escape') {
+      setDropdownOpen(false);
+    }
+  }
 
   function pickCharacter(char) {
     const vals = {
@@ -49,6 +87,7 @@ export default function Suggest() {
     setOriginal(vals);
     setSelected(char);
     setShowSearch(false);
+    setDropdownOpen(false);
     setDone(false);
     setError('');
   }
@@ -58,6 +97,7 @@ export default function Suggest() {
     setOriginal(null);
     setSelected('new');
     setShowSearch(false);
+    setDropdownOpen(false);
     setDone(false);
     setError('');
   }
@@ -118,25 +158,34 @@ export default function Suggest() {
 
       {showSearch ? (
         <div className="suggest-search-wrap">
-          <input
-            className="suggest-search"
-            type="text"
-            placeholder="Search for a character to edit…"
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            autoFocus
-          />
+          <div className="suggest-input-wrapper">
+            <input
+              className="suggest-search"
+              type="text"
+              placeholder="Search for a character to edit…"
+              value={search}
+              onChange={e => { setSearch(e.target.value); setDropdownOpen(true); setHighlighted(-1); }}
+              onFocus={() => setDropdownOpen(true)}
+              onBlur={() => setTimeout(() => setDropdownOpen(false), 150)}
+              onKeyDown={handleSearchKey}
+              autoFocus
+            />
+            {dropdownOpen && filtered.length > 0 && (
+              <ul className="suggest-dropdown" ref={listRef}>
+                {filtered.map((c, i) => (
+                  <li
+                    key={c.id}
+                    className={i === highlighted ? 'highlighted' : ''}
+                    onMouseDown={() => pickCharacter(c)}
+                    onMouseEnter={() => setHighlighted(i)}
+                  >
+                    {c.name}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
           <button className="suggest-btn-new" onClick={pickNew}>+ Suggest a new character</button>
-          {search && (
-            <div className="suggest-results">
-              {filtered.slice(0, 20).map(c => (
-                <button key={c.id} className="suggest-result-item" onClick={() => pickCharacter(c)}>
-                  {c.name}
-                </button>
-              ))}
-              {filtered.length === 0 && <p className="suggest-no-results">No characters found</p>}
-            </div>
-          )}
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="suggest-form">
