@@ -2,6 +2,27 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../utils/supabase.js';
 import './Admin.css';
 
+const ALL_ABILITIES = [
+  'Aether', 'Aetherbound', 'Augur', 'Avatar', 'Aviar Bond', 'Awakener',
+  'Blessing of Potency', 'Blessing of Presence', 'Bloodmaker', 'Bloodsealer',
+  'Bondsmith', 'Brute', 'Charred', 'ChayShan', 'Cognitive Shadow', 'Coinshot',
+  'Comedic timing', 'Consumes Investiture', 'Control of Roseite', 'Curse of Kind',
+  'Dakhor', 'Dawnshard', 'Deadeye', 'Duralumin Gnat', 'Dustbringer', 'Edgedancer',
+  'Elantrian', 'Elsecaller', 'Fannahn-im', 'Ferring', 'Feruchemist', 'Forger',
+  'Forms of Power', 'Fused', 'Hemalurgy', 'Herald', 'Honorbearer', 'Hordelings',
+  'Immortal', 'Knight Radiant', 'Leecher', 'Lifeless', 'Lightweaver', 'Luhel Bond',
+  'Lurcher', 'Mastrell', 'Mental shielding', 'Mistborn', 'Misting', 'Nahel Bond',
+  'Navigator', 'Nex-im', 'Nightmare', 'Nightmare Painter', 'Old Magic', 'Pewterarm',
+  'Precognition', 'Pulser', 'Returned', 'Rioter', 'Royal Locks', 'Sand master',
+  'Savant', 'Seeker', 'Seer', 'Shanay-im', 'Shapeshifter', 'Shapeshifting',
+  'Shard Vessel', 'Shardbearer', 'Sighted', 'Skimmer', 'Skybreaker', 'Slider',
+  'Sliver', 'Smoker', 'Soother', 'Splinter', 'Spore Eater', 'Sprouter',
+  'Starcarved', 'Starmarks', 'Stoneward', 'Surgebinder', 'Tineye', 'Truthwatcher',
+  'Twinborn', 'Undermastrell', 'Uninvested', 'Unknown', 'Unnamed electricity power',
+  'Unoathed', 'Voidbinder', 'Willshaper', 'Windrunner', 'Windrunner Squire',
+  'Windwhisperer', 'Worldhopper', 'Yoki-Hijo',
+];
+
 const EMPTY_FORM = {
   name: '',
   home_world: '',
@@ -158,7 +179,6 @@ export default function Admin() {
                 { key: 'home_world', label: 'Home World' },
                 { key: 'first_appearance', label: 'First Appearance' },
                 { key: 'species', label: 'Species' },
-                { key: 'abilities', label: 'Abilities' },
               ].map(({ key, label, required }) => (
                 <div className="admin-field" key={key}>
                   <label className="admin-label">{label}</label>
@@ -171,6 +191,33 @@ export default function Admin() {
                   />
                 </div>
               ))}
+              <div className="admin-field">
+                <label className="admin-label">
+                  Abilities
+                  {form.abilities && <span className="admin-abilities-count"> ({form.abilities.split(',').filter(Boolean).length} selected)</span>}
+                </label>
+                <div className="admin-abilities-grid">
+                  {ALL_ABILITIES.map(ability => {
+                    const selected = form.abilities.split(',').map(a => a.trim()).filter(Boolean).includes(ability);
+                    return (
+                      <label key={ability} className={`admin-ability-item${selected ? ' selected' : ''}`}>
+                        <input
+                          type="checkbox"
+                          checked={selected}
+                          onChange={() => {
+                            const current = form.abilities.split(',').map(a => a.trim()).filter(Boolean);
+                            const next = selected
+                              ? current.filter(a => a !== ability)
+                              : [...current, ability].sort();
+                            setForm(f => ({ ...f, abilities: next.join(', ') }));
+                          }}
+                        />
+                        {ability}
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
               <div className="admin-field">
                 <label className="admin-label">Valid From (puzzle #)</label>
                 <input
