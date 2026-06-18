@@ -158,6 +158,7 @@ export default function Suggest() {
 
       {showSearch ? (
         <div className="suggest-search-wrap">
+          <button className="suggest-btn-new" onClick={pickNew}>+ Suggest a new character</button>
           <div className="suggest-input-wrapper">
             <input
               className="suggest-search"
@@ -185,7 +186,6 @@ export default function Suggest() {
               </ul>
             )}
           </div>
-          <button className="suggest-btn-new" onClick={pickNew}>+ Suggest a new character</button>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="suggest-form">
