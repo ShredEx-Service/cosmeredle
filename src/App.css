@@ -131,10 +131,24 @@ body {
 }
 
 .nav-dropdown-account {
-  padding: 8px 20px 4px;
-  font-size: 0.78rem;
-  color: #888;
+  padding: 10px 20px 6px;
+  font-size: 0.85rem;
+  color: #c8a84b;
+  font-weight: 700;
   white-space: nowrap;
+  border-bottom: 1px solid #3a2f10;
+  margin-bottom: 4px;
+}
+
+.nav-logged-in {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -18px;
+  font-size: 0.65rem;
+  color: #c8a84b;
+  white-space: nowrap;
+  opacity: 0.8;
 }
 
 .app-main { flex: 1; padding: 24px 16px; }

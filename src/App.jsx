@@ -81,6 +81,7 @@ export default function App() {
             <p className="app-subtitle">Guess the Cosmere character</p>
           </div>
           <div className="nav-menu" ref={menuRef}>
+            {user && <span className="nav-logged-in">{profile?.username || user.email}</span>}
             <button className="hamburger-btn" onClick={openMenu} aria-label="Menu">
               <span /><span /><span />
             </button>

@@ -71,8 +71,24 @@ for (const c of characters) {
   else if (!cPast && !ePast) { if (c.validFrom < existing.validFrom) byName.set(c.name, c); }
 }
 
+// Drop standalone nickname entries when a "Full Name (Nickname)" entry exists with identical data
+function dataMatches(a, b) {
+  return a.homeWorld === b.homeWorld && a.firstAppearance === b.firstAppearance &&
+    a.species === b.species && a.abilities === b.abilities;
+}
+const allEntries = [...byName.values()];
+const nicknameDupes = new Set();
+for (const c of allEntries) {
+  const m = c.name.match(/\((.*?)\)\s*$/);
+  if (!m) continue;
+  const nickname = m[1].trim();
+  const standalone = allEntries.find(o => o.name === nickname);
+  if (standalone && dataMatches(c, standalone)) nicknameDupes.add(standalone.name);
+}
+const filtered = allEntries.filter(c => !nicknameDupes.has(c.name));
+
 const sortKey = s => s.replace(/['"]/g, '').trim().toLowerCase();
-const deduped = [...byName.values()].sort((a, b) => sortKey(a.name).localeCompare(sortKey(b.name)));
+const deduped = filtered.sort((a, b) => sortKey(a.name).localeCompare(sortKey(b.name)));
 const validAnswers = deduped.filter(c => c.validFrom <= TODAY);
 
 const output = `// Auto-generated from Google Sheets — do not edit manually
