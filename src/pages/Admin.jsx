@@ -40,9 +40,9 @@ function OptionsManager() {
   async function saveEdit(oldValue) {
     const newVal = editText.trim();
     if (!newVal || newVal === oldValue) { setEditing(null); return; }
-    await supabase.from('category_options')
-      .update({ value: newVal })
+    await supabase.from('category_options').delete()
       .eq('category', activeTab).eq('value', oldValue);
+    await supabase.from('category_options').insert([{ category: activeTab, value: newVal }]);
     setEditing(null);
     refetch();
   }

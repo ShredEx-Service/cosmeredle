@@ -8,6 +8,8 @@ export function OptionsProvider({ children }) {
   const [options, setOptions] = useState(STATIC_OPTIONS);
   const [loaded, setLoaded] = useState(false);
 
+  const SEED_KEY = 'cosmeredle_options_seeded';
+
   function buildOptions(rows) {
     const merged = { home_world: [], first_appearance: [], species: [], abilities: [] };
     for (const row of rows) {
@@ -29,24 +31,28 @@ export function OptionsProvider({ children }) {
       return;
     }
 
-    // Seed any static options not yet in Supabase (one-time migration)
-    const existing = new Set(data.map(r => `${r.category}::${r.value}`));
-    const toInsert = [];
-    for (const [cat, vals] of Object.entries(STATIC_OPTIONS)) {
-      for (const val of vals) {
-        if (!existing.has(`${cat}::${val}`)) {
-          toInsert.push({ category: cat, value: val });
+    // Seed static options once — after that, Supabase is the sole source of truth
+    if (!localStorage.getItem(SEED_KEY)) {
+      const existing = new Set(data.map(r => `${r.category}::${r.value}`));
+      const toInsert = [];
+      for (const [cat, vals] of Object.entries(STATIC_OPTIONS)) {
+        for (const val of vals) {
+          if (!existing.has(`${cat}::${val}`)) {
+            toInsert.push({ category: cat, value: val });
+          }
         }
       }
-    }
-
-    if (toInsert.length > 0) {
-      await supabase.from('category_options').insert(toInsert);
-      const { data: seeded } = await supabase
-        .from('category_options')
-        .select('category, value')
-        .order('value');
-      buildOptions(seeded || []);
+      if (toInsert.length > 0) {
+        await supabase.from('category_options').insert(toInsert);
+        const { data: seeded } = await supabase
+          .from('category_options')
+          .select('category, value')
+          .order('value');
+        buildOptions(seeded || []);
+      } else {
+        buildOptions(data);
+      }
+      localStorage.setItem(SEED_KEY, 'true');
     } else {
       buildOptions(data);
     }
