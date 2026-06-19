@@ -14,19 +14,21 @@ const CATEGORY_LABELS = {
 function OptionsManager() {
   const { options, refetch } = useOptions();
   const [activeTab, setActiveTab] = useState('home_world');
-  const [addText, setAddText] = useState('');
+  const [filterText, setFilterText] = useState('');
   const [saving, setSaving] = useState(false);
   const [deleteConfirm, setDeleteConfirm] = useState(null);
   const [editing, setEditing] = useState(null);
   const [editText, setEditText] = useState('');
-  const [listFilter, setListFilter] = useState('');
+
+  const allForTab = options[activeTab] || [];
+  const canAdd = filterText.trim() && !allForTab.some(v => v.toLowerCase() === filterText.trim().toLowerCase());
 
   async function addOption() {
-    const val = addText.trim();
+    const val = filterText.trim();
     if (!val) return;
     setSaving(true);
     await supabase.from('category_options').insert([{ category: activeTab, value: val }]);
-    setAddText('');
+    setFilterText('');
     setSaving(false);
     refetch();
   }
@@ -54,8 +56,8 @@ function OptionsManager() {
     setDeleteConfirm(null);
   }
 
-  const current = (options[activeTab] || []).filter(v =>
-    !listFilter || v.toLowerCase().includes(listFilter.toLowerCase())
+  const current = allForTab.filter(v =>
+    !filterText.trim() || v.toLowerCase().includes(filterText.trim().toLowerCase())
   );
 
   return (
@@ -66,7 +68,7 @@ function OptionsManager() {
           <button
             key={key}
             className={`options-tab${activeTab === key ? ' active' : ''}`}
-            onClick={() => { setActiveTab(key); setDeleteConfirm(null); setAddText(''); setEditing(null); setListFilter(''); }}
+            onClick={() => { setActiveTab(key); setDeleteConfirm(null); setFilterText(''); setEditing(null); }}
           >
             {label} ({(options[key] || []).length})
           </button>
@@ -76,23 +78,17 @@ function OptionsManager() {
         <input
           className="options-add-input"
           type="text"
-          placeholder={`Add new ${CATEGORY_LABELS[activeTab]}…`}
-          value={addText}
-          onChange={e => setAddText(e.target.value)}
-          onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addOption(); } }}
+          placeholder={`Search or add ${CATEGORY_LABELS[activeTab]}…`}
+          value={filterText}
+          onChange={e => { setFilterText(e.target.value); setDeleteConfirm(null); }}
+          onKeyDown={e => { if (e.key === 'Enter' && canAdd) { e.preventDefault(); addOption(); } }}
         />
-        <button className="options-add-btn" onClick={addOption} disabled={saving || !addText.trim()}>
-          {saving ? '…' : '+ Add'}
-        </button>
+        {canAdd && (
+          <button className="options-add-btn" onClick={addOption} disabled={saving}>
+            {saving ? '…' : '+ Add'}
+          </button>
+        )}
       </div>
-      <input
-        className="options-add-input"
-        type="text"
-        placeholder="Search…"
-        value={listFilter}
-        onChange={e => setListFilter(e.target.value)}
-        style={{ marginBottom: '6px' }}
-      />
       <div className="options-list">
         {current.map(val => (
           <div key={val} className="options-item">
