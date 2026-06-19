@@ -102,10 +102,11 @@ export function ChecklistField({ label, fieldKey, value, onChange, highlight, op
     }
     if (isMulti) {
       if (!selected.includes(val)) onChange([...selected, val].sort().join(', '));
+      setFilter('');
     } else {
       onChange(val);
+      // keep filter so the newly selected item stays visible
     }
-    setFilter('');
   }
 
   return (
