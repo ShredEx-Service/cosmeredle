@@ -53,7 +53,7 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
     if (listLocked.current) return;
     const normalize = s => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
     const q = normalize(query);
-    const fields = ['home_world', 'first_appearance', 'species', 'abilities'];
+    const fields = ['homeWorld', 'firstAppearance', 'species', 'abilities'];
     const filtered = CHARACTERS
       .filter(c => !guessedNames.includes(c.name) && (displayAll || !q ||
         normalize(c.name).includes(q) ||
@@ -183,7 +183,7 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
 
   const canGuess = !!(selected || suggestions.length === 1);
 
-  const FIELD_LABELS = { home_world: 'Home World', first_appearance: 'First Appearance', species: 'Species', abilities: 'Abilities' };
+  const FIELD_LABELS = { homeWorld: 'Home World', firstAppearance: 'First Appearance', species: 'Species', abilities: 'Abilities' };
   function matchSubtitle(c) {
     if (!query) return null;
     const normalize = s => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
