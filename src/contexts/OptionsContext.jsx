@@ -13,13 +13,25 @@ export function OptionsProvider({ children }) {
       .from('category_options')
       .select('category, value')
       .order('value');
-    if (error || !data || data.length === 0) { setLoaded(true); return; }
 
-    const grouped = { home_world: [], first_appearance: [], species: [], abilities: [] };
-    for (const row of data) {
-      if (grouped[row.category]) grouped[row.category].push(row.value);
+    // Always start from static base, then add any Supabase-only entries on top
+    const merged = {
+      home_world: [...STATIC_OPTIONS.home_world],
+      first_appearance: [...STATIC_OPTIONS.first_appearance],
+      species: [...STATIC_OPTIONS.species],
+      abilities: [...STATIC_OPTIONS.abilities],
+    };
+
+    if (!error && data) {
+      for (const row of data) {
+        if (merged[row.category] && !merged[row.category].includes(row.value)) {
+          merged[row.category].push(row.value);
+          merged[row.category].sort();
+        }
+      }
     }
-    setOptions(grouped);
+
+    setOptions(merged);
     setLoaded(true);
   }
 
