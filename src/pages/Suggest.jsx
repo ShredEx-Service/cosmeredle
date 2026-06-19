@@ -11,7 +11,7 @@ const LABELS = { home_world: 'Home World', first_appearance: 'First Appearance',
 
 export default function Suggest() {
   const { user } = useAuth();
-  const { options } = useOptions();
+  const { options, addOption } = useOptions();
   const [characters, setCharacters] = useState([]);
   const [search, setSearch] = useState('');
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -218,6 +218,7 @@ export default function Suggest() {
               onChange={v => setForm(f => ({ ...f, [key]: v }))}
               highlight={isChanged(key)}
               optionsList={options[key]}
+              onAddOption={addOption}
             />
           ))}
 

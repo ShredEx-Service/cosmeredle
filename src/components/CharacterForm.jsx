@@ -64,7 +64,7 @@ export const OPTIONS = {
 
 const MULTI_FIELDS = new Set(['abilities']);
 
-export function ChecklistField({ label, fieldKey, value, onChange, highlight, optionsList }) {
+export function ChecklistField({ label, fieldKey, value, onChange, highlight, optionsList, onAddOption }) {
   const isMulti = MULTI_FIELDS.has(fieldKey);
   const [extraOptions, setExtraOptions] = useState([]);
   const [addText, setAddText] = useState('');
@@ -91,7 +91,10 @@ export function ChecklistField({ label, fieldKey, value, onChange, highlight, op
   function addCustom() {
     const val = addText.trim();
     if (!val) return;
-    if (!allOptions.includes(val)) setExtraOptions(e => [...e, val]);
+    if (!allOptions.includes(val)) {
+      setExtraOptions(e => [...e, val]);
+      onAddOption?.(fieldKey, val);
+    }
     if (isMulti) {
       if (!selected.includes(val)) onChange([...selected, val].sort().join(', '));
     } else {

@@ -198,7 +198,7 @@ function SuggestionsPanel({ onApproved }) {
 // ── Main admin page ────────────────────────────────────────────────────────────
 
 export default function Admin() {
-  const { options } = useOptions();
+  const { options, addOption } = useOptions();
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
@@ -336,16 +336,16 @@ export default function Admin() {
               </div>
               <ChecklistField label="Home World" fieldKey="home_world"
                 value={form.home_world} onChange={v => setForm(f => ({ ...f, home_world: v }))}
-                optionsList={options.home_world} />
+                optionsList={options.home_world} onAddOption={addOption} />
               <ChecklistField label="First Appearance" fieldKey="first_appearance"
                 value={form.first_appearance} onChange={v => setForm(f => ({ ...f, first_appearance: v }))}
-                optionsList={options.first_appearance} />
+                optionsList={options.first_appearance} onAddOption={addOption} />
               <ChecklistField label="Species" fieldKey="species"
                 value={form.species} onChange={v => setForm(f => ({ ...f, species: v }))}
-                optionsList={options.species} />
+                optionsList={options.species} onAddOption={addOption} />
               <ChecklistField label="Abilities" fieldKey="abilities"
                 value={form.abilities} onChange={v => setForm(f => ({ ...f, abilities: v }))}
-                optionsList={options.abilities} />
+                optionsList={options.abilities} onAddOption={addOption} />
 
               {error && <p className="admin-error">{error}</p>}
               <div className="admin-modal-actions">

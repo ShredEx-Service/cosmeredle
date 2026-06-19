@@ -25,8 +25,13 @@ export function OptionsProvider({ children }) {
 
   useEffect(() => { fetchOptions(); }, []);
 
+  async function addOption(category, value) {
+    await supabase.from('category_options').insert([{ category, value }]);
+    await fetchOptions();
+  }
+
   return (
-    <OptionsContext.Provider value={{ options, loaded, refetch: fetchOptions }}>
+    <OptionsContext.Provider value={{ options, loaded, refetch: fetchOptions, addOption }}>
       {children}
     </OptionsContext.Provider>
   );
