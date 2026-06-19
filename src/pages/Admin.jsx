@@ -19,6 +19,7 @@ function OptionsManager() {
   const [deleteConfirm, setDeleteConfirm] = useState(null);
   const [editing, setEditing] = useState(null);
   const [editText, setEditText] = useState('');
+  const [listFilter, setListFilter] = useState('');
 
   async function addOption() {
     const val = addText.trim();
@@ -53,7 +54,9 @@ function OptionsManager() {
     setDeleteConfirm(null);
   }
 
-  const current = options[activeTab] || [];
+  const current = (options[activeTab] || []).filter(v =>
+    !listFilter || v.toLowerCase().includes(listFilter.toLowerCase())
+  );
 
   return (
     <div className="options-manager">
@@ -63,7 +66,7 @@ function OptionsManager() {
           <button
             key={key}
             className={`options-tab${activeTab === key ? ' active' : ''}`}
-            onClick={() => { setActiveTab(key); setDeleteConfirm(null); setAddText(''); setEditing(null); }}
+            onClick={() => { setActiveTab(key); setDeleteConfirm(null); setAddText(''); setEditing(null); setListFilter(''); }}
           >
             {label} ({(options[key] || []).length})
           </button>
@@ -82,6 +85,14 @@ function OptionsManager() {
           {saving ? '…' : '+ Add'}
         </button>
       </div>
+      <input
+        className="options-add-input"
+        type="text"
+        placeholder="Search…"
+        value={listFilter}
+        onChange={e => setListFilter(e.target.value)}
+        style={{ marginBottom: '6px' }}
+      />
       <div className="options-list">
         {current.map(val => (
           <div key={val} className="options-item">
