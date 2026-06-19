@@ -29,7 +29,7 @@ export default function Suggest() {
     supabase.from('characters').select('id, name, home_world, first_appearance, species, abilities')
       .then(({ data }) => {
         if (data) {
-          const sortKey = s => s.name.replace(/^[^a-zA-Z]+/, '').toLowerCase();
+          const sortKey = s => s.name.replace(/^[^a-zA-Z]+/, '').replace(/^the\s+/i, '').toLowerCase();
           setCharacters(data.sort((a, b) => sortKey(a).localeCompare(sortKey(b))));
         }
       });
