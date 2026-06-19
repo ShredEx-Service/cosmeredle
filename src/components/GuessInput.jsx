@@ -53,14 +53,22 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
     if (listLocked.current) return;
     const normalize = s => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
     const q = normalize(query);
+    const fields = ['home_world', 'first_appearance', 'species', 'abilities'];
     const filtered = CHARACTERS
-      .filter(c => !guessedNames.includes(c.name) && (displayAll || !q || normalize(c.name).includes(q)))
+      .filter(c => !guessedNames.includes(c.name) && (displayAll || !q ||
+        normalize(c.name).includes(q) ||
+        fields.some(f => normalize(c[f] || '').includes(q))
+      ))
       .sort((a, b) => {
         if (!q) return 0;
-        const aStarts = normalize(a.name).startsWith(q);
-        const bStarts = normalize(b.name).startsWith(q);
-        if (aStarts && !bStarts) return -1;
-        if (!aStarts && bStarts) return 1;
+        const aName = normalize(a.name).startsWith(q);
+        const bName = normalize(b.name).startsWith(q);
+        if (aName && !bName) return -1;
+        if (!aName && bName) return 1;
+        const aNameMatch = normalize(a.name).includes(q);
+        const bNameMatch = normalize(b.name).includes(q);
+        if (aNameMatch && !bNameMatch) return -1;
+        if (!aNameMatch && bNameMatch) return 1;
         return 0;
       })
       .slice(0, 300);
@@ -175,6 +183,18 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
 
   const canGuess = !!(selected || suggestions.length === 1);
 
+  const FIELD_LABELS = { home_world: 'Home World', first_appearance: 'First Appearance', species: 'Species', abilities: 'Abilities' };
+  function matchSubtitle(c) {
+    if (!query) return null;
+    const normalize = s => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+    const q = normalize(query);
+    if (normalize(c.name).includes(q)) return null;
+    for (const [f, label] of Object.entries(FIELD_LABELS)) {
+      if (normalize(c[f] || '').includes(q)) return `${label}: ${c[f]}`;
+    }
+    return null;
+  }
+
   return (
     <div className="guess-input-wrapper">
       <div className="guess-input-row">
@@ -210,19 +230,23 @@ export default function GuessInput({ onGuess, guessedNames, disabled }) {
           lastMousePos.current = { x: e.clientX, y: e.clientY };
           if (moved) usingKeyboard.current = false;
         }}>
-          {suggestions.map((c, i) => (
-            <li
-              key={c.name}
-              className={i === highlighted ? 'highlighted' : ''}
-              onMouseDown={() => selectSuggestion(c, false)}
-              onTouchStart={(e) => { touchStartY.current = e.touches[0].clientY; touchMoved.current = false; }}
-              onTouchMove={(e) => { if (Math.abs(e.touches[0].clientY - touchStartY.current) > 8) touchMoved.current = true; }}
-              onTouchEnd={(e) => { if (!touchMoved.current) { e.preventDefault(); selectSuggestion(c, false); } }}
-              onMouseEnter={() => { if (!usingKeyboard.current) setHighlighted(i); }}
-            >
-              {c.name}
-            </li>
-          ))}
+          {suggestions.map((c, i) => {
+            const subtitle = matchSubtitle(c);
+            return (
+              <li
+                key={c.name}
+                className={i === highlighted ? 'highlighted' : ''}
+                onMouseDown={() => selectSuggestion(c, false)}
+                onTouchStart={(e) => { touchStartY.current = e.touches[0].clientY; touchMoved.current = false; }}
+                onTouchMove={(e) => { if (Math.abs(e.touches[0].clientY - touchStartY.current) > 8) touchMoved.current = true; }}
+                onTouchEnd={(e) => { if (!touchMoved.current) { e.preventDefault(); selectSuggestion(c, false); } }}
+                onMouseEnter={() => { if (!usingKeyboard.current) setHighlighted(i); }}
+              >
+                <span className="suggestion-name">{c.name}</span>
+                {subtitle && <span className="suggestion-sub">{subtitle}</span>}
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

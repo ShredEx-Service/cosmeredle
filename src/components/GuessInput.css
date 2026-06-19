@@ -71,16 +71,20 @@
 }
 
 .suggestions li {
-  padding: 10px 16px;
+  padding: 8px 16px;
   cursor: pointer;
   color: #fff;
   font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
-.suggestions li.highlighted {
-  background: #c8a84b;
-  color: #1a1a1a;
-}
+.suggestions li.highlighted { background: #c8a84b; color: #1a1a1a; }
+
+.suggestion-name { font-size: 0.95rem; }
+.suggestion-sub { font-size: 0.72rem; color: #aaa; }
+.suggestions li.highlighted .suggestion-sub { color: #5a3d00; }
 
 @media (max-width: 600px) {
   .guess-input { font-size: 0.95rem; padding: 10px 12px; min-height: 44px; }
