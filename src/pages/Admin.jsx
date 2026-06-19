@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../utils/supabase.js';
-import { ChecklistField } from '../components/CharacterForm.jsx';
+import { ChecklistField, OPTIONS as STATIC_OPTIONS } from '../components/CharacterForm.jsx';
 import { useOptions } from '../contexts/OptionsContext.jsx';
 import './Admin.css';
 
@@ -36,6 +36,7 @@ function OptionsManager() {
   }
 
   const current = options[activeTab] || [];
+  const staticSet = new Set(STATIC_OPTIONS[activeTab] || []);
 
   return (
     <div className="options-manager">
@@ -68,7 +69,9 @@ function OptionsManager() {
         {current.map(val => (
           <div key={val} className="options-item">
             <span className="options-item-label">{val}</span>
-            {deleteConfirm === val ? (
+            {staticSet.has(val) ? (
+              <span className="options-item-static">built-in</span>
+            ) : deleteConfirm === val ? (
               <>
                 <button className="options-btn-confirm" onClick={() => deleteOption(val)}>Delete</button>
                 <button className="options-btn-cancel" onClick={() => setDeleteConfirm(null)}>Cancel</button>
