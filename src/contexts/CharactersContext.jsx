@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { supabase } from '../utils/supabase.js';
 import { CHARACTERS as STATIC_CHARACTERS, VALID_ANSWERS as STATIC_VALID_ANSWERS } from '../data/characters.js';
+import { getDayNumber } from '../utils/gameLogic.js';
 
 const CharactersContext = createContext(null);
 
@@ -44,9 +45,13 @@ export function CharactersProvider({ children }) {
         a.name.replace(/^[^a-zA-Z]+/, '').toLowerCase()
           .localeCompare(b.name.replace(/^[^a-zA-Z]+/, '').toLowerCase())
       );
+      // Only include characters whose valid_from <= today in the answer pool.
+      // New characters added with a future valid_from never shift past answers.
+      const today = getDayNumber();
+      const eligible = sorted.filter(c => (c.validFrom ?? 0) <= today);
       setCharacters(sorted);
-      setValidAnswers(sorted);
-      setShuffled(seededShuffle(sorted, 0xC05E4E));
+      setValidAnswers(eligible);
+      setShuffled(seededShuffle(eligible, 0xC05E4E));
       setLoaded(true);
     });
   }, []);
