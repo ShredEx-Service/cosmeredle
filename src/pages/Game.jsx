@@ -19,19 +19,63 @@ export default function Game() {
   const { user } = useAuth();
 
   useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-    if (saved.day === dayNumber) {
-      setGuesses(saved.guesses || []);
-      setWon(saved.won || false);
-    }
-  }, [dayNumber]);
+    async function loadState() {
+      // Always load localStorage first for instant render
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      const local = saved.day === dayNumber ? { guesses: saved.guesses || [], won: saved.won || false } : null;
 
-  function saveState(newGuesses, newWon) {
+      if (user) {
+        const { data } = await supabase
+          .from('game_states')
+          .select('guesses, won')
+          .eq('user_id', user.id)
+          .eq('day_number', dayNumber)
+          .single();
+        if (data) {
+          // Server state wins — it's the canonical cross-device state
+          setGuesses(data.guesses || []);
+          setWon(data.won || false);
+          saveLocalState(data.guesses || [], data.won || false);
+          return;
+        }
+        // No server state yet — if we have local guesses, push them up
+        if (local && local.guesses.length > 0) {
+          await supabase.from('game_states').upsert({
+            user_id: user.id,
+            day_number: dayNumber,
+            guesses: local.guesses,
+            won: local.won,
+            updated_at: new Date().toISOString(),
+          });
+        }
+      }
+
+      if (local) {
+        setGuesses(local.guesses);
+        setWon(local.won);
+      }
+    }
+    loadState();
+  }, [dayNumber, user]);
+
+  function saveLocalState(newGuesses, newWon) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       day: dayNumber,
       guesses: newGuesses,
       won: newWon,
     }));
+  }
+
+  async function saveState(newGuesses, newWon) {
+    saveLocalState(newGuesses, newWon);
+    if (!user) return;
+    await supabase.from('game_states').upsert({
+      user_id: user.id,
+      day_number: dayNumber,
+      guesses: newGuesses,
+      won: newWon,
+      updated_at: new Date().toISOString(),
+    });
   }
 
   async function syncDailyResult(newWon) {
@@ -53,14 +97,14 @@ export default function Game() {
     }).eq('user_id', user.id);
   }
 
-  function handleGuess(char) {
+  async function handleGuess(char) {
     if (won) return;
     const result = compareCharacters(char, target);
     const newGuesses = [...guesses, result];
     const newWon = char.name === target.name;
     setGuesses(newGuesses);
     setWon(newWon);
-    saveState(newGuesses, newWon);
+    await saveState(newGuesses, newWon);
     if (newWon) syncDailyResult(true);
     else if (newGuesses.length >= 20) syncDailyResult(false);
   }
