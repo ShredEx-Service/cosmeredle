@@ -17,6 +17,8 @@ function OptionsManager() {
   const [addText, setAddText] = useState('');
   const [saving, setSaving] = useState(false);
   const [deleteConfirm, setDeleteConfirm] = useState(null);
+  const [editing, setEditing] = useState(null);
+  const [editText, setEditText] = useState('');
 
   async function addOption() {
     const val = addText.trim();
@@ -35,6 +37,22 @@ function OptionsManager() {
     refetch();
   }
 
+  async function saveEdit(oldValue) {
+    const newVal = editText.trim();
+    if (!newVal || newVal === oldValue) { setEditing(null); return; }
+    await supabase.from('category_options')
+      .update({ value: newVal })
+      .eq('category', activeTab).eq('value', oldValue);
+    setEditing(null);
+    refetch();
+  }
+
+  function startEdit(val) {
+    setEditing(val);
+    setEditText(val);
+    setDeleteConfirm(null);
+  }
+
   const current = options[activeTab] || [];
 
   return (
@@ -45,7 +63,7 @@ function OptionsManager() {
           <button
             key={key}
             className={`options-tab${activeTab === key ? ' active' : ''}`}
-            onClick={() => { setActiveTab(key); setDeleteConfirm(null); setAddText(''); }}
+            onClick={() => { setActiveTab(key); setDeleteConfirm(null); setAddText(''); setEditing(null); }}
           >
             {label} ({(options[key] || []).length})
           </button>
@@ -67,14 +85,30 @@ function OptionsManager() {
       <div className="options-list">
         {current.map(val => (
           <div key={val} className="options-item">
-            <span className="options-item-label">{val}</span>
-            {deleteConfirm === val ? (
+            {editing === val ? (
               <>
+                <input
+                  className="options-edit-input"
+                  value={editText}
+                  onChange={e => setEditText(e.target.value)}
+                  onKeyDown={e => { if (e.key === 'Enter') saveEdit(val); if (e.key === 'Escape') setEditing(null); }}
+                  autoFocus
+                />
+                <button className="options-btn-confirm" onClick={() => saveEdit(val)}>Save</button>
+                <button className="options-btn-cancel" onClick={() => setEditing(null)}>Cancel</button>
+              </>
+            ) : deleteConfirm === val ? (
+              <>
+                <span className="options-item-label">{val}</span>
                 <button className="options-btn-confirm" onClick={() => deleteOption(val)}>Delete</button>
                 <button className="options-btn-cancel" onClick={() => setDeleteConfirm(null)}>Cancel</button>
               </>
             ) : (
-              <button className="options-btn-delete" onClick={() => setDeleteConfirm(val)}>✕</button>
+              <>
+                <span className="options-item-label">{val}</span>
+                <button className="options-btn-edit" onClick={() => startEdit(val)}>✎</button>
+                <button className="options-btn-delete" onClick={() => setDeleteConfirm(val)}>✕</button>
+              </>
             )}
           </div>
         ))}
