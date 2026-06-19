@@ -164,7 +164,9 @@ function SuggestionsPanel({ onApproved }) {
       abilities: s.abilities,
     };
     if (s.type === 'new') {
-      await supabase.from('characters').insert([payload]);
+      const epoch = new Date(2024, 0, 1);
+      const tomorrow = Math.floor((Date.now() - epoch) / (1000 * 60 * 60 * 24)) + 1;
+      await supabase.from('characters').insert([{ ...payload, valid_from: tomorrow }]);
     } else {
       await supabase.from('characters').update(payload).eq('id', s.character_id);
     }
@@ -294,7 +296,9 @@ export default function Admin() {
     setError('');
 
     if (editing === 'new') {
-      const { error } = await supabase.from('characters').insert([form]);
+      const epoch = new Date(2024, 0, 1);
+      const tomorrow = Math.floor((Date.now() - epoch) / (1000 * 60 * 60 * 24)) + 1;
+      const { error } = await supabase.from('characters').insert([{ ...form, valid_from: tomorrow }]);
       if (error) { setError(error.message); setSaving(false); return; }
     } else {
       const { error } = await supabase.from('characters').update(form).eq('id', editing.id);
