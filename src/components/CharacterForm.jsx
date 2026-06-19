@@ -67,15 +67,20 @@ const MULTI_FIELDS = new Set(['abilities']);
 export function ChecklistField({ label, fieldKey, value, onChange, highlight, optionsList, onAddOption }) {
   const isMulti = MULTI_FIELDS.has(fieldKey);
   const [extraOptions, setExtraOptions] = useState([]);
-  const [addText, setAddText] = useState('');
-  const addInputRef = useRef(null);
+  const [filter, setFilter] = useState('');
 
   const base = optionsList || OPTIONS[fieldKey] || [];
-  const allOptions = [...base, ...extraOptions];
+  const allOptions = [...new Set([...base, ...extraOptions])].sort((a, b) => a.localeCompare(b));
 
   const selected = isMulti
     ? value.split(',').map(s => s.trim()).filter(Boolean)
     : value ? [value] : [];
+
+  const filterLow = filter.toLowerCase();
+  const visible = filterLow
+    ? allOptions.filter(o => o.toLowerCase().includes(filterLow))
+    : allOptions;
+  const canAdd = filter.trim() && !allOptions.some(o => o.toLowerCase() === filterLow);
 
   function toggle(opt) {
     if (isMulti) {
@@ -89,9 +94,9 @@ export function ChecklistField({ label, fieldKey, value, onChange, highlight, op
   }
 
   function addCustom() {
-    const val = addText.trim();
+    const val = filter.trim();
     if (!val) return;
-    if (!allOptions.includes(val)) {
+    if (!allOptions.some(o => o.toLowerCase() === val.toLowerCase())) {
       setExtraOptions(e => [...e, val]);
       onAddOption?.(fieldKey, val);
     }
@@ -100,8 +105,7 @@ export function ChecklistField({ label, fieldKey, value, onChange, highlight, op
     } else {
       onChange(val);
     }
-    setAddText('');
-    addInputRef.current?.focus();
+    setFilter('');
   }
 
   return (
@@ -115,8 +119,21 @@ export function ChecklistField({ label, fieldKey, value, onChange, highlight, op
         )}
         {highlight && <span className="cf-changed"> ✦ changed</span>}
       </label>
+      <div className="cf-add-row">
+        <input
+          className="cf-add-input"
+          type="text"
+          placeholder={`Filter or add new ${label.toLowerCase()}…`}
+          value={filter}
+          onChange={e => setFilter(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); canAdd ? addCustom() : (visible[0] && toggle(visible[0])); } }}
+        />
+        {canAdd && (
+          <button type="button" className="cf-add-btn" onClick={addCustom}>+ Add</button>
+        )}
+      </div>
       <div className="cf-grid">
-        {allOptions.map(opt => {
+        {visible.map(opt => {
           const isSelected = selected.includes(opt);
           return (
             <label key={opt} className={`cf-item${isSelected ? ' selected' : ''}`}>
@@ -129,18 +146,6 @@ export function ChecklistField({ label, fieldKey, value, onChange, highlight, op
             </label>
           );
         })}
-        <div className="cf-add-row">
-          <input
-            ref={addInputRef}
-            className="cf-add-input"
-            type="text"
-            placeholder="Add new…"
-            value={addText}
-            onChange={e => setAddText(e.target.value)}
-            onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addCustom(); } }}
-          />
-          <button type="button" className="cf-add-btn" onClick={addCustom}>+</button>
-        </div>
       </div>
     </div>
   );

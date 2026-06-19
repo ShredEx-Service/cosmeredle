@@ -39,8 +39,7 @@
 .cf-add-row {
   display: flex;
   gap: 4px;
-  grid-column: 1 / -1;
-  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .cf-add-input {
