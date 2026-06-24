@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import GuessInput from '../components/GuessInput.jsx';
 import GuessRow, { GuessHeader } from '../components/GuessRow.jsx';
 import { getDailyCharacter, getDayNumber, compareCharacters } from '../utils/gameLogic.js';
 import { useCharacters } from '../contexts/CharactersContext.jsx';
+import { useAuth } from '../contexts/AuthContext.jsx';
+import { supabase } from '../utils/supabase.js';
 import './Game.css';
 import './Archive.css';
 
@@ -21,6 +23,7 @@ const DAY_LABELS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 
 export default function Archive() {
   const { shuffled } = useCharacters();
+  const { user } = useAuth();
   const currentDay = getDayNumber();
   const today = new Date();
 
@@ -30,12 +33,50 @@ export default function Archive() {
   const [guesses, setGuesses] = useState([]);
   const [won, setWon] = useState(false);
   const [revealed, setRevealed] = useState(false);
+  // Map of day_number -> { guesses, won } for calendar display
+  const [playedDays, setPlayedDays] = useState({});
 
-  function selectDay(dayNum) {
+  // Load all played days from Supabase for calendar display
+  useEffect(() => {
+    if (!user) return;
+    supabase.from('game_states')
+      .select('day_number, guesses, won')
+      .eq('user_id', user.id)
+      .then(({ data }) => {
+        if (!data) return;
+        const map = {};
+        for (const row of data) map[row.day_number] = row;
+        setPlayedDays(map);
+      });
+  }, [user]);
+
+  async function selectDay(dayNum) {
     setSelectedDay(dayNum);
-    setGuesses([]);
     setWon(false);
     setRevealed(false);
+    // Load saved state for this day
+    if (user) {
+      const { data } = await supabase.from('game_states')
+        .select('guesses, won')
+        .eq('user_id', user.id)
+        .eq('day_number', dayNum)
+        .single();
+      if (data) {
+        setGuesses(data.guesses || []);
+        setWon(data.won || false);
+        return;
+      }
+    }
+    // Fall back to localStorage for today
+    if (dayNum === currentDay) {
+      const saved = JSON.parse(localStorage.getItem('cosmeredle_daily') || '{}');
+      if (saved.day === dayNum) {
+        setGuesses(saved.guesses || []);
+        setWon(saved.won || false);
+        return;
+      }
+    }
+    setGuesses([]);
   }
 
   function prevMonth() {
@@ -133,15 +174,17 @@ export default function Archive() {
           const isToday = dayNum === currentDay;
           const isPast = dayNum < currentDay;
           const hasPuzzle = dayNum >= 0 && dayNum <= currentDay;
+          const played = playedDays[dayNum];
           return (
             <button
               key={date}
-              className={`cal-cell${isToday ? ' cal-today' : ''}${isPast ? ' cal-past' : ''}${!hasPuzzle ? ' cal-future' : ''}`}
+              className={`cal-cell${isToday ? ' cal-today' : ''}${isPast ? ' cal-past' : ''}${!hasPuzzle ? ' cal-future' : ''}${played ? (played.won ? ' cal-won' : ' cal-lost') : ''}`}
               onClick={() => hasPuzzle && selectDay(dayNum)}
               disabled={!hasPuzzle}
             >
               <span className="cal-date-num">{date}</span>
               {hasPuzzle && <span className="cal-puzzle-num">#{dayNum + 1}</span>}
+              {played && <span className="cal-score">{played.won ? `${played.guesses.length}` : '✗'}</span>}
             </button>
           );
         })}

@@ -134,3 +134,23 @@
   color: #aaa;
   font-size: 0.9rem;
 }
+
+.cal-won {
+  border-color: #4a7c4a !important;
+  background: #1a2e1a !important;
+}
+
+.cal-lost {
+  border-color: #7c3a3a !important;
+  background: #2e1a1a !important;
+}
+
+.cal-score {
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #aaa;
+}
+
+.cal-won .cal-score { color: #6dbf6d; }
+.cal-lost .cal-score { color: #bf6d6d; }
